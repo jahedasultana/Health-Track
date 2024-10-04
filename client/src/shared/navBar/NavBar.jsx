@@ -14,8 +14,8 @@ const Navbar = () => {
       <div className="mx-auto flex justify-between items-center">
         <div className="w-full">
           {/* first part */}
-          <div className="flex justify-between items-center w-full py-5 md:px-10 px-3">
-            <div className="w-96">
+          <div className="flex justify-between items-center w-full py-3 md:px-10 px-3">
+            <div className="w-92">
               <img
                 className="md:w-[55%] w-[45%]"
                 src="/health-track.png"
