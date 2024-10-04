@@ -24,19 +24,19 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:flex items-center justify-center gap-5">
-              <button className="px-3 py-2 border bg-[#1DB2FF] text-white">
+              <button className="px-3 py-2 border bg-[#1DBFCC] text-white">
                 Donate
               </button>
               {/* karpa start */}
 
-              <button className="px-3 py-2 border bg-[#1DB2FF] text-white">
+              <button className="px-3 py-2 border bg-[#1DBFCC] text-white">
                 Login
               </button>
             </div>
           </div>
 
           {/* second part */}
-          <div className="hidden md:flex bg-[#E7F6FD] text-black/70 py-5 pl-10">
+          <div className="hidden md:flex bg-[#E4FEFF] text-black/70 py-5 pl-10">
             <div className="hidden md:flex lg:gap-16 md:gap-5 text-center font-semibold">
               <Link to={"/"}>Home</Link>
               <Link to={"/donation-request"}>Donation Request</Link>
