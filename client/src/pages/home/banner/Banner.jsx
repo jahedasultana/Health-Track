@@ -45,7 +45,7 @@ const Banner = () => {
               alt={`Slide ${index + 1}`}
               className="w-full md:h-[450px] h-[280px] object-cover"
             />
-            <div className="absolute top-0 left-0 right-0 flex justify-center items-center h-full bg-black bg-opacity-40">
+            <div className="absolute top-0 left-0 right-0 flex justify-center items-center h-full bg-black bg-opacity-35">
               <h1 className="text-white text-3xl md:text-5xl font-bold px-4">
                 {image.text}
               </h1>
