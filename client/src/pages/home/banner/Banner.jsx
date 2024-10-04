@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const images = [
   {
-    src: "https://img.freepik.com/premium-photo/modern-apartment-building-exterior-sunrise-perspective-view-modern-apartment-building-exterio_636537-279673.jpg?w=900",
+    src: "/doctort.png",
     text: "Welcome to Our Beautiful Apartment",
   },
   {
@@ -22,13 +22,13 @@ const Banner = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000); // Change slide every 3 seconds
+    }, 5000); // Change slide every 3 seconds
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className="relative mb-16 w-full h-[450px] overflow-hidden">
+    <div className="relative mb-16 w-full h-[280px] md:h-[450px] overflow-hidden">
       <div
         className="transition-opacity duration-700 ease-in-out"
         style={{ opacity: 1 }}
@@ -43,7 +43,7 @@ const Banner = () => {
             <img
               src={image.src}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[450px] object-cover"
+              className="w-full md:h-[450px] h-[280px] object-cover"
             />
             <div className="absolute top-0 left-0 right-0 flex justify-center items-center h-full bg-black bg-opacity-40">
               <h1 className="text-white text-3xl md:text-5xl font-bold px-4">
