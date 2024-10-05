@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 
-
 const images = [
   {
     src: "/doctort.png",
     text: "Welcome to Our Beautiful Apartment",
+    paragraph: "Entrust your health our doctors",
   },
   {
     src: "https://img.freepik.com/free-photo/analog-landscape-city-with-buildings_23-2149661456.jpg?t=st=1728036926~exp=1728040526~hmac=d04c41219b974fd0b6538c957d45c6ff7518028031ccd08146a9bdd6e3917d83&w=900",
     text: "Explore the City Life",
+    paragraph: "Entrust your health our doctors",
   },
   {
     src: "https://img.freepik.com/free-photo/3d-rendering-house-model_23-2150799725.jpg?t=st=1728041452~exp=1728045052~hmac=791f57ada1789729513b7b5fc362a9a111ab2d0d6f1df7a08d3880eb13d8e2e2&w=740",
     text: "Discover Your Dream Home",
+    paragraph: "Entrust your health our doctors",
   },
 ];
 
@@ -45,10 +47,18 @@ const Banner = () => {
               alt={`Slide ${index + 1}`}
               className="w-full md:h-[450px] h-[280px] object-cover"
             />
-            <div className="absolute top-0 left-0 right-0 flex justify-center items-center h-full bg-black bg-opacity-35">
-              <h1 className="text-white text-3xl md:text-5xl font-bold px-4">
-                {image.text}
-              </h1>
+
+            <div className="absolute flex items-center top-0 left-0 right-0  h-full bg-black bg-opacity-20">
+              <div className="md:pl-44 pl-10 md:space-y-4 space-y-2">
+                <p>{image.paragraph}</p>
+                <h1 className="text-white text-lg md:text-3xl font-semibold md:w-[70%] w-full">
+                  {image.text}
+                </h1>
+              <div>
+              <button className="border p-4">delete</button>
+              <button className=" border p-4">update</button>
+              </div>
+              </div>
             </div>
           </div>
         ))}
