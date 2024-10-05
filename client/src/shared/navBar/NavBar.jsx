@@ -25,7 +25,7 @@ const Navbar = () => {
 
             <div className="hidden md:flex items-center justify-center gap-5">
               <button className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
-                Donate
+                Doctor
               </button>
               {/* karpa start */}
 
@@ -39,9 +39,9 @@ const Navbar = () => {
           <div className="hidden md:flex bg-[#E4FEFF] text-black/70 py-5 pl-10">
             <div className="hidden md:flex lg:gap-16 md:gap-5 text-center font-semibold">
               <Link to={"/"}>Home</Link>
-              <Link to={"/donation-request"}>Donation Request</Link>
-              <Link to={"/blog"}>Blog</Link>
-              <Link to={"/"}>Funding</Link>
+              <Link to={"/donation-request"}>Appointment</Link>
+              <Link to={"/blog"}>Appointment</Link>
+              <Link to={"/"}>Appointment</Link>
             </div>
           </div>
         </div>
