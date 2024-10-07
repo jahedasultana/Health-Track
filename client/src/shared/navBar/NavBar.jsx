@@ -50,9 +50,9 @@ const Navbar = () => {
         <div className="md:hidden pr-3">
           <button id="btn" onClick={toggleMenu}>
             {isOpen ? (
-              <VscChromeClose size={30}/>
+              <VscChromeClose size={30} />
             ) : (
-              <RiMenuAddFill size={30}/>
+              <RiMenuAddFill size={30} />
             )}
           </button>
         </div>
