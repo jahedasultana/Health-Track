@@ -35,7 +35,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="relative mb-16 w-full h-[280px] md:h-[450px] overflow-hidden">
+    <div className="relative mb-4 w-full h-[280px] md:h-[450px] overflow-hidden">
       <div
         className="transition-opacity duration-700 ease-in-out"
         style={{ opacity: 1 }}
