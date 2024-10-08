@@ -30,7 +30,7 @@ const OurServices = () => {
         </div>
 
         {/* Third image container */}
-        <div className="w-[40%] flex items-end">
+        <div className="w-[40%] flex items-end rounded-md">
           <img
             className="w-full object-cover"
             src="https://i.postimg.cc/4xRgfLHV/hospital-reception.jpg"
