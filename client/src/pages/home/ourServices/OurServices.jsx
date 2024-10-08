@@ -13,7 +13,7 @@ const OurServices = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center rounded-sm">
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
             <h3 className="text-[30px] text-white font-semibold -rotate-90">
               Our Services
             </h3>
@@ -21,7 +21,7 @@ const OurServices = () => {
         </div>
 
         {/* Second image container with bottom alignment */}
-        <div className="w-[40%] flex items-end">
+        <div className="w-[40%] flex items-end rounded-md">
           <img
             className="w-full object-cover"
             src="https://i.postimg.cc/mrxGrdc7/happy-doctor.jpg"
