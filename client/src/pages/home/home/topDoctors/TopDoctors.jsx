@@ -28,7 +28,7 @@ const TopDoctors = () => {
            <p>Sunday</p>
            <p>9.00-15.00</p>
            </div>
-           
+           <hr className="opacity-60"/>
         
             </div>
            
