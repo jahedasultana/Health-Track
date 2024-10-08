@@ -13,7 +13,7 @@ const OurServices = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center rounded-sm">
             <h3 className="text-[30px] text-white font-semibold -rotate-90">
               Our Services
             </h3>
