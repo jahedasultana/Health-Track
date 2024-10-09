@@ -32,10 +32,10 @@ const OurServices = () => {
 
         {/* Second and Third image containers (Always Visible) */}
         <div className="flex flex-col gap-4 md:flex-row w-full md:w-[80%]">
-          <div className="w-full md:w-[50%] flex items-end rounded-md">
-            <div className="relative w-full flex items-end rounded-md group overflow-hidden">
+          <div className="w-full md:w-[50%] flex items-end ">
+            <div className="relative w-full flex items-end  group overflow-hidden">
               <img
-                className="w-full object-cover rounded-md"
+                className="w-full object-cover"
                 src="https://i.postimg.cc/mrxGrdc7/happy-doctor.jpg"
                 alt="doctorService"
               />
@@ -59,10 +59,10 @@ const OurServices = () => {
             </div>
           </div>
 
-          <div className="w-full md:w-[50%] flex items-end rounded-md">
-            <div className="relative w-full flex items-end rounded-md group overflow-hidden">
+          <div className="w-full md:w-[50%] flex items-end ">
+            <div className="relative w-full flex items-end  group overflow-hidden">
               <img
-                className="w-full object-cover rounded-md"
+                className="w-full object-cover"
                 src="https://i.postimg.cc/4xRgfLHV/hospital-reception.jpg"
                 alt="doctorService"
               />
