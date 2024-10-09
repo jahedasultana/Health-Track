@@ -3,7 +3,7 @@
 const Specialities = () => {
     return (
         <div>
-            
+            hi
         </div>
     );
 };
