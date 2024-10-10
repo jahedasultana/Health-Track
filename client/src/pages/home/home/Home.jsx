@@ -1,8 +1,8 @@
 import Banner from "../banner/Banner";
 import OurServices from "../ourServices/OurServices";
-import HomeContact from "./homeContact/HomeContact";
-import Specialities from "./specialities/Specialities";
-import TopDoctors from "./topDoctors/TopDoctors";
+import HomeContact from "../homeContact/HomeContact";
+import TopDoctors from "../topDoctors/TopDoctors";
+import Faq from "../faq/Faq";
 
 const Home = () => {
     return (
@@ -11,7 +11,9 @@ const Home = () => {
          <HomeContact></HomeContact>
          <TopDoctors></TopDoctors>
          <OurServices></OurServices>
-         <Specialities></Specialities>
+         {/* <Specialties></Specialties> */}
+         <Faq></Faq>
+        
         </div>
     );
 };
