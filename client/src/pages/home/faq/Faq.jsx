@@ -74,7 +74,6 @@ const Faq = () => {
           ))}
         </div>
 
-        {/* Image Section (30% width) */}
         <div className="md:w-[40%] w-full mt-6 md:mt-0 relative">
           <img
             src="https://img.freepik.com/free-vector/question-mark-sign-with-chat-bubble-sticker-ideas-speech_1017-43369.jpg?t=st=1728558652~exp=1728562252~hmac=5bc1876df16790dde8e767939036e7847fb40327e92237cc4e602785d4207ae8&w=740"
