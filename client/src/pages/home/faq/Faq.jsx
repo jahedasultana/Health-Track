@@ -56,7 +56,7 @@ const Faq = () => {
                 <h3 className="text-lg md:w-full w-[90%] text-[#6e6e6f] font-medium">{faq.question}</h3>
                <div className="w-[10%]">
                <button
-                  className="text-xl font-normal w-7 h-7 text-white bg-[#1DBFCC] rounded-full"
+                  className="text-xl font-semibold w-7 h-7 text-white bg-[#1DBFCC] rounded-full"
                   aria-expanded={open === index}
                 >
                   {open === index ? "-" : "+"}
