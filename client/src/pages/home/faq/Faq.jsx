@@ -53,13 +53,15 @@ const Faq = () => {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h3 className="text-lg text-[#6e6e6f] font-medium">{faq.question}</h3>
-                <button
+                <h3 className="text-lg md:w-full w-[90%] text-[#6e6e6f] font-medium">{faq.question}</h3>
+               <div className="w-[10%]">
+               <button
                   className="text-xl font-normal w-7 h-7 text-white bg-[#1DBFCC] rounded-full"
                   aria-expanded={open === index}
                 >
                   {open === index ? "-" : "+"}
                 </button>
+               </div>
               </div>
               <div
                 className={`mt-2 text-gray-600 transition-all duration-300 ease-in-out ${
