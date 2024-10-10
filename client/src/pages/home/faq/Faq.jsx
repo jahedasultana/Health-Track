@@ -79,9 +79,9 @@ const Faq = () => {
           <img
             src="https://img.freepik.com/free-vector/question-mark-sign-with-chat-bubble-sticker-ideas-speech_1017-43369.jpg?t=st=1728558652~exp=1728562252~hmac=5bc1876df16790dde8e767939036e7847fb40327e92237cc4e602785d4207ae8&w=740"
             alt="faq"
-            className="w-full h-auto"
+            className="w-full h-auto "
           />
-          <div className="absolute inset-0 bg-[#1DBFCC] bg-opacity-40 flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 bg-[#1DBFCC] bg-opacity-40 flex justify-center items-center opacity-50 hover:opacity-100 transition-opacity duration-300 ">
             <span className="text-white text-5xl font-bold">FAQ</span>
           </div>
         </div>
