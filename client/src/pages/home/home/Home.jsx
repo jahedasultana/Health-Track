@@ -3,6 +3,7 @@ import OurServices from "../ourServices/OurServices";
 import HomeContact from "../homeContact/HomeContact";
 import TopDoctors from "../topDoctors/TopDoctors";
 import Faq from "../faq/Faq";
+import WhyChooseUs from "../banner/whyChooseUs/WhyChooseUs";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
          <OurServices></OurServices>
          {/* <Specialties></Specialties> */}
          <Faq></Faq>
+         <WhyChooseUs></WhyChooseUs>
         
         </div>
     );
