@@ -3,15 +3,15 @@ import { GoGoal } from "react-icons/go";
 const Parallax = () => {
     return (
       <div
-        className="relative bg-red-400 bg-cover bg-center h-[280px] md:my-10 my-8 "
+        className="relative bg-red-400 bg-cover bg-center h-[340px] md:my-10 my-8 "
         style={{
-          backgroundImage: "url('https://i.postimg.cc/02z27bqD/closeup-diverse-people-joining-t.jpg')",
+          backgroundImage: "url('https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg')",
           backgroundAttachment: "fixed",
           backgroundSize: "cover"
         }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
   
         <div className="container mx-auto h-full flex flex-col justify-center relative z-10">
           <div className="flex justify-center">
