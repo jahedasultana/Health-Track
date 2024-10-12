@@ -3,7 +3,7 @@ import { GoGoal } from "react-icons/go";
 const Parallax = () => {
     return (
       <div
-        className="relative bg-red-400 bg-cover bg-center h-[340px] md:my-10 my-8 "
+        className="relative bg-red-400 bg-cover bg-center md:h-[340px] h-[280px] md:my-10 my-8 "
         style={{
           backgroundImage: "url('https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg')",
           backgroundAttachment: "fixed",
