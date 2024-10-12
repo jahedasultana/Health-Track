@@ -10,13 +10,18 @@ const WhyChooseUs = () => {
   return (
     <div className="flex flex-col md:flex-row relative my-12 gap-8 md:gap-12 items-center w-[95%] md:w-[90%] mx-auto">
       {/* Background Box */}
-      <div className="absolute -top-6 left-1 md:-left-[63px] bg-[#1DBFCC] h-[250px] md:h-[320px] z-0 w-[250px] md:w-[320px]">
+      <div className="absolute -top-6 left-1 md:-left-[63px] bg-[#1DBFCC] h-[250px] md:h-[320px] z-0 w-[250px] md:w-[320px] hidden md:block">
         <div className="relative">
           <p className="-rotate-90 absolute top-24 md:top-36 text-2xl md:text-4xl font-bold text-white/90 -left-16 md:-left-28">
             Why Choose Us
           </p>
         </div>
       </div>
+
+      <h1 className="relative text-center md:hidden text-[#535354] text-3xl font-bold">
+          <span className="absolute inset-0 bg-[#02929c]  opacity-30 blur-md rounded-md"></span>
+          Why Choose Us
+        </h1>
 
       {/* Image with overlay */}
       <div className="relative w-full md:w-[50%] z-10">
