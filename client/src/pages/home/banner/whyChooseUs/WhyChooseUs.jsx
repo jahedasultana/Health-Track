@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
               <MdHealthAndSafety size={25} />
             </p>
           </div>
-          <p className="text-gray-600 text-start md:text-right">
+          <p className="text-[#6e6e6f] text-start md:text-right">
               Streamlined Appointment Scheduling
             </p>
         </div>
@@ -59,7 +59,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
          
-            <p className="text-gray-600 md:text-right text-start">
+            <p className="text-[#6e6e6f] md:text-right text-start">
               Real-time Analytics & Reporting
             </p>
          
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
 
-            <p className="text-gray-600  md:text-right text-start ">
+            <p className="text-[#6e6e6f]  md:text-right text-start ">
               Remote Access & Telemedicine Integration
             </p>
         
@@ -85,7 +85,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         
-            <p className="text-gray-600 md:text-right text-start">
+            <p className="text-[#6e6e6f] md:text-right text-start">
               Data Security and Privacy
             </p>
      
@@ -97,7 +97,7 @@ const WhyChooseUs = () => {
               <MdSupportAgent size={25} />
             </p>
           </div>
-          <p className="text-gray-600 md:text-right text-start">24/7 Services</p>
+          <p className="text-[#6e6e6f] md:text-right text-start">24/7 Services</p>
         </div>
       </div>
     </div>
