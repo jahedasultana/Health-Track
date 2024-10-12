@@ -8,7 +8,7 @@ import {
 
 const WhyChooseUs = () => {
   return (
-    <div className="flex flex-col md:flex-row relative my-12 gap-8 md:gap-12 items-center w-[95%] md:w-[90%] mx-auto">
+    <div className="flex flex-col md:flex-row relative md:mb-12  md:mt-20 mt-10  gap-8 md:gap-12 items-center w-[95%] md:w-[90%] mx-auto">
       {/* Background Box */}
       <div className="absolute -top-6 left-1 md:-left-[63px] bg-[#1DBFCC] h-[250px] md:h-[320px] z-0 w-[250px] md:w-[320px] hidden md:block">
         <div className="relative">
@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
         </h1>
 
       {/* Image with overlay */}
-      <div className="relative w-full md:w-[50%] z-10">
+      <div className="relative  w-full md:w-[50%] z-10">
         <img
           className="h-[300px] md:h-[400px] w-full object-cover"
           src="https://i.postimg.cc/ry0NVkbP/hand-holding.jpg"
