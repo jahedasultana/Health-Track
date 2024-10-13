@@ -17,7 +17,9 @@ const Home = () => {
          {/* <Specialties></Specialties> */}
          <Faq></Faq>
          <Parallax></Parallax>
-         <WhyChooseUs></WhyChooseUs>
+   
+       <WhyChooseUs></WhyChooseUs>
+    
         
         </div>
     );

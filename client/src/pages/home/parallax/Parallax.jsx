@@ -1,33 +1,61 @@
-import { GoGoal } from "react-icons/go";
-
 const Parallax = () => {
-    return (
-      <div
-        className="relative bg-red-400 bg-cover bg-center md:h-[340px] h-[280px] md:my-10 my-8 "
-        style={{
-          backgroundImage: "url('https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg')",
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover"
-        }}
-      >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black opacity-40"></div>
-  
-        <div className="container mx-auto h-full flex flex-col justify-center relative z-10">
-          <div className="flex justify-center">
-            <p className="text-white md:text-3xl text-xl font-medium flex items-center gap-3"><GoGoal className="text-[#991747]"/> Our Goal</p>
+  return (
+    <div
+      className="relative bg-red-400 bg-cover bg-center md:h-[500px] h-auto md:my-10 my-8 "
+      style={{
+        backgroundImage:
+          "url('https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg')",
+        backgroundAttachment: "fixed",
+        backgroundSize: "cover",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black opacity-40"></div>
+
+      <div className="w-[80%] pt-8 mx-auto h-full flex flex-col relative z-10">
+        <div className="grid md:grid-cols-3 gap-3 grid-cols-1">
+          {/* card number 1 */}
+          <div className="border p-2 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg">
+            <img
+              className="h-44 w-full object-cover rounded-t-lg"
+              src="https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg"
+              alt=""
+            />
+            <div className="p-3">
+              <h1 className="text-lg font-semibold">Hello</h1>
+              <p className="text-sm">Some descriptive text here.</p>
+            </div>
           </div>
-          <div className="mt-4">
-            <p className="text-white md:w-[60%] w-full mx-auto text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-              explicabo exercitationem id sint accusantium doloribus ab temporibus
-              suscipit, eligendi deleniti est ut animi quaerat quos beatae saepe.
-              Voluptatum, cum saepe!
-            </p>
+          {/* card number 2 */}
+          <div className="border p-2 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg">
+            <img
+              className="h-44 w-full object-cover rounded-t-lg"
+              src="https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg"
+              alt=""
+            />
+            <div className="p-3">
+              <h1 className="text-lg font-semibold">Hello</h1>
+              <p className="text-sm">Some descriptive text here.</p>
+            </div>
+          </div>
+          {/* card number 3 */}
+          <div className="border p-2 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg">
+            <img
+              className="h-44 w-full object-cover rounded-t-lg"
+              src="https://i.postimg.cc/sX1BnfnS/doctors-doing.jpg"
+              alt=""
+            />
+            <div className="p-3">
+              <h1 className="text-lg font-semibold">Hello</h1>
+              <p className="text-sm">Some descriptive text here.</p>
+            </div>
           </div>
         </div>
       </div>
-    );
-  };
-  
-  export default Parallax;
+
+      <div className="w-full h-36 bg-green-700 absolute bottom-0 left-0"></div>
+    </div>
+  );
+};
+
+export default Parallax;
