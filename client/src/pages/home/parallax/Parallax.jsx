@@ -13,18 +13,20 @@ const Parallax = () => {
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       <div className="w-[80%] pt-16 mx-auto h-full flex flex-col relative z-10">
-        <div className="grid md:grid-cols-3 gap-3 grid-cols-1">
+        <div className="grid md:grid-cols-3 gap-5 grid-cols-1">
           {/* card number 1 */}
           <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
-                src="https://i.postimg.cc/28x9rfRq/portrait-cheerful.jpg" 
+                src="https://i.postimg.cc/28x9rfRq/portrait-cheerful.jpg"
                 alt="Professor"
               />
             </div>
             <div className="text-center space-y-1">
-              <h1 className="text-2xl text-[#69dde5] font-semibold">Professor Dr. John Doe</h1>
+              <h1 className="text-2xl text-[#69dde5] font-semibold">
+                Professor Dr. John Doe
+              </h1>
               <p className="text-sm text-white/90">
                 Over 25 years of experience in medical research and advanced
                 surgical procedures globally.
@@ -42,7 +44,9 @@ const Parallax = () => {
               />
             </div>
             <div className="text-center space-y-1">
-              <h1 className="text-2xl text-[#69dde5] font-semibold">Professor Dr. Sarah Lee</h1>
+              <h1 className="text-2xl text-[#69dde5] font-semibold">
+                Professor Dr. Sarah Lee
+              </h1>
               <p className="text-sm text-white/90">
                 18 years of clinical practice in cardiology, specializing in
                 heart disease prevention and treatment.
@@ -51,7 +55,7 @@ const Parallax = () => {
           </div>
 
           {/* card number 3 */}
-          <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
+          <div className="max-w-xs mb-4 md:mb-0 border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
@@ -72,30 +76,29 @@ const Parallax = () => {
         </div>
       </div>
 
-      <div className="w-full h-36 bg-[#1DBFCC]/80 absolute bottom-0 left-0">
-      <div className="w-full h-36 flex justify-evenly items-center text-white/90">
-  <div className="text-center">
-    <h1 className="text-3xl font-semibold">100%</h1>
-    <p className="text-sm">Quality</p>
-  </div>
-  <div className="text-center">
-    <h1 className="text-3xl font-semibold">3480</h1>
-    <p className="text-sm">Patients a year</p>
-  </div>
-  <div className="text-center">
-    <h1 className="text-3xl font-semibold">35</h1>
-    <p className="text-sm">People working</p>
-  </div>
-  <div className="text-center">
-    <h1 className="text-3xl font-semibold">40</h1>
-    <p className="text-sm">Years of experience</p>
-  </div>
-  <div className="text-center">
-    <h1 className="text-3xl font-semibold">8856</h1>
-    <p className="text-sm">Happy Smiles</p>
-  </div>
-</div>
-
+      <div className="w-full h-36 hidden md:block bg-[#1DBFCC]/80 absolute bottom-0 left-0">
+        <div className="w-full h-36 flex justify-evenly items-center text-white/90">
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold">100%</h1>
+            <p className="text-sm">Quality</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold">3480</h1>
+            <p className="text-sm">Patients a year</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold">35</h1>
+            <p className="text-sm">People working</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold">40</h1>
+            <p className="text-sm">Years of experience</p>
+          </div>
+          <div className="text-center">
+            <h1 className="text-3xl font-semibold">8856</h1>
+            <p className="text-sm">Happy Smiles</p>
+          </div>
+        </div>
       </div>
     </div>
   );
