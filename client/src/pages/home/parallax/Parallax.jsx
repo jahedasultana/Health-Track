@@ -83,27 +83,27 @@ const Parallax = () => {
         <div className="w-full h-36 flex justify-evenly items-center text-white/90">
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-              <CountUp start={0} end={100} duration={3.17} delay={1}></CountUp>%
+              <CountUp start={0} enableScrollSpy={true} end={100} duration={3.17} delay={0}></CountUp>%
             </h1>
             <p className="text-sm">Quality</p>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold"><CountUp start={0} end={3480} duration={3.17} delay={2}></CountUp></h1>
+            <h1 className="text-3xl font-semibold"><CountUp start={0} enableScrollSpy={true} end={3480} duration={3.17} delay={2}></CountUp></h1>
             <p className="text-sm">Patients a year</p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-            <CountUp start={0} end={35} duration={3.17} delay={3}></CountUp></h1>
+            <CountUp start={0} enableScrollSpy={true}  end={35} duration={3.17} delay={3}></CountUp></h1>
             <p className="text-sm">People working</p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-            <CountUp start={0} end={40} duration={3.17} delay={4}></CountUp></h1>
+            <CountUp start={0} enableScrollSpy={true}  end={40} duration={3.17} delay={4}></CountUp></h1>
             <p className="text-sm">Years of experience</p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-            <CountUp start={0} end={8856} duration={3.17} delay={5}></CountUp></h1>
+            <CountUp start={0} enableScrollSpy={true}  end={8856} duration={3.17} delay={5}></CountUp></h1>
             <p className="text-sm">Happy Smiles</p>
           </div>
         </div>
