@@ -83,27 +83,27 @@ const Parallax = () => {
         <div className="w-full h-36 flex justify-evenly items-center text-white/90">
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-              <CountUp start={0} enableScrollSpy={true} end={100} duration={3.17}></CountUp>%
+              <CountUp start={0} enableScrollSpy={true} end={100} duration={3.17} scrollSpyOnce={true}></CountUp>%
             </h1>
             <p className="text-sm">Quality</p>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold"><CountUp start={0} enableScrollSpy={true} end={3480} duration={3.17} scrollSpyDelay={1000}></CountUp></h1>
+            <h1 className="text-3xl font-semibold"><CountUp start={0} enableScrollSpy={true} scrollSpyOnce={true} end={3480} duration={3.17} scrollSpyDelay={1000}></CountUp></h1>
             <p className="text-sm">Patients a year</p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-            <CountUp start={0} enableScrollSpy={true}  end={35} duration={3.17} scrollSpyDelay={1500}></CountUp></h1>
+            <CountUp start={0} enableScrollSpy={true}  end={35} duration={3.17} scrollSpyDelay={1500} scrollSpyOnce={true}></CountUp></h1>
             <p className="text-sm">People working</p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-            <CountUp start={0} enableScrollSpy={true}  end={40} duration={3.17} scrollSpyDelay={2000}></CountUp></h1>
+            <CountUp start={0} enableScrollSpy={true}  end={40} duration={3.17} scrollSpyOnce={true} scrollSpyDelay={2000}></CountUp></h1>
             <p className="text-sm">Years of experience</p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold">
-            <CountUp start={0} enableScrollSpy={true} end={8856} duration={3.17} scrollSpyDelay={2500}></CountUp></h1>
+            <CountUp start={0} enableScrollSpy={true} end={8856} duration={3.17} scrollSpyOnce={true} scrollSpyDelay={2500}></CountUp></h1>
             <p className="text-sm">Happy Smiles</p>
           </div>
         </div>
