@@ -1,3 +1,5 @@
+import CountUp from 'react-countup';
+
 const Parallax = () => {
   return (
     <div
@@ -76,26 +78,32 @@ const Parallax = () => {
         </div>
       </div>
 
-      <div className="w-full h-36 hidden md:block bg-[#1DBFCC]/80 absolute bottom-0 left-0">
+{/* text */}
+      <div className="w-full h-36 hidden md:block bg-[#1DBFCC] absolute bottom-0 left-0">
         <div className="w-full h-36 flex justify-evenly items-center text-white/90">
           <div className="text-center">
-            <h1 className="text-3xl font-semibold">100%</h1>
+            <h1 className="text-3xl font-semibold">
+              <CountUp start={0} end={100} duration={3.17} delay={1}></CountUp>%
+            </h1>
             <p className="text-sm">Quality</p>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold">3480</h1>
+            <h1 className="text-3xl font-semibold"><CountUp start={0} end={3480} duration={3.17} delay={2}></CountUp></h1>
             <p className="text-sm">Patients a year</p>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold">35</h1>
+            <h1 className="text-3xl font-semibold">
+            <CountUp start={0} end={35} duration={3.17} delay={3}></CountUp></h1>
             <p className="text-sm">People working</p>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold">40</h1>
+            <h1 className="text-3xl font-semibold">
+            <CountUp start={0} end={40} duration={3.17} delay={4}></CountUp></h1>
             <p className="text-sm">Years of experience</p>
           </div>
           <div className="text-center">
-            <h1 className="text-3xl font-semibold">8856</h1>
+            <h1 className="text-3xl font-semibold">
+            <CountUp start={0} end={8856} duration={3.17} delay={5}></CountUp></h1>
             <p className="text-sm">Happy Smiles</p>
           </div>
         </div>
