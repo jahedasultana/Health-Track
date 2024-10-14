@@ -12,10 +12,14 @@ const Parallax = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black opacity-40"></div>
-
-      <div className="w-[80%] pt-16 mx-auto h-full flex flex-col relative z-10">
+      <div className="absolute inset-0  bg-black opacity-40"></div>
+      <h1 className="text-2xl text-center  pt-4 text-white  font-semibold">
+                Professor Dr. John Doe
+              </h1>
+      <div className="w-[80%] pt-5 mx-auto h-full flex flex-col relative z-10">
+    
         <div className="grid md:grid-cols-3 gap-5 grid-cols-1">
+          
           {/* card number 1 */}
           <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
             <div className="flex justify-center">
