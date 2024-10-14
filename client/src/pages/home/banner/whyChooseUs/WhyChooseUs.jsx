@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
 
       {/* Image with overlay */}
       <div className="relative   w-full md:w-[50%] z-10">
-        <div className="h-[300px] md:h-[400px] bg-[#1DBFCC]/80 w-full ">
+        <div className="h-[300px] md:h-[400px] bg-[#1DBFCC]/90 w-full ">
           <img className="h-full w-full" src={why} alt="" />
         </div>
         {/* <img
