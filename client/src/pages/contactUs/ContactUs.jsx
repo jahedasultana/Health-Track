@@ -17,7 +17,7 @@ const ContactUs = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="bg-[#1DBFCC]/10 md:mt-16 mt-10 ">
+      <div className="bg-[#1DBFCC]/20 md:mt-16 mt-10 ">
         <div className="container px-6 py-8 mx-auto">
           <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6">
@@ -51,7 +51,7 @@ const ContactUs = () => {
               <div className="mt-6 w-80 md:mt-8">
                 <h3 className="text-white/95">Follow us</h3>
 
-                <div className="flex mt-4 -mx-1.5 bg-black/20 rounded-mg p-2">
+                <div className="flex mt-4 -mx-1.5 bg-[#1DBFCC]/20 rounded-mg p-2">
                   <a
                     className="mx-1.5 text-gray-100 transition-colors duration-300 transform hover:text-blue-500"
                     href="#"
@@ -93,7 +93,7 @@ const ContactUs = () => {
                     <input
                       type="text"
                       placeholder="John Doe"
-                      className="block w-full px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md focus:border-[#1DBFCC] focus:ring-[#1DBFCC] focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
@@ -104,7 +104,7 @@ const ContactUs = () => {
                     <input
                       type="email"
                       placeholder="johndoe@example.com"
-                      className="block w-full px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md focus:border-[#1DBFCC] focus:ring-[#1DBFCC] focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
                     />
                   </div>
 
@@ -113,12 +113,12 @@ const ContactUs = () => {
                       Message
                     </label>
                     <textarea
-                      className="block w-full h-32 px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md md:h-28 focus:border-[#1DBFCC] focus:ring-[#1DBFCC] focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full h-32 px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md md:h-28 focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
                       placeholder="Message"
                     ></textarea>
                   </div>
 
-                  <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#1DBFCC]/70 rounded-md hover:bg-[#179ba4]/60 focus:outline-none focus:ring focus:ring-[#179ba4] focus:ring-opacity-50">
+                  <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#1DBFCC]/70 rounded-md hover:bg-[#179ba4]/60 focus:outline-none focus:ring focus:border-gray-400 focus:ring-gray-400 focus:ring-opacity-50">
                     get in touch
                   </button>
                 </form>
