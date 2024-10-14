@@ -43,13 +43,13 @@ const ContactUs = () => {
                 <p className="flex items-start -mx-2">
                   <FaEnvelope className="w-6 h-6 mx-2 text-[#1DBFCC]" />
                   <span className="mx-2 text-white/95 truncate w-72">
-                  track@gmail.com
+                  health-track@gmail.com
                   </span>
                 </p>
               </div>
 
               <div className="mt-6 w-80 md:mt-8">
-                <h3 className="text-white/95">Follow us</h3>
+                <h3 className="text-white/95 text-lg">Follow us</h3>
 
                 <div className="flex mt-4 -mx-1.5 bg-[#1DBFCC]/30 rounded-mg p-2">
                   <a
