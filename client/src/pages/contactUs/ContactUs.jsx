@@ -51,7 +51,7 @@ const ContactUs = () => {
               <div className="mt-6 w-80 md:mt-8">
                 <h3 className="text-white/95">Follow us</h3>
 
-                <div className="flex mt-4 -mx-1.5 bg-[#1DBFCC]/20 rounded-mg p-2">
+                <div className="flex mt-4 -mx-1.5 bg-[#1DBFCC]/30 rounded-mg p-2">
                   <a
                     className="mx-1.5 text-gray-100 transition-colors duration-300 transform hover:text-blue-500"
                     href="#"
@@ -113,7 +113,7 @@ const ContactUs = () => {
                       Message
                     </label>
                     <textarea
-                      className="block w-full h-32 px-5 py-3 mt-2 text-white placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md md:h-28 focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
+                      className="block w-full h-32 px-5 py-3 mt-2 text-white resize-none placeholder-white/90 bg-black/30 border border-gray-200/25 rounded-md md:h-28 focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
                       placeholder="Message"
                     ></textarea>
                   </div>

@@ -21,7 +21,7 @@ const Parallax = () => {
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
-                src="https://i.postimg.cc/28x9rfRq/portrait-cheerful.jpg"
+                src="https://i.postimg.cc/0yC7kyMT/middle-aged6.jpg"
                 alt="Professor"
               />
             </div>
@@ -41,7 +41,7 @@ const Parallax = () => {
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
-                src="https://i.postimg.cc/DyfdQJHZ/man-with.jpg"
+                src="https://i.postimg.cc/hGpvwJzG/smiling254.jpg"
                 alt="Professor"
               />
             </div>
