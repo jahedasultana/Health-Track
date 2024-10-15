@@ -36,7 +36,7 @@ const ContactUs = () => {
                 <p className="flex items-start -mx-2">
                   <FaPhone className="w-6 h-6 mx-2 text-[#1DBFCC]" />
                   <span className="mx-2 text-white/95 truncate w-72">
-                    (257) 563-7401
+                    (257) 563 -7401
                   </span>
                 </p>
 
