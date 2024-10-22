@@ -89,7 +89,7 @@ const Parallax = () => {
             <h1 className="text-3xl font-semibold">
               <CountUp start={0} enableScrollSpy={true} end={100} duration={3.17} scrollSpyOnce={true}></CountUp>%
             </h1>
-            <p className="text-sm">Quality</p>
+            <p className="text-sm">Quality </p>
           </div>
           <div className="text-center">
             <h1 className="text-3xl font-semibold"><CountUp start={0} enableScrollSpy={true} scrollSpyOnce={true} end={3480} duration={3.17} scrollSpyDelay={1000}></CountUp></h1>
