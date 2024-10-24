@@ -42,8 +42,8 @@ const Testimonial = () => {
             magna aliqua.
           </p>
           {/* Quote mark */}
-          <div className="absolute top-4 right-4 text-[#E0E0E0] text-4xl font-serif">
-            “
+          <div className="absolute top-4 right-4 ">
+            <img className="w-8 h-8 opacity-30" src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png" alt="mark" />
           </div>
           {/* Star rating */}
           <div className="flex items-center mt-4 text-yellow-400">
