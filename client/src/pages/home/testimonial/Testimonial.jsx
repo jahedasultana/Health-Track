@@ -35,7 +35,7 @@ const Testimonial = () => {
             
           </div>
            {/* Red line beneath the name */}
-             <div className="w-12 h-1 bg-red-500 mt-1"></div>
+             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
           <p className="text-gray-600 mt-4">
             Get the latest news in your own inbox. Consecteturi adipiscing
             elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
