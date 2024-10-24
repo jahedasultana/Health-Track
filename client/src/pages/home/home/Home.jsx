@@ -6,6 +6,7 @@ import Faq from "../faq/Faq";
 import WhyChooseUs from "../banner/whyChooseUs/WhyChooseUs";
 import Parallax from "../parallax/Parallax";
 import ContactUs from "../../contactUs/ContactUs";
+import Testimonial from "../testimonial/Testimonial";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
          <Parallax></Parallax>
    
        <WhyChooseUs></WhyChooseUs>
+       <Testimonial></Testimonial>
         <ContactUs></ContactUs>
         
         </div>
