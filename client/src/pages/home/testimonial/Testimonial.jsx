@@ -18,8 +18,7 @@ const Testimonial = () => {
           dolore magna aliqua. Quis ipsum suspend isseultrices and gravida.
           Consectetur adipiscing elitadipiscing in elitserissed aliqua.
         </p>
-        <button className="p-2 mr-1 bg-slate-700">Previous</button>
-        <button className="p-2 bg-green-600">Next</button>
+
       </div>
 
       {/* Right side testimonial cards */}

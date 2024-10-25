@@ -1,3 +1,4 @@
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -5,25 +6,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// Import required modules
+
+// import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
-import { useRef } from 'react';
+
 
 export default function TestimonialSlide() {
-  const swiperRef = useRef(null);
-
   return (
     <>
       <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        slidesPerView={1}
-        spaceBetween={10}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        loop={true}
-        breakpoints={{
+              slidesPerView={1}
+              spaceBetween={10}
+            
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              loop={true}
+         breakpoints={{
           640: {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -38,10 +38,10 @@ export default function TestimonialSlide() {
           },
         }}
         modules={[Pagination, Autoplay]}
-        className="mySwiper"
+         className="mySwiper"
       >
-        {/* Slide content goes here */}
         <SwiperSlide>
+          {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
             <div className="flex items-center space-x-3 mb-4">
@@ -52,15 +52,18 @@ export default function TestimonialSlide() {
               />
               <div>
                 <h4 className="font-bold text-[#3f3f41]">John Smith</h4>
+
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+            {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
               Get the latest news in your own inbox. Consecteturi adipiscing
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
+            {/* Quote mark */}
             <div className="absolute top-4 right-4 ">
               <img
                 className="w-8 h-8 opacity-30"
@@ -68,6 +71,7 @@ export default function TestimonialSlide() {
                 alt="mark"
               />
             </div>
+            {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
               <span className="ml-2 text-gray-500 text-sm">4.0</span>
@@ -75,6 +79,7 @@ export default function TestimonialSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+          {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
             <div className="flex items-center space-x-3 mb-4">
@@ -85,15 +90,18 @@ export default function TestimonialSlide() {
               />
               <div>
                 <h4 className="font-bold text-[#3f3f41]">John Smith</h4>
+
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+            {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
               Get the latest news in your own inbox. Consecteturi adipiscing
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
+            {/* Quote mark */}
             <div className="absolute top-4 right-4 ">
               <img
                 className="w-8 h-8 opacity-30"
@@ -101,6 +109,7 @@ export default function TestimonialSlide() {
                 alt="mark"
               />
             </div>
+            {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
               <span className="ml-2 text-gray-500 text-sm">4.0</span>
@@ -108,6 +117,7 @@ export default function TestimonialSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+          {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
             <div className="flex items-center space-x-3 mb-4">
@@ -118,15 +128,18 @@ export default function TestimonialSlide() {
               />
               <div>
                 <h4 className="font-bold text-[#3f3f41]">John Smith</h4>
+
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+            {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
               Get the latest news in your own inbox. Consecteturi adipiscing
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
+            {/* Quote mark */}
             <div className="absolute top-4 right-4 ">
               <img
                 className="w-8 h-8 opacity-30"
@@ -134,6 +147,7 @@ export default function TestimonialSlide() {
                 alt="mark"
               />
             </div>
+            {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
               <span className="ml-2 text-gray-500 text-sm">4.0</span>
@@ -141,6 +155,7 @@ export default function TestimonialSlide() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
+          {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
             <div className="flex items-center space-x-3 mb-4">
@@ -151,15 +166,18 @@ export default function TestimonialSlide() {
               />
               <div>
                 <h4 className="font-bold text-[#3f3f41]">John Smith</h4>
+
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+            {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
               Get the latest news in your own inbox. Consecteturi adipiscing
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
+            {/* Quote mark */}
             <div className="absolute top-4 right-4 ">
               <img
                 className="w-8 h-8 opacity-30"
@@ -167,6 +185,7 @@ export default function TestimonialSlide() {
                 alt="mark"
               />
             </div>
+            {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
               <span className="ml-2 text-gray-500 text-sm">4.0</span>
@@ -174,25 +193,7 @@ export default function TestimonialSlide() {
           </div>
         </SwiperSlide>
 
-        {/* Additional slides */}
-        {/* Repeat the SwiperSlide component for additional testimonials */}
       </Swiper>
-
-      {/* Navigation buttons */}
-      <div className="flex justify-center mt-4 space-x-4">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
-        >
-          Previous
-        </button>
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
-        >
-          Next
-        </button>
-      </div>
     </>
   );
 }
