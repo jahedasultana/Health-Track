@@ -1,6 +1,7 @@
 import TestimonialSlide from "./TestimonialSlide";
 
 const Testimonial = () => {
+
   return (
     <div className="flex w-[90%] mx-auto mt-16">
       {/* Left side heading and description */}
