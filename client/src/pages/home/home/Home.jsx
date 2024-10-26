@@ -7,7 +7,9 @@ import WhyChooseUs from "../banner/whyChooseUs/WhyChooseUs";
 import Parallax from "../parallax/Parallax";
 import ContactUs from "../../contactUs/ContactUs";
 import Testimonial from "../testimonial/Testimonial";
-import DoctorCategory from "../doctorCategory/DoctorCategory";
+import OurDoctors from "../ourDoctors/OurDoctors";
+
+
 
 const Home = () => {
     return (
@@ -16,7 +18,7 @@ const Home = () => {
          <HomeContact></HomeContact>
          <TopDoctors></TopDoctors>
          <OurServices></OurServices>
-         <DoctorCategory></DoctorCategory>
+         <OurDoctors></OurDoctors>
         
          {/* <Specialties></Specialties> */}
          <Faq></Faq>
