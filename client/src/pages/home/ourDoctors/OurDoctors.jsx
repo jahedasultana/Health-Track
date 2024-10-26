@@ -2,7 +2,11 @@ import { FaPhoneAlt, FaEnvelope, FaPlus } from "react-icons/fa";
 
 const OurDoctors = () => {
   return (
-    <section>
+    <section className="w-[90%] mx-auto">
+        <div className="mb-10">
+            <p className="text-[#1DBFCC]">Professionals</p>
+            <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]">Our Doctors</h1>
+        </div>
       <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg relative group">
         <div className="relative">
           <img
