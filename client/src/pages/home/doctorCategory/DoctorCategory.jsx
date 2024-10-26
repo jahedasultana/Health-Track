@@ -9,10 +9,10 @@ const DoctorCategory = () => {
                 />
 
                 <div className="py-5 text-center">
-                   <h3 className="text-4xl">John Doe</h3>
-                    <p className="text-sm text-gray-700 ">Software Engineer</p>
+                   <h3 className="text-3xl opacity-80 font-semibold "> Dr.John Doe</h3>
+                    <p className="text-sm opacity-70 text-gray-700 ">Software Engineer</p>
                     <hr className="opacity-95 mt-2"/>
-                    <p className="my-2">Cum sociis natoque penatibus et magnis dis parturient montesmus.</p>
+                    <p className="my-2 opacity-50">Cum sociis natoque penatibus et magnis dis parturient montesmus.</p>
                     <hr className="opacity-95 mb-2"/>
                     <p>+1-212-333-7078</p>
                     <p>johan24@gmail.com</p>
