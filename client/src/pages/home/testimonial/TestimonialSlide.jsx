@@ -82,6 +82,7 @@ export default function TestimonialSlide() {
           {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
+            <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="https://i.postimg.cc/63D9Pd4k/front-view.jpg"
@@ -94,6 +95,16 @@ export default function TestimonialSlide() {
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+               {/* Quote mark */}
+               <div className=" ">
+              <img
+                className="w-8 h-8 opacity-30"
+                src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png"
+                alt="mark"
+              />
+            </div>
+            </div>
+           
             {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
@@ -101,14 +112,7 @@ export default function TestimonialSlide() {
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
-            {/* Quote mark */}
-            <div className="absolute top-4 right-4 ">
-              <img
-                className="w-8 h-8 opacity-30"
-                src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png"
-                alt="mark"
-              />
-            </div>
+         
             {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
@@ -120,6 +124,7 @@ export default function TestimonialSlide() {
           {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 md:mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
+            <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="https://i.postimg.cc/63D9Pd4k/front-view.jpg"
@@ -132,6 +137,16 @@ export default function TestimonialSlide() {
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+               {/* Quote mark */}
+               <div className=" ">
+              <img
+                className="w-8 h-8 opacity-30"
+                src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png"
+                alt="mark"
+              />
+            </div>
+            </div>
+           
             {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
@@ -139,14 +154,7 @@ export default function TestimonialSlide() {
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
-            {/* Quote mark */}
-            <div className="absolute top-4 right-4 ">
-              <img
-                className="w-8 h-8 opacity-30"
-                src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png"
-                alt="mark"
-              />
-            </div>
+         
             {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
@@ -158,6 +166,7 @@ export default function TestimonialSlide() {
           {" "}
           {/* Card 1 */}
           <div className="bg-white p-6 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
+            <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="https://i.postimg.cc/63D9Pd4k/front-view.jpg"
@@ -170,6 +179,16 @@ export default function TestimonialSlide() {
                 <p className="text-sm text-gray-500">Heart Patient</p>
               </div>
             </div>
+               {/* Quote mark */}
+               <div className=" ">
+              <img
+                className="w-8 h-8 opacity-30"
+                src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png"
+                alt="mark"
+              />
+            </div>
+            </div>
+           
             {/* Red line beneath the name */}
             <div className="w-12 h-1 bg-[#9ee9ef] mt-1"></div>
             <p className="text-gray-600 mt-4">
@@ -177,14 +196,7 @@ export default function TestimonialSlide() {
               elitadipiscing elitseddoe. Tempor incididunt utlabore et dolore
               magna aliqua.
             </p>
-            {/* Quote mark */}
-            <div className="absolute top-4 right-4 ">
-              <img
-                className="w-8 h-8 opacity-30"
-                src="https://i.postimg.cc/JnqNcc6Q/quotation-mark.png"
-                alt="mark"
-              />
-            </div>
+         
             {/* Star rating */}
             <div className="flex items-center mt-4 text-yellow-400">
               <span>★ ★ ★ ★ ☆</span>
@@ -192,6 +204,8 @@ export default function TestimonialSlide() {
             </div>
           </div>
         </SwiperSlide>
+        
+       
       </Swiper>
     </>
   );
