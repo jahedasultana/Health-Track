@@ -3,9 +3,9 @@ import TestimonialSlide from "./TestimonialSlide";
 const Testimonial = () => {
 
   return (
-    <div className="flex w-[90%] mx-auto mt-16">
+    <div className="flex md:flex-row flex-col w-[90%] mx-auto mt-16">
       {/* Left side heading and description */}
-      <div className="w-[35%] bg-[#FFFFFF] space-y-4">
+      <div className="md:w-[35%] bg-[#FFFFFF] space-y-4">
         <h6 className="text-lg font-semibold text-[#1DBFCC]">
           20+ Years Of Experiences
         </h6>
@@ -22,7 +22,7 @@ const Testimonial = () => {
       </div>
 
       {/* Right side testimonial cards */}
-      <div className="w-[65%] bg-[#F4F7F9]  space-x-4 p-4">
+      <div className="md:w-[65%] bg-[#F4F7F9]  space-x-4 p-4">
      
 
             <TestimonialSlide></TestimonialSlide>

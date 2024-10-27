@@ -1,29 +1,25 @@
-
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination } from 'swiper/modules';
-
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function TestimonialSlide() {
   return (
     <>
       <Swiper
-              slidesPerView={1}
-              spaceBetween={10}
-            
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              loop={true}
-         breakpoints={{
+        slidesPerView={1}
+        spaceBetween={10}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
+        breakpoints={{
           640: {
             slidesPerView: 1,
             spaceBetween: 10,
@@ -38,12 +34,12 @@ export default function TestimonialSlide() {
           },
         }}
         modules={[Pagination, Autoplay]}
-         className="mySwiper"
+        className="mySwiper"
       >
         <SwiperSlide>
           {" "}
           {/* Card 1 */}
-          <div className="bg-white p-6 mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
+          <div className="bg-white p-6 md:mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="https://i.postimg.cc/63D9Pd4k/front-view.jpg"
@@ -119,7 +115,7 @@ export default function TestimonialSlide() {
         <SwiperSlide>
           {" "}
           {/* Card 1 */}
-          <div className="bg-white p-6 mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
+          <div className="bg-white p-6 md:mt-12 shadow-lg rounded-lg md:h-[360px] w-[320px] relative">
             <div className="flex items-center space-x-3 mb-4">
               <img
                 src="https://i.postimg.cc/63D9Pd4k/front-view.jpg"
@@ -192,7 +188,6 @@ export default function TestimonialSlide() {
             </div>
           </div>
         </SwiperSlide>
-
       </Swiper>
     </>
   );
