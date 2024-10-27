@@ -4,7 +4,7 @@ import { SlLocationPin } from "react-icons/sl";
 
 const HomeContact = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6 justify-around items-center w-full max-w-7xl mb-10 mx-auto px-4">
+    <div className="flex flex-col md:flex-row gap-6 justify-between items-center md:w-[90%] w-full mb-10 mx-auto md:px-0 px-4">
 
       <div className="flex gap-6 items-center w-full md:w-auto">
         <div className="flex-shrink-0">
