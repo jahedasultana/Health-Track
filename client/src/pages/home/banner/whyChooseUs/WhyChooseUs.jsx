@@ -5,7 +5,6 @@ import {
   MdSecurity,
   MdSupportAgent,
 } from "react-icons/md";
-import why from "../../../../assets/homeImage/why.png"
 
 const WhyChooseUs = () => {
   return (
@@ -27,14 +26,14 @@ const WhyChooseUs = () => {
       {/* Image with overlay */}
       <div className="relative   w-full md:w-[50%] z-10">
         <div className="h-[300px] md:h-[400px] bg-[#1DBFCC]/90 w-full ">
-          <img className="h-full w-full" src={why} alt="" />
+          <img className="h-full rounded-lg w-full" src="https://i.postimg.cc/h4bqRJB6/doctor-blurred8994.jpg" alt="" />
         </div>
         {/* <img
           className="h-[300px] md:h-[400px] w-full object-cover"
           src="https://i.postimg.cc/ry0NVkbP/hand-holding.jpg"
           alt="whyChoose"
         /> */}
-        <div className="absolute inset-0 bg-black opacity-20 hover:opacity-10 transition-all duration-1000  z-10"></div>{" "}
+        <div className="absolute inset-0 bg-[#07444a] opacity-30 hover:opacity-10 transition-all duration-1000  z-10"></div>{" "}
         {/* Overlay */}
       </div>
 
