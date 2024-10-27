@@ -4,7 +4,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 const OurDoctors = () => {
   return (
     <section className="w-[90%] mx-auto mb-16">
-      <div className="mb-10">
+      <div className="md:mb-10 mb-6">
         <p className="text-[#1DBFCC]">Professionals</p>
         <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]">Our Doctors</h1>
       </div>
@@ -89,7 +89,7 @@ const OurDoctors = () => {
               <FaPhoneAlt className="text-[#1DBFCC]"/> +1-555-321-4567
             </p>
             <p className="flex items-center justify-center gap-2">
-              <FaEnvelope className="text-[#1DBFCC]"/> michael.brown@hospital.com
+              <FaEnvelope className="text-[#1DBFCC]"/> michael.br@hospital.com
             </p>
           </div>
         </div>
