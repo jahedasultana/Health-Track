@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
           src="https://i.postimg.cc/ry0NVkbP/hand-holding.jpg"
           alt="whyChoose"
         /> */}
-        <div className="absolute inset-0 bg-[#07444a] opacity-30 hover:opacity-10 transition-all duration-1000  z-10"></div>{" "}
+        <div className="absolute inset-0 bg-[#07444a] opacity-25 hover:opacity-5 transition-all duration-1000  z-10"></div>{" "}
         {/* Overlay */}
       </div>
 

@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className="hidden md:flex bg-[#E4FEFF] text-black/70 py-5 pl-10">
             <div className="hidden md:flex lg:gap-16 md:gap-5 text-center font-semibold">
               <Link to={"/"}>Home</Link>
-              <Link to={"/donation-request"}>Appointment</Link>
+              <Link to={"/appointment"}>Appointment</Link>
               <Link to={"/blog"}>Appointment</Link>
               <Link to={"/"}>Appointment</Link>
             </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
       >
         <div className="flex items-center flex-col space-y-2">
           <Link to={"/"}>Home</Link>
-          <Link to={"/donation-request"}>Donation Request</Link>
+          <Link to={"/appointment"}>Appointment</Link>
           <Link to={"/blog"}>Blog</Link>
           <Link to={"/"}>Funding</Link>
           <Link to={"/login"}>Login</Link>
