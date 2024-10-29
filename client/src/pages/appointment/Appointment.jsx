@@ -56,7 +56,7 @@ const Appointment = () => {
           className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px]"
         >
           <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
-          <p className="text-sm">Cardiologists</p>
+          <p className="text-sm">Cardiologists </p>
         </motion.div>
       </div>
     </div>
