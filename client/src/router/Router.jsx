@@ -20,6 +20,7 @@ import Appointment from "../pages/appointment/Appointment";
             path: "/appointment",
             element: <Appointment></Appointment>
         },
+      
         
       ]
     },
