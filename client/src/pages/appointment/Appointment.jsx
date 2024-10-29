@@ -1,35 +1,66 @@
+import { motion } from "framer-motion";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+
 const Appointment = () => {
-    return (
-      <div className="md:w-[90%] grid grid-cols-3 w-full mx-auto py-10">
-        <div className="relative group w-[300px]">
-          {/* Doctor Image */}
-          <img
-            className="h-[350px] w-full object-cover object-top"
-            src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
-            alt="Doctor"
-          />
-  
-          {/* Hover Full Overlay */}
-          <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center text-white group-hover:opacity-100">
-            <h3 className="text-xl font-semibold">Melissa Lombardo</h3>
-            <p className="text-sm mb-4">Cardiologists</p>
-            <div className="flex space-x-4">
-              <i className="fab fa-twitter text-lg"></i>
-              <i className="fab fa-linkedin-in text-lg"></i>
-              <i className="fab fa-facebook-f text-lg"></i>
-              <i className="fab fa-youtube text-lg"></i>
-            </div>
-          </div>
-  
-          {/* Bottom Overlay (Positioned a bit above the bottom) */}
-          <div className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-tr-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0">
-            <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
-            <p className="text-sm">Cardiologists</p>
-          </div>
-        </div>
+  return (
+    <div className="md:w-[90%] grid grid-cols-3 w-full mx-auto py-10">
+      <div className="relative group w-[300px]">
+        {/* Doctor Image */}
+        <img
+          className="h-[350px] w-full object-cover object-top"
+          src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
+          alt="Doctor"
+        />
+
+        {/* Hover Full Overlay */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="absolute inset-0 bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center text-white group-hover:opacity-100"
+        >
+          <motion.h3
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-xl font-semibold"
+          >
+            Melissa Lombardo
+          </motion.h3>
+          <motion.p
+            initial={{ y: 0, opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-sm mb-4"
+          >
+            Cardiologists
+          </motion.p>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="flex space-x-4 mt-4"
+          >
+            <FaFacebookF className="text-lg" />
+            <FaLinkedinIn className="text-lg" />
+            <FaTwitter className="text-lg" />
+            <FaYoutube className="text-lg" />
+          </motion.div>
+        </motion.div>
+
+        {/* Bottom Overlay (Positioned a bit above the bottom) */}
+        <motion.div
+          initial={{ x: 0, opacity: 1 }}
+          whileHover={{ x: 50, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px]"
+        >
+          <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
+          <p className="text-sm">Cardiologists</p>
+        </motion.div>
       </div>
-    );
-  };
-  
-  export default Appointment;
-  
+    </div>
+  );
+};
+
+export default Appointment;
