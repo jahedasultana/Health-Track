@@ -25,7 +25,7 @@ const Appointment = () => {
             transition={{ duration: 0.5 }}
             className="text-xl font-semibold"
           >
-            Melissa Lombardo
+            Melissa    Lombardo
           </motion.h3>
           <motion.p
             initial={{ y: 0, opacity: 0 }}
