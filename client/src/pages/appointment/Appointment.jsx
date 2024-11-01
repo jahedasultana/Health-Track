@@ -15,9 +15,8 @@ const Appointment = () => {
         {/* Hover Full Overlay */}
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="absolute inset-0 bg-black bg-opacity-60 opacity-0 transition-opacity duration-300 flex flex-col justify-center items-center text-white group-hover:opacity-100"
+          whileHover={{ opacity: 1 }}
+          className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100"
         >
           <motion.h3
             initial={{ y: -50, opacity: 0 }}
@@ -48,16 +47,13 @@ const Appointment = () => {
           </motion.div>
         </motion.div>
 
-        {/* Bottom Overlay (Positioned a bit above the bottom) */}
-        <motion.div
-          initial={{ x: 0, opacity: 1 }}
-          whileHover={{ x: 50, opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px]"
+        {/* Bottom Overlay (Initially Visible, Hidden on Hover) */}
+        <div
+          className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
         >
           <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
-          <p className="text-sm">Cardiologists </p>
-        </motion.div>
+          <p className="text-sm">Cardiologists</p>
+        </div>
       </div>
     </div>
   );
