@@ -41,13 +41,13 @@ export default function TestimonialSlide() {
           {/* Card 1 */}
           <div className="relative bg-[#F4F7F9] p-[1.5px] md:mt-12 md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
             {/* Gradient border using a pseudo-element */}
-            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-lg pointer-events-none">
+            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-t-lg pointer-events-none">
               {/* Initial gradient direction (top to bottom) */}
               <div className="absolute inset-0 transition-all duration-1000 ease-in-out bg-gradient-to-b from-[#2aa7ff] via-[#2aa7ff99] to-transparent group-hover:bg-gradient-to-t"></div>
             </div>
 
             {/* Inner content with hover effect */}
-            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-lg p-6 h-full transition-colors duration-300 ease-in-out">
+            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-t-lg p-6 h-full transition-colors duration-300 ease-in-out">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-3 mb-4">
                   <img
@@ -88,15 +88,15 @@ export default function TestimonialSlide() {
         <SwiperSlide>
           {" "}
           {/* Card 1 */}
-          <div className="relative md:mt-2 bg-[#F4F7F9] p-[1.5px]  md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
+          <div className="relative bg-[#F4F7F9] p-[1.5px] md:mt-2 md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
             {/* Gradient border using a pseudo-element */}
-            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-lg pointer-events-none">
+            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-t-lg pointer-events-none">
               {/* Initial gradient direction (top to bottom) */}
               <div className="absolute inset-0 transition-all duration-1000 ease-in-out bg-gradient-to-b from-[#2aa7ff] via-[#2aa7ff99] to-transparent group-hover:bg-gradient-to-t"></div>
             </div>
 
             {/* Inner content with hover effect */}
-            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-lg p-6 h-full transition-colors duration-300 ease-in-out">
+            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-t-lg p-6 h-full transition-colors duration-300 ease-in-out">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-3 mb-4">
                   <img
@@ -134,19 +134,18 @@ export default function TestimonialSlide() {
             </div>
           </div>
         </SwiperSlide>
-     
         <SwiperSlide>
           {" "}
           {/* Card 1 */}
           <div className="relative bg-[#F4F7F9] p-[1.5px] md:mt-12 md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
             {/* Gradient border using a pseudo-element */}
-            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-lg pointer-events-none">
+            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-t-lg pointer-events-none">
               {/* Initial gradient direction (top to bottom) */}
               <div className="absolute inset-0 transition-all duration-1000 ease-in-out bg-gradient-to-b from-[#2aa7ff] via-[#2aa7ff99] to-transparent group-hover:bg-gradient-to-t"></div>
             </div>
 
             {/* Inner content with hover effect */}
-            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-lg p-6 h-full transition-colors duration-300 ease-in-out">
+            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-t-lg p-6 h-full transition-colors duration-300 ease-in-out">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-3 mb-4">
                   <img
@@ -187,15 +186,15 @@ export default function TestimonialSlide() {
         <SwiperSlide>
           {" "}
           {/* Card 1 */}
-          <div className="relative bg-[#F4F7F9] md:mt-2 p-[1.5px]  md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
+          <div className="relative bg-[#F4F7F9] p-[1.5px] md:mt-2 md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
             {/* Gradient border using a pseudo-element */}
-            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-lg pointer-events-none">
+            <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-t-lg pointer-events-none">
               {/* Initial gradient direction (top to bottom) */}
               <div className="absolute inset-0 transition-all duration-1000 ease-in-out bg-gradient-to-b from-[#2aa7ff] via-[#2aa7ff99] to-transparent group-hover:bg-gradient-to-t"></div>
             </div>
 
             {/* Inner content with hover effect */}
-            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-lg p-6 h-full transition-colors duration-300 ease-in-out">
+            <div className="relative z-10 bg-[#F4F7F9] group-hover:bg-white rounded-none group-hover:rounded-t-lg p-6 h-full transition-colors duration-300 ease-in-out">
               <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-3 mb-4">
                   <img
@@ -233,6 +232,8 @@ export default function TestimonialSlide() {
             </div>
           </div>
         </SwiperSlide>
+
+      
       </Swiper>
     </>
   );
