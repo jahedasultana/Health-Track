@@ -21,7 +21,7 @@ const Parallax = () => {
         <div className="grid md:grid-cols-3 gap-5 grid-cols-1">
           
           {/* card number 1 */}
-          <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
+          <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-[1.04] duration-300 ease-in-out">
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
@@ -41,7 +41,7 @@ const Parallax = () => {
           </div>
 
           {/* card number 2 */}
-          <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
+          <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-[1.04] duration-300 ease-in-out">
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
@@ -61,7 +61,7 @@ const Parallax = () => {
           </div>
 
           {/* card number 3 */}
-          <div className="max-w-xs mb-4 md:mb-0 border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-105 duration-300 ease-in-out">
+          <div className="max-w-xs border p-4 space-y-5 border-gray-200/40 bg-slate-100 bg-opacity-30 backdrop-blur-0 rounded-lg shadow-lg transform transition-transform hover:scale-[1.04] duration-300 ease-in-out">
             <div className="flex justify-center">
               <img
                 className="h-28 w-28 object-cover rounded-full border-2 border-gray-300"
