@@ -1,4 +1,3 @@
-
 import { FaLongArrowAltRight } from "react-icons/fa";
 export const InfoCard = ({ title, Icon, description, isEven }) => {
     return (
@@ -34,7 +33,7 @@ export const InfoCard = ({ title, Icon, description, isEven }) => {
                     </div>
                 </div>
             </div>
-            <div className="absolute -bottom-4 bg-black text-white px-6 py-1 rounded-full">
+            <div className="absolute -bottom-4 bg-white text-gray-400 border border-gray-400 px-6 pt-1 rounded-full">
                 <button><FaLongArrowAltRight /></button>
             </div>
         </div>

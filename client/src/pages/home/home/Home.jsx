@@ -9,6 +9,7 @@ import ContactUs from "../../contactUs/ContactUs";
 import Testimonial from "../testimonial/Testimonial";
 import OurDoctors from "../ourDoctors/OurDoctors";
 import Specialties from "../specialties/Specialties";
+import OurUrgentCareServiceS from "../ourUrgentCareServiceS/OurUrgentCareServiceS";
 
 
 
@@ -25,7 +26,7 @@ const Home = () => {
          
          <Specialties></Specialties>
          <Faq></Faq>
-        
+        <OurUrgentCareServiceS></OurUrgentCareServiceS>
        <WhyChooseUs></WhyChooseUs>
        <Testimonial></Testimonial>
         <ContactUs></ContactUs>
