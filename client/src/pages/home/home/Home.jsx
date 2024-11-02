@@ -8,6 +8,7 @@ import Parallax from "../parallax/Parallax";
 import ContactUs from "../../contactUs/ContactUs";
 import Testimonial from "../testimonial/Testimonial";
 import OurDoctors from "../ourDoctors/OurDoctors";
+import Specialties from "../specialties/Specialties";
 
 
 
@@ -20,10 +21,10 @@ const Home = () => {
          <OurServices></OurServices>
          <OurDoctors></OurDoctors>
         
-         {/* <Specialties></Specialties> */}
+     
          <Faq></Faq>
          <Parallax></Parallax>
-   
+         <Specialties></Specialties>
        <WhyChooseUs></WhyChooseUs>
        <Testimonial></Testimonial>
         <ContactUs></ContactUs>
