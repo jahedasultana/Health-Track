@@ -3,15 +3,24 @@ const AboutUs = () => {
     <div className="flex justify-center items-center bg-white py-10 px-6">
       <div className="flex flex-col md:flex-row items-center max-w-5xl space-y-6 md:space-y-0 md:space-x-8">
         {/* Image and Ratings Section */}
-        <div className="relative w-full md:w-1/2 flex flex-col items-center">
-          <div className="w-full relative">
+        <div className="relative w-full md:w-1/2 flex items-center">
+          <div className="w-[60%]">
             <img
               src="https://i.postimg.cc/d346Lj6N/man-woman.jpg"
               alt="Patient"
               className="rounded-lg shadow-lg"
             />
-            {/* Overlay Elements */}
-            <div className="absolute top-2 left-2 bg-white rounded-lg p-2 shadow-lg">
+          </div>
+          <div className="w-[40%]">
+            <img
+              src="https://i.postimg.cc/pTzR2dfy/young-doctor-his.jpg"
+              alt="Patient"
+              className="rounded-lg shadow-lg"
+            />
+          </div>
+
+          {/* Overlay Elements */}
+          {/* <div className="absolute top-2 left-2 bg-white rounded-lg p-2 shadow-lg">
               <p className="text-sm font-semibold">3.5k Plus</p>
               <p className="text-xs text-gray-500">Satisfied Patients</p>
             </div>
@@ -23,8 +32,7 @@ const AboutUs = () => {
             <div className="absolute bottom-2 right-2 bg-white rounded-lg p-2 shadow-lg">
               <p className="text-xs">Lily A. Wilson</p>
               <p className="text-gray-500 text-xs">Senior Cardiologist</p>
-            </div>
-          </div>
+            </div> */}
         </div>
 
         {/* Text Section */}
