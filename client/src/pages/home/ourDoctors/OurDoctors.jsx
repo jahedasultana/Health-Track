@@ -3,7 +3,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 const OurDoctors = () => {
   return (
-    <section className="w-[90%] mx-auto mb-16">
+    <section className="w-[90%] mx-auto my-16">
       <div className="md:mb-10 mb-6">
         <p className="text-[#1DBFCC]">Professionals</p>
         <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]">Our Doctors</h1>
