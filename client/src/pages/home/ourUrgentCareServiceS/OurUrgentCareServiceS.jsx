@@ -13,8 +13,10 @@ const services = [
 const OurUrgentCareServiceS = () => {
     return (
         <div className="py-20 mt-16 px-4 bg-blue-50 ">
+            <div className="w-[90%] mx-auto">
             <p className="text-[#1DBFCC]">Services</p>
             <h2 className="md:text-3xl text-xl font-medium text-[#3f3f41] mb-14">Our Urgent Care Services</h2>
+            </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-[90%] mx-auto gap-6">
                 {services.map((service, index) => (
                     <div key={index} className="bg-white p-[52px] rounded-lg flex flex-col items-center">
