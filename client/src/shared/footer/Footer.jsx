@@ -35,7 +35,7 @@ const Footer = () => {
                             <FaEnvelope className="text-[#1DBFCC]" /> example@healthcare.com
                         </p>
                         <ul className="mt-4 space-y-1 text-sm text-gray-400">
-                            <li>  CT Scan Center</li>
+                            <li>CT Scan Center</li>
                             <li>Medical Store</li>
                             <li>Pediatric Clinic</li>
                             <li>Physiotherapy</li>
