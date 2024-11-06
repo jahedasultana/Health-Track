@@ -21,7 +21,9 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Office Address</h3>
               <p className="mt-2">Evanto HQ 24 Fifth St., Los Angeles, USA</p>
             </div>
-              
+              <div className="h-[120px] w-[1px] bg-white">
+
+              </div>
             <div>
               <h3 className="text-lg font-semibold">Talk To Expert</h3>
               <p className="mt-2 flex items-center justify-center md:justify-start gap-2">
@@ -29,6 +31,9 @@ const Footer = () => {
               </p>
             </div>
 
+            <div className="h-[120px] w-[1px] bg-white">
+
+</div>
             <div>
               <h3 className="text-lg font-semibold">Talk To Expert</h3>
               <p className="mt-2 flex items-center justify-center md:justify-start gap-2">
