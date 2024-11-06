@@ -10,7 +10,7 @@ const ContactUs = () => {
             <p className="mt-1 text-3xl font-bold text-gray-600">
               Get In Touch
             </p>
-            <div className=" relative pt-16 ">
+            <div className=" relative md:pt-16 pt-8 ">
               <img
                 className=""
                 src="https://kamleshyadav.com/html/healthcare/bootstrap5/healthcare/assets/images/map.png"
@@ -46,38 +46,38 @@ const ContactUs = () => {
             <div className="p-8 ">
               <form className="space-y-4">
                 <div>
-                  <label className="block text-gray-700">Full Name</label>
+                  <label className="block text-[13px] text-gray-700">Full Name</label>
                   <input
                     type="text"
                     placeholder="John Doe"
-                    className="w-full px-4 py-2 mt-2 border rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-500"
+                    className="w-full text-[13px] px-4 py-2 mt-2 border  focus:outline-none focus:ring-1 focus:ring-teal-500/40"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">Email Address</label>
+                  <label className="block text-[13px] text-gray-700">Email Address</label>
                   <input
                     type="email"
                     placeholder="johndoe@example.com"
-                    className="w-full px-4 py-2 mt-2 border rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-500"
+                    className="w-full text-[13px] px-4 py-2 mt-2 border  focus:outline-none focus:ring-1 focus:ring-teal-500/40"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">Contact No.</label>
+                  <label className="block text-[13px] text-gray-700">Contact No.</label>
                   <input
                     type="text"
                     placeholder="(123) 456-7890"
-                    className="w-full px-4 py-2 mt-2 border rounded-2xl focus:outline-none focus:ring-1 focus:ring-teal-500"
+                    className="w-full text-[13px] px-4 py-2 mt-2 border focus:outline-none focus:ring-1 focus:ring-teal-500/40"
                   />
                 </div>
                 <div>
-                  <label className="block text-gray-700">Message</label>
+                  <label className="block text-[13px] text-gray-700">Message</label>
                   <textarea
                     placeholder="Message"
-                    className="w-full px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500"
+                    className="w-full text-[13px] px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500/40"
                     rows="4"
                   ></textarea>
                 </div>
-                <button className="w-[110px] px-4 py-2 text-white bg-teal-500 rounded-md hover:bg-teal-400">
+                <button className="w-[110px] px-4 py-2 text-white bg-teal-500  hover:bg-teal-400">
                   Submit
                 </button>
               </form>
