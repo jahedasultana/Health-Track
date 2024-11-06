@@ -19,7 +19,7 @@ const ContactUs = () => {
 
               <div className="absolute top-32 right-32 group">
                 <FaLocationDot className="text-xl text-[#FD9678]" />
-                <div className="opacity-0 group-hover:opacity-100 absolute bottom-full mb-2 right-0bg-white text-gray-500 shadow-md text-sm rounded p-4  transition-opacity duration-300 w-[165px]">
+                <div className="opacity-0 group-hover:opacity-100 absolute bottom-full mb-2 right-0 bg-white text-gray-500 shadow-md text-sm rounded p-4  transition-opacity duration-300 w-[165px]">
                 13/2 Elizabeth Street Melbourne VIC 3000, Australia
                 </div>
               </div>
@@ -39,8 +39,7 @@ const ContactUs = () => {
               </div>
             </div>
             <div>
-              {/* <FaCirclePlus />
-            <FaCirclePlus /> */}
+             
             </div>
           </div>
           <div className="w-full lg:w-1/2">
