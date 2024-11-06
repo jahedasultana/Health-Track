@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-around items-center text-center py-8 space-y-6 md:space-y-0">
             {/* Office Address */}
             <div className="w-full md:w-auto">
-              <h3 className="text-md font-semibold">Office Address</h3>
+              <h3 className="text-xl font-semibold">Office Address</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
               <FaLocationDot className="text-[#FD9678] text-2xl"/><span className="text-[13px]">Evanto HQ 24 Fifth St., Los Angeles, USA</span></p>
             </div>
@@ -25,7 +25,7 @@ const Footer = () => {
 
             {/* Talk to Expert */}
             <div className="w-full md:w-auto">
-              <h3 className="text-md font-semibold">Talk To Expert</h3>
+              <h3 className="text-xl font-semibold">Talk To Expert</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
                 <FaPhoneAlt className="text-[#FD9678] text-xl" /> <span className="text-[13px]">(+01) 123 456 7890</span>
               </p>
@@ -36,7 +36,7 @@ const Footer = () => {
 
             {/* Another Contact */}
             <div className="w-full md:w-auto">
-              <h3 className="text-md font-semibold">Talk To Expert</h3>
+              <h3 className="text-xl font-semibold">Talk To Expert</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
                 <MdEmail  className="text-[#FD9678] text-2xl" /> <span className="text-[13px]">example@healthtrack.com</span>
               </p>
@@ -64,10 +64,10 @@ const Footer = () => {
             ],
           ].map((section, index) => (
             <div key={index} className="mb-6 md:mb-0">
-              <ul className="mt-4 space-y-2 text-sm text-white">
+              <ul className="mt-4 space-y-2 text-md text-white">
                 {section.map((item, idx) => (
                   <li key={idx} className="hover:text-[#FD9678] cursor-pointer">
-                    <span className="mr-2 text-[#FD9678] text-lg">-</span>
+                    <span className="mr-2 text-[#FD9678] text-2xl">-</span>
                     {item}
                   </li>
                 ))}
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center bg-[#283240] py-4">
+      <div className="text-center bg-[#283240] py-5">
         <p className="text-white text-[13px]">
           © 2020 Health Track. All Rights Reserved.
         </p>
