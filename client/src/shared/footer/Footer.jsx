@@ -66,7 +66,7 @@ const Footer = () => {
             <div key={index} className="mb-6 md:mb-0">
               <ul className="mt-4 space-y-2 text-sm text-white">
                 {section.map((item, idx) => (
-                  <li key={idx} className="hover:text-[#FD9678]">
+                  <li key={idx} className="hover:text-[#FD9678] cursor-pointer">
                     <span className="mr-2 text-[#FD9678] text-lg">-</span>
                     {item}
                   </li>
