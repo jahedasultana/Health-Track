@@ -14,8 +14,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-around items-center text-center py-8 space-y-6 md:space-y-0">
             {/* Office Address */}
             <div className="w-full md:w-auto">
-              <h3 className="text-lg font-semibold">Office Address</h3>
-              <p className="mt-2">Evanto HQ 24 Fifth St., Los Angeles, USA</p>
+              <h3 className="text-md font-semibold">Office Address</h3>
+              <p className="mt-1">Evanto HQ 24 Fifth St., Los Angeles, USA</p>
             </div>
 
             {/* Divider */}
@@ -23,8 +23,8 @@ const Footer = () => {
 
             {/* Talk to Expert */}
             <div className="w-full md:w-auto">
-              <h3 className="text-lg font-semibold">Talk To Expert</h3>
-              <p className="mt-2 flex items-center justify-center gap-2">
+              <h3 className="text-md font-semibold">Talk To Expert</h3>
+              <p className="mt-1 flex items-center justify-center gap-2">
                 <FaPhoneAlt className="text-[#1DBFCC]" /> (+01) 123 456 7890
               </p>
             </div>
@@ -34,8 +34,8 @@ const Footer = () => {
 
             {/* Another Contact */}
             <div className="w-full md:w-auto">
-              <h3 className="text-lg font-semibold">Talk To Expert</h3>
-              <p className="mt-2 flex items-center justify-center gap-2">
+              <h3 className="text-md font-semibold">Talk To Expert</h3>
+              <p className="mt-1 flex items-center justify-center gap-2">
                 <FaPhoneAlt className="text-[#1DBFCC]" /> (+01) 123 456 7890
               </p>
             </div>
