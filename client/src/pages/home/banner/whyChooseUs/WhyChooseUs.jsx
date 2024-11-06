@@ -15,7 +15,8 @@ const WhyChooseUs = () => {
             <p className="text-xl font-bold">Successful Cases</p>
           </div>
           <p className="text-gray-500">
-            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro convallis facilisisro
+            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
+            convallis facilisisro
           </p>
         </div>
         <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
@@ -25,7 +26,8 @@ const WhyChooseUs = () => {
             <p className="text-xl font-bold">Qualified Doctors</p>
           </div>
           <p className="text-gray-500">
-            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro convallis facilisisro
+            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
+            convallis facilisisro
           </p>
         </div>
         <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
@@ -35,7 +37,8 @@ const WhyChooseUs = () => {
             <p className="text-xl font-bold">Years of Experience</p>
           </div>
           <p className="text-gray-500">
-            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro convallis facilisisro
+            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
+            convallis facilisisro
           </p>
         </div>
         <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
@@ -45,7 +48,8 @@ const WhyChooseUs = () => {
             <p className="text-xl font-bold">Staff Availability</p>
           </div>
           <p className="text-gray-500">
-            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro convallis facilisisro
+            Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
+            convallis facilisisro
           </p>
         </div>
       </div>
