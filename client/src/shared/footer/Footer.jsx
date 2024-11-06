@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#1F2732] text-white">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
-        <div className="pt-12 pb-8 text-center">
+        <div className="pt-20 pb-12 text-center">
           <img className="mx-auto bg-transparent md:w-[20%] w-[45%]" src={img} alt="logo" />
         </div>
 
@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
 
             {/* Divider */}
-            <div className="h-[1px] w-full md:w-[1px] bg-white/10 md:h-[50px]" />
+            <div className="h-[1px] w-full md:w-[1px] bg-white/10 md:h-[70px]" />
 
             {/* Talk to Expert */}
             <div className="w-full md:w-auto">
@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
 
             {/* Divider */}
-            <div className="h-[1px] w-full md:w-[1px] bg-white/10 md:h-[50px]" />
+            <div className="h-[1px] w-full md:w-[1px] bg-white/10 md:h-[70px]" />
 
             {/* Another Contact */}
             <div className="w-full md:w-auto">
@@ -45,7 +45,7 @@ const Footer = () => {
           <hr className="opacity-15" />
         </div>
 
-        <div className="grid md:justify-items-start justify-items-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 pt-4 pb-12 gap-6">
+        <div className="grid md:justify-items-start justify-items-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 pt-6 pb-16 gap-6">
           {/* Footer Links Section */}
           {[
             [
