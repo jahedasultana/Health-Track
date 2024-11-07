@@ -1,7 +1,9 @@
+import { FaRegUser } from "react-icons/fa";
+
 const AboutUs = () => {
   return (
-    <div className="flex justify-center items-center bg-white py-10 px-6">
-      <div className="flex flex-col md:flex-row items-center max-w-5xl space-y-6 md:space-y-0 md:space-x-8">
+    <div className=" md:w-[90%] w-full mx-auto bg-white py-10 px-6">
+      <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
         {/* Image and Ratings Section */}
         <div className="relative w-full md:w-1/2 flex items-center">
           <div className="w-[60%]">
@@ -17,6 +19,9 @@ const AboutUs = () => {
               alt="Patient"
               className="rounded-lg shadow-lg"
             />
+            <div className="bg-green-500 h-32 w-full">
+            <FaRegUser size={50}/>
+            </div>
           </div>
 
           {/* Overlay Elements */}

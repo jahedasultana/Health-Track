@@ -7,7 +7,11 @@ const Footer = () => {
     <footer className="bg-[#1F2732] text-white">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="pt-20 pb-12 text-center">
-          <img className="mx-auto bg-transparent md:w-[20%] w-[45%]" src={img} alt="logo" />
+          <img
+            className="mx-auto bg-transparent md:w-[20%] w-[45%]"
+            src={img}
+            alt="logo"
+          />
         </div>
 
         <div className="">
@@ -17,7 +21,11 @@ const Footer = () => {
             <div className="w-full md:w-auto">
               <h3 className="text-xl font-semibold">Office Address</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
-              <FaLocationDot className="text-[#FD9678] text-2xl"/><span className="text-[13px]">Evanto HQ 24 Fifth St., Los Angeles, USA</span></p>
+                <FaLocationDot className="text-[#FD9678] text-2xl" />
+                <span className="text-[13px]">
+                  Evanto HQ 24 Fifth St., Los Angeles, USA
+                </span>
+              </p>
             </div>
 
             {/* Divider */}
@@ -27,7 +35,8 @@ const Footer = () => {
             <div className="w-full md:w-auto">
               <h3 className="text-xl font-semibold">Talk To Expert</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
-                <FaPhoneAlt className="text-[#FD9678] text-xl" /> <span className="text-[13px]">(+01) 123 456 7890</span>
+                <FaPhoneAlt className="text-[#FD9678] text-xl" />{" "}
+                <span className="text-[13px]">(+01) 123 456 7890</span>
               </p>
             </div>
 
@@ -38,7 +47,8 @@ const Footer = () => {
             <div className="w-full md:w-auto">
               <h3 className="text-xl font-semibold">Talk To Expert</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
-                <MdEmail  className="text-[#FD9678] text-2xl" /> <span className="text-[13px]">example@healthtrack.com</span>
+                <MdEmail className="text-[#FD9678] text-2xl" />{" "}
+                <span className="text-[13px]">example@healthtrack.com</span>
               </p>
             </div>
           </div>
@@ -46,7 +56,9 @@ const Footer = () => {
         </div>
 
         <div className="grid md:justify-items-start justify-items-center lg:grid-cols-4 md:grid-cols-2 grid-cols-1 pt-6 pb-16 gap-6">
+
           {/* Footer Links Section */}
+          
           {[
             [
               "Pediatric Clinic",
