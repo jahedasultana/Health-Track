@@ -5,8 +5,8 @@ import TopIcon from "./TopIcone";
 
 const AboutUs = () => {
   return (
-    <div className=" md:w-[90%] w-full mx-auto">
-      <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0">
+    <div className=" md:w-[90%] my-28 w-full mx-auto">
+      <div className="flex flex-col md:flex-row items-center space-y-6 gap-5 md:space-y-0">
         {/* Image and Ratings Section ------- TODO: border change */}
         <div className="relative w-full md:w-1/2 h-full md:pl-10 pl-0">
           <img src="https://kamleshyadav.com/html/healthcare/bootstrap5/demo9/assets/images/about_1.png" alt="images" />
