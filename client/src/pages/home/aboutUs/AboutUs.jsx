@@ -1,3 +1,5 @@
+import Last from "./Last";
+import Middle from "./Middle";
 import TopIcon from "./TopIcone";
 
 
@@ -8,13 +10,13 @@ const AboutUs = () => {
         {/* Image and Ratings Section ------- TODO: border change */}
         <div className="relative w-full md:w-1/2 h-full md:pl-10 pl-0">
           <img src="https://kamleshyadav.com/html/healthcare/bootstrap5/demo9/assets/images/about_1.png" alt="images" />
-          <div className="absolute -top-14 right-28">
+          <div className="absolute -top-14  md:right-28">
             <TopIcon></TopIcon>
           </div>
-          <div className="absolute top-[270px] right-28">
+          <div className="absolute md:block hidden top-[270px] right-28">
             <Middle/>
           </div>
-          <div className="absolute -bottom-12 -left-12">
+          <div className="absolute -bottom-12 md:-left-12">
             <Last></Last>
           </div>
         </div>
