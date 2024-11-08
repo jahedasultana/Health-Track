@@ -1,6 +1,5 @@
-import Last from "./Last";
-import Middle from "./Middle";
-import TopIcon from "./TopIcon";
+import TopIcon from "./TopIcone";
+
 
 const AboutUs = () => {
   return (
