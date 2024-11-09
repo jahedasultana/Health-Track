@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { FaQuestion } from "react-icons/fa";
 import TopIcon from "./TopIcon";
 import LeftIcon from "./LeftIcon";
 import HeartIcon from "./HeartIcon";
-
+import { FaQuestionCircle } from "react-icons/fa";
 const Faq = () => {
   const [open, setOpen] = useState(null);
 
@@ -73,7 +72,9 @@ const Faq = () => {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h3 className="text-lg md:w-full w-[90%] text-[#6e6e6f] font-medium">
+                <h3 className="text-base md:w-full w-[90%] text-[#6e6e6f] font-medium flex items-center gap-4"><FaQuestionCircle className={`text-xl ${
+                    open == null ? "text-red-700" : "text-[#1DBFCC]"
+                  }`}/>
                   {faq.question}
                 </h3>
                 <button
