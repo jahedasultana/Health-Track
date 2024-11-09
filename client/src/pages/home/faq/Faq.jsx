@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaQuestion } from "react-icons/fa";
 import { FaHandHoldingMedical } from "react-icons/fa";
+import TopIcon from "./TopIcon";
+import LeftIcon from "./LeftIcon";
 
 const Faq = () => {
   const [open, setOpen] = useState(null);
@@ -30,13 +32,32 @@ const Faq = () => {
 
   return (
     <div className="container w-[90%] mx-auto">
-      <h2 className="md:text-3xl text-xl font-medium mb-8 flex items-center text-[#3f3f41] gap-3">
-        <FaQuestion className="text-[#1DBFCC]" /> Frequently Asked Questions
-      </h2>
+     
 
-      <div className="flex flex-col md:flex-row md:space-x-10 items-center">
+      <div className=" relative flex flex-col md:flex-row md:space-x-10 items-center">
+          {/* FAQ Image with Overlay Text */}
+          <div className="md:w-[50%] w-full mt-6 md:mt-0 relative">
+          <img
+            src="https://kamleshyadav.com/html/healthcare/bootstrap5/demo9/assets/images/faq.png"
+            alt="faq"
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+          
+   <div className="absolute -top-10 right-14">
+   <TopIcon></TopIcon>
+   </div>
+   <di className="absolute bottom-12 -left-5">
+    <LeftIcon></LeftIcon>
+   </di>
+        </div>
+
+
         {/* FAQ Section */}
-        <div className="md:w-[60%] w-full space-y-6">
+        <div className="md:w-[50%] w-full space-y-6">
+
+        <h2 className="md:text-3xl text-xl font-medium mb-8 flex items-center text-[#3f3f41] gap-3">
+        <FaQuestion className="text-[#1DBFCC]" />Frequently Asked Questions
+      </h2>
           {faqs.map((faq, index) => (
             <div key={index} className="border-b pb-2">
               <div
@@ -62,28 +83,7 @@ const Faq = () => {
           ))}
         </div>
 
-        {/* FAQ Image with Overlay Text */}
-        <div className="md:w-[40%] w-full mt-6 md:mt-0 relative">
-          <img
-            src="https://img.freepik.com/free-vector/medical-doctor-operating-surgery_23-2148459147.jpg"
-            alt="faq"
-            className="w-full h-auto rounded-lg shadow-md"
-          />
-          
-          {/* Overlay Top Icon with Title */}
-          <div className="absolute top-[-20px] left-[50%] transform -translate-x-[50%] bg-white shadow-lg rounded-lg px-4 py-2 flex items-center gap-2">
-            <span className="text-2xl">😊</span>
-            <div>
-              <h3 className="font-bold text-lg">Get Your Answer</h3>
-              <p className="text-sm text-gray-600">Frequently Asked Questions</p>
-            </div>
-          </div>
-
-          {/* Bottom Icon Overlay */}
-          <div className="absolute bottom-[-20px] left-[50%] transform -translate-x-[50%] bg-white shadow-lg rounded-full p-3">
-            <FaHandHoldingMedical className="text-[#1DBFCC] text-3xl" />
-          </div>
-        </div>
+      
       </div>
     </div>
   );
