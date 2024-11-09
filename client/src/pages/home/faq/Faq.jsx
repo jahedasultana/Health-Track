@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaQuestion } from "react-icons/fa";
-import { FaHandHoldingMedical } from "react-icons/fa";
 import TopIcon from "./TopIcon";
 import LeftIcon from "./LeftIcon";
+import HeartIcon from "./HeartIcon";
 
 const Faq = () => {
   const [open, setOpen] = useState(null);
@@ -40,15 +40,18 @@ const Faq = () => {
           <img
             src="https://kamleshyadav.com/html/healthcare/bootstrap5/demo9/assets/images/faq.png"
             alt="faq"
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-auto  "
           />
           
    <div className="absolute -top-10 right-14">
    <TopIcon></TopIcon>
    </div>
-   <di className="absolute bottom-12 -left-5">
+   <div className="absolute bottom-12 -left-5">
     <LeftIcon></LeftIcon>
-   </di>
+   </div>
+   <div className="absolute bottom-14 right-[1px]">
+    <HeartIcon></HeartIcon>
+   </div>
         </div>
 
 
