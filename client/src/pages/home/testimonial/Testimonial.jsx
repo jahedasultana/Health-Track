@@ -24,7 +24,6 @@ const Testimonial = () => {
       {/* Right side testimonial cards */}
       <div className="md:w-[65%] bg-[#F4F7F9] mt-6 md:mt-0 space-x-4 p-4">
      
-
             <TestimonialSlide></TestimonialSlide>
       </div>
     </div>
