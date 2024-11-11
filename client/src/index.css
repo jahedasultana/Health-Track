@@ -8,15 +8,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Default gradient background */
-.gradient-hover {
-    background: linear-gradient(to bottom, #2aa7ff, #2aa7ff99, transparent);
-    transition: background 1.5s ease-in-out; /* Slow transition on color change */
-};
 
-/* Change gradient direction on hover */
-.group:hover .gradient-hover {
-    background: linear-gradient(to top, #2aa7ff, #2aa7ff99, transparent);
-};
 
 

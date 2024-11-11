@@ -40,8 +40,10 @@ export default function TestimonialSlide() {
           {" "}
           {/* Card 1 */}
           <div className="relative bg-[#F4F7F9] p-[1.5px] md:mt-12 md:h-[360px] w-[320px] overflow-hidden group hover:shadow-lg -translate-y-1">
+            
             {/* Gradient border using a pseudo-element */}
             <div className="absolute inset-0 border-[1px] border-transparent rounded-none group-hover:rounded-t-lg pointer-events-none">
+              
               {/* Initial gradient direction (top to bottom) */}
               <div className="absolute inset-0 transition-all duration-1000 ease-in-out bg-gradient-to-b from-[#2aa7ff] via-[#2aa7ff99] to-transparent group-hover:bg-gradient-to-t"></div>
             </div>
