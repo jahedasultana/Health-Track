@@ -5,7 +5,7 @@ const services = [
   { name: "X-Ray And ECG", icon: "📉" },
   { name: "Lipid Profile", icon: "📄" },
   { name: "Thyroid Test", icon: "🧬" },
-  { name: "Hepatic Function Panel", icon: "🫁" },
+  { name: "Hepatic Function", icon: "🫁" },
   { name: "Prolactin Test", icon: "📊" },
 ];
 
@@ -22,13 +22,14 @@ const OurUrgentCareServiceS = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="bg-white p-[52px] rounded-lg flex flex-col items-center hover:-translate-y-3 transition-all duration-700"
+            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-b from-blue-300 to-pink-300/30 p-[2px] rounded-lg"
           >
-
-            <div className="bg-blue-100 rounded-full p-4 mb-4">
-              <span className="text-3xl">{service.icon}</span>
+            <div className="flex flex-col items-center bg-white p-[52px] rounded-lg">
+              <div className="bg-blue-100 rounded-full p-4 mb-4">
+                <span className="text-3xl">{service.icon}</span>
+              </div>
+              <h3 className="text-xl font-semibold text-center">{service.name}</h3>
             </div>
-            <h3 className="text-xl font-semibold text-center">{service.name}</h3>
           </div>
         ))}
       </div>
