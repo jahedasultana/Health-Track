@@ -6,6 +6,7 @@ import Home from "../pages/home/home/Home";
 import Error from "../pages/error/Error";
 import Appointment from "../pages/appointment/Appointment";
 import GetAvailableDoctor from "../pages/getAvailableDoctor/GetAvailableDoctor";
+import Details from "../pages/details/Details";
 
  export const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ import GetAvailableDoctor from "../pages/getAvailableDoctor/GetAvailableDoctor";
         {
             path: "/getAvailableDoctor",
             element: <GetAvailableDoctor></GetAvailableDoctor>
+        },
+        {
+            path: "/details",
+            element: <Details></Details>
         },
       
         
