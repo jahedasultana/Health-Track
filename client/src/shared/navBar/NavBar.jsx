@@ -40,7 +40,7 @@ const Navbar = () => {
             <div className="hidden md:flex lg:gap-16 md:gap-5 text-center font-semibold">
               <Link to={"/"}>Home</Link>
               <Link to={"/appointment"}>Appointment</Link>
-              <Link to={"/blog"}>Appointment</Link>
+              <Link to={"/getAvailableDoctor"}>GetAvailableDoctor</Link>
               <Link to={"/"}>Appointment</Link>
             </div>
           </div>

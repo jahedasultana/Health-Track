@@ -1,59 +1,106 @@
-import { motion } from "framer-motion";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
-
+import Select from "react-select";
+import { useNavigate } from "react-router-dom";
 const Appointment = () => {
+  const navigate = useNavigate(); 
+
+ 
+  const options = [
+    { value: "heart-surgery", label: "Heart Surgery" },
+    { value: "orthopedics", label: "Orthopedics" },
+    { value: "pediatrics", label: "Pediatrics" },
+  
+  ];
+
+  
+  const handleDoctorClick = () => {
+    navigate("/doctors"); 
+  };
+
   return (
-    <div className="md:w-[90%] grid grid-cols-3 w-full mx-auto py-10">
-      <div className="relative group w-[300px]">
-        {/* Doctor Image */}
-        <img
-          className="h-[350px] w-full object-cover object-top"
-          src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
-          alt="Doctor"
+    <div className="px-2 my-10 w-[100%] font-sans">
+      <h2 className="text-2xl font-semibold text-center mb-6">
+        Appointment Page
+      </h2>
+      <div className="flex flex-col items-center mb-8">
+        <label className="text-lg mb-2">Search by Category</label>
+        <Select
+          options={options}
+          placeholder="Select category..."
+          className="w-64"
         />
-
-        {/* Hover Full Overlay */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-          className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100"
-        >
-          <motion.h3
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-xl font-semibold"
+      </div>
+      <div className="flex gap-6 justify-center">
+        <div className="border border-gray-300 p-4 w-64 text-center shadow-md rounded-lg transform transition-transform hover:scale-105">
+          <div className="bg-gray-200 h-24 w-full mb-4 flex items-center justify-center overflow-hidden rounded-lg">
+            <img
+              src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
+              alt="Doctor"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="font-medium text-lg mb-2">Heart Surgery</h3>
+          <p className="text-gray-700 mb-4">Total Doctors: 10</p>
+          <button
+            onClick={handleDoctorClick}
+            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
           >
-            Melissa Lombardo
-          </motion.h3>
-          <motion.p
-            initial={{ y: 0, opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-sm mb-4"
-          >
-            Cardiologists
-          </motion.p>
-          <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex space-x-4 mt-4"
-          >
-            <FaFacebookF className="text-lg" />
-            <FaLinkedinIn className="text-lg" />
-            <FaTwitter className="text-lg" />
-            <FaYoutube className="text-lg" />
-          </motion.div>
-        </motion.div>
-
-        {/* Bottom Overlay (Initially Visible, Hidden on Hover) */}
-        <div
-          className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
-        >
-          <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
-          <p className="text-sm">Cardiologists</p>
+            Get Available Doctor
+          </button>
         </div>
+        <div className="border border-gray-300 p-4 w-64 text-center shadow-md rounded-lg transform transition-transform hover:scale-105">
+          <div className="bg-gray-200 h-24 w-full mb-4 flex items-center justify-center overflow-hidden rounded-lg">
+            <img
+              src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
+              alt="Doctor"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="font-medium text-lg mb-2">Heart Surgery</h3>
+          <p className="text-gray-700 mb-4">Total Doctors: 10</p>
+          <button
+            onClick={handleDoctorClick}
+            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+          >
+            Get Available Doctor
+          </button>
+        </div>
+        <div className="border border-gray-300 p-4 w-64 text-center shadow-md rounded-lg transform transition-transform hover:scale-105">
+          <div className="bg-gray-200 h-24 w-full mb-4 flex items-center justify-center overflow-hidden rounded-lg">
+            <img
+              src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
+              alt="Doctor"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="font-medium text-lg mb-2">Heart Surgery</h3>
+          <p className="text-gray-700 mb-4">Total Doctors: 10</p>
+          <button
+            onClick={handleDoctorClick}
+            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+          >
+            Get Available Doctor
+          </button>
+        </div>
+        <div className="border border-gray-300 p-4 w-64 text-center shadow-md rounded-lg transform transition-transform hover:scale-105">
+          <div className="bg-gray-200 h-24 w-full mb-4 flex items-center justify-center overflow-hidden rounded-lg">
+            <img
+              src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
+              alt="Doctor"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="font-medium text-lg mb-2">Heart Surgery</h3>
+          <p className="text-gray-700 mb-4">Total Doctors: 10</p>
+          <button
+            onClick={handleDoctorClick}
+            className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition-colors"
+          >
+            Get Available Doctor
+          </button>
+        </div>
+
+    
+        {/* আরও কার্ড যোগ করতে পারেন */}
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Root from "../layout/Root";
 import Home from "../pages/home/home/Home";
 import Error from "../pages/error/Error";
 import Appointment from "../pages/appointment/Appointment";
+import GetAvailableDoctor from "../pages/getAvailableDoctor/GetAvailableDoctor";
 
  export const router = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ import Appointment from "../pages/appointment/Appointment";
         {
             path: "/appointment",
             element: <Appointment></Appointment>
+        },
+        {
+            path: "/getAvailableDoctor",
+            element: <GetAvailableDoctor></GetAvailableDoctor>
         },
       
         
