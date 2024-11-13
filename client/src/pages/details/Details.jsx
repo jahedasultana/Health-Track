@@ -26,28 +26,33 @@ const Details = () => {
             <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold mb-4">Patient Details - Input Form</h2>
                 <form className="space-y-4">
-                    <input
-                        type="text"
-                        placeholder="Patient Name"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    <input
-                        type="text"
-                        placeholder="Patient Age"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
+                    {/* Row for Patient Name and Age */}
+                    <div className="flex gap-4">
+                        <input
+                            type="text"
+                            placeholder="Patient Name"
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <input
+                            type="text"
+                            placeholder="Patient Age"
+                            className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                
                     <input
                         type="text"
                         placeholder="Patient Condition"
                         className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
+                 
                     <textarea
                         placeholder="Additional Details"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full p-7 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
+                        className=" bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
                     >
                         Submit
                     </button>
