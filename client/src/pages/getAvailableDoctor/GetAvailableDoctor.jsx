@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
 
@@ -46,6 +45,15 @@ const GetAvailableDoctor = () => {
             <FaTwitter className="text-lg" />
             <FaYoutube className="text-lg" />
           </motion.div>
+          {/* New Button on Hover */}
+          <motion.button
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors"
+          >
+            View Profile
+          </motion.button>
         </motion.div>
 
         {/* Bottom Overlay (Initially Visible, Hidden on Hover) */}
