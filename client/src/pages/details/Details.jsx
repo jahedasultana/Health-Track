@@ -1,12 +1,15 @@
-
 const Details = () => {
     return (
         <div className="flex flex-col lg:flex-row gap-8 p-8">
             {/* Doctor Details Section */}
             <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold mb-4">Doctor Details</h2>
-                <div className="bg-gray-200 h-32 w-full mb-4 rounded-lg flex items-center justify-center text-gray-500">
-                    Doctor Image
+                <div className="bg-gray-200 h-32 w-full mb-4 rounded-lg overflow-hidden flex items-center justify-center">
+                    <img
+                        src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
+                        alt="Doctor"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
                 <div className="text-gray-700 mb-4">
                     <p><span className="font-semibold">Name:</span> Dr. John Doe</p>
