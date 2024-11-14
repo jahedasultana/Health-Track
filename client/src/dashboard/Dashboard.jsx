@@ -1,3 +1,4 @@
+import MainDash from "./mainDash/MainDash";
 import Sidebar from "./sidebar/Sidebar";
 
 const Dashboard = () => {
@@ -5,6 +6,7 @@ const Dashboard = () => {
         <div className="App">
            <div className="AppGlass">
                 <Sidebar></Sidebar>
+                <MainDash></MainDash>
            </div>
         </div>
     );

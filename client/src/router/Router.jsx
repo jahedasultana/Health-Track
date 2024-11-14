@@ -8,6 +8,7 @@ import Appointment from "../pages/appointment/Appointment";
 import GetAvailableDoctor from "../pages/getAvailableDoctor/GetAvailableDoctor";
 import Details from "../pages/details/Details";
 import Dashboard from "../dashboard/Dashboard";
+import MainDash from "../dashboard/mainDash/MainDash";
 
  export const router = createBrowserRouter([
     {
@@ -43,7 +44,7 @@ import Dashboard from "../dashboard/Dashboard";
 
       //   {
       //     index: true,
-      //     element: <PrivateRoute><Statistics></Statistics></PrivateRoute>
+      //     element: <MainDash></MainDash>
       //   },
 
       // ], 
