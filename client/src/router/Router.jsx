@@ -7,6 +7,7 @@ import Error from "../pages/error/Error";
 import Appointment from "../pages/appointment/Appointment";
 import GetAvailableDoctor from "../pages/getAvailableDoctor/GetAvailableDoctor";
 import Details from "../pages/details/Details";
+import Dashboard from "../dashboard/Dashboard";
 
  export const router = createBrowserRouter([
     {
@@ -34,5 +35,18 @@ import Details from "../pages/details/Details";
         
       ]
     },
+
+    {
+      path: '/dashboard',
+      element: <Dashboard></Dashboard>,
+      // children: [
+
+      //   {
+      //     index: true,
+      //     element: <PrivateRoute><Statistics></Statistics></PrivateRoute>
+      //   },
+
+      // ], 
+    }
   ]);
 
