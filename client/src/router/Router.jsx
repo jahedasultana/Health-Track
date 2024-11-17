@@ -8,7 +8,9 @@ import Appointment from "../pages/appointment/Appointment";
 import GetAvailableDoctor from "../pages/getAvailableDoctor/GetAvailableDoctor";
 import Details from "../pages/details/Details";
 import Dashboard from "../dashboard/Dashboard";
-import MainDash from "../dashboard/mainDash/MainDash";
+import UserProfile from "../pages/usserProfile/UserProfile";
+import DoctorProfile from "../pages/doctorProfile/DoctorProfile";
+
 
  export const router = createBrowserRouter([
     {
@@ -31,6 +33,14 @@ import MainDash from "../dashboard/mainDash/MainDash";
         {
             path: "/details",
             element: <Details></Details>
+        },
+        {
+            path: "/doctorProfile",
+            element: <DoctorProfile></DoctorProfile>
+        },
+        {
+            path: "/userProfile",
+            element: <UserProfile></UserProfile>
         },
       
         
