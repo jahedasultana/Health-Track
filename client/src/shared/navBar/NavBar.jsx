@@ -41,7 +41,8 @@ const Navbar = () => {
               <Link to={"/"}>Home</Link>
               <Link to={"/appointment"}>Appointment</Link>
               <Link to={"/getAvailableDoctor"}>GetAvailableDoctor</Link>
-              <Link to={"/"}>Appointment</Link>
+              <Link to={"/aboutUs"}>About Us</Link>
+              <Link to={"/contactUs"}>Contact Us</Link>
             </div>
           </div>
         </div>
