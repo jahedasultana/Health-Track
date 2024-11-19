@@ -1,10 +1,44 @@
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
-    return (
-        <div>
-            hi
+  return (
+    <div>
+      {/* Parallax Section */}
+      <div
+        className="relative h-[170px] bg-fixed bg-center bg-cover flex items-center"
+        style={{
+          backgroundImage:
+            "url('https://i.postimg.cc/Kj77stLH/image-profession.jpg')",
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
+        {/* Content */}
+        <div className="relative z-10 flex justify-between w-full px-10">
+          {/* Section Name */}
+          <h1 className="text-white text-4xl font-bold">About Us</h1>
+          {/* Navigation Links */}
+          <div className="text-white space-x-4">
+            <Link to="/" className="text-lg hover:underline">
+              Home
+            </Link>
+            <Link to="/about" className="text-lg hover:underline">
+              About
+            </Link>
+          </div>
         </div>
-    );
+      </div>
+
+      {/* Main Content */}
+      <div className="p-8">
+        <h2 className="text-2xl font-bold mb-4">Welcome to About Us</h2>
+        <p>
+          This is the About Us section where you can add details about your
+          company or website.
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default AboutUs;
