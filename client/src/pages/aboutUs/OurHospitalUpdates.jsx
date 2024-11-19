@@ -13,30 +13,24 @@ const OurHospitalUpdates = () => {
   };
   const faqs = [
     {
+        image: "https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg",
       question: "Why opt for our medical services for your family?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt",
     },
     {
+        image: "https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg",
       question: "Why choose our medical for your family?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     },
     {
+        image: "https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg",
       question: "Why opt for our healthcare services for your family?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
     },
-    {
-      question: "Why choose our medical services for your family?",
-      answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    },
-    {
-      question: "Why choose our medical services for your family?",
-      answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    },
+   
   ];
 
   return (
@@ -67,6 +61,7 @@ const OurHospitalUpdates = () => {
                   open === index ? "block" : "hidden"
                 }`}
               >
+                <img className="h-[92px] w-[111px] float-start pr-2 " src={faq.image} alt="fair" />
                 {faq.answer}
               </div>
             </div>
