@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import WhoWeAre from "./WhoWeAre";
 
 const AboutUs = () => {
   return (
@@ -30,14 +31,9 @@ const AboutUs = () => {
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="p-8">
-        <h2 className="text-2xl font-bold mb-4">Welcome to About Us</h2>
-        <p>
-          This is the About Us section where you can add details about your
-          company or website.
-        </p>
-      </div>
+    <div>
+      <WhoWeAre/>
+    </div>
     </div>
   );
 };
