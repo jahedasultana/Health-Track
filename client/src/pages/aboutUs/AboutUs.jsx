@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import WhoWeAre from "./WhoWeAre";
 import MeetOurHealthCareTeam from "./MeetOurHealthCareTeam";
+import OurHospitalUpdates from "./OurHospitalUpdates";
 
 const AboutUs = () => {
   return (
@@ -38,6 +39,9 @@ const AboutUs = () => {
 
     <div>
      <MeetOurHealthCareTeam/>
+    </div>
+    <div>
+     <OurHospitalUpdates/>
     </div>
     </div>
   );
