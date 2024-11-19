@@ -14,14 +14,15 @@ const AboutUs = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
         {/* Content */}
-        <div className="relative z-10 flex justify-between w-full px-10">
+        <div className="relative md:mt-10 z-10 flex justify-between w-full px-10">
           {/* Section Name */}
           <h1 className="text-white text-4xl font-bold">About Us</h1>
           {/* Navigation Links */}
-          <div className="text-white space-x-4">
+          <div className="text-white flex items-center space-x-4">
             <Link to="/" className="text-lg hover:underline">
               Home
             </Link>
+            <p className="">।</p>
             <Link to="/about" className="text-lg hover:underline">
               About
             </Link>
