@@ -33,10 +33,15 @@ const OurHospitalUpdates = () => {
   ];
 
   return (
-    <div className="w-[90%] mx-auto">
-      <div className="flex flex-col md:flex-row gap-10">
+    <div className="w-[90%] mx-auto my-28">
+        <div className="">
+        <h2 className="text-[#1ABC9C] text-2xl mb-3">Our Hospital Updates</h2>
+        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-6">
         {/* FAQ Section */}
-        <div className="w-[65%]">
+        <div className="w-[72%]">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4 bg-gray-200 border pb-2">
               <div
@@ -75,6 +80,10 @@ const OurHospitalUpdates = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="w-[28%] ">
+          <img className="h-[406px] border-b-4 border-[#FD9678] rounded-lg" src="https://i.postimg.cc/ZY7K1tWH/cool-doctor.jpg" alt="" />
         </div>
       </div>
     </div>
