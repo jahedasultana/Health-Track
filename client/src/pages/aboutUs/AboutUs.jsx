@@ -26,7 +26,7 @@ const AboutUs = () => {
               Home
             </Link>
             <p className="">।</p>
-            <Link to="/about" className="text-lg hover:underline">
+            <Link to="/aboutUs" className="text-lg hover:underline">
               About Us
             </Link>
           </div>

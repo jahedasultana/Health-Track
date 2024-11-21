@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import GetInTouchWithUs from "./GetInTouchWithUs";
 
 const ContactPage = () => {
     return (
@@ -23,11 +24,15 @@ const ContactPage = () => {
               Home
             </Link>
             <p className="">।</p>
-            <Link to="/about" className="text-lg hover:underline">
+            <Link to="/contactUs" className="text-lg hover:underline">
               Contact Us
             </Link>
           </div>
         </div>
+      </div>
+
+      <div>
+        <GetInTouchWithUs/>
       </div>
         </div>
     );
