@@ -1,12 +1,9 @@
 import { Link } from "react-router-dom";
-import WhoWeAre from "./WhoWeAre";
-import MeetOurHealthCareTeam from "./MeetOurHealthCareTeam";
-import OurHospitalUpdates from "./OurHospitalUpdates";
 
-const AboutUs = () => {
-  return (
-    <div>
-      {/* Parallax Section */}
+const ContactPage = () => {
+    return (
+        <div>
+            {/* Parallax Section */}
       <div
         className="relative h-[170px] bg-fixed bg-center bg-cover flex items-center"
         style={{
@@ -19,7 +16,7 @@ const AboutUs = () => {
         {/* Content */}
         <div className="relative md:mt-10 z-10 flex justify-between w-full px-10">
           {/* Section Name */}
-          <h1 className="text-white text-4xl">About Us</h1>
+          <h1 className="text-white text-4xl">Contact Us</h1>
           {/* Navigation Links */}
           <div className="text-white flex items-center space-x-4">
             <Link to="/" className="text-lg hover:underline">
@@ -27,24 +24,13 @@ const AboutUs = () => {
             </Link>
             <p className="">।</p>
             <Link to="/about" className="text-lg hover:underline">
-              About Us
+              Contact Us
             </Link>
           </div>
         </div>
       </div>
-
-    <div>
-      <WhoWeAre/>
-    </div>
-
-    <div>
-     <MeetOurHealthCareTeam/>
-    </div>
-    <div>
-     <OurHospitalUpdates/>
-    </div>
-    </div>
-  );
+        </div>
+    );
 };
 
-export default AboutUs;
+export default ContactPage;

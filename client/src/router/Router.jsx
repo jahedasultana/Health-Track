@@ -11,6 +11,7 @@ import Dashboard from "../dashboard/Dashboard";
 import UserProfile from "../pages/usserProfile/UserProfile";
 import DoctorProfile from "../pages/doctorProfile/DoctorProfile";
 import AboutUs from "../pages/aboutUs/AboutUs";
+import ContactPage from "../pages/contactPage/ContactPage";
 
 
  export const router = createBrowserRouter([
@@ -38,6 +39,10 @@ import AboutUs from "../pages/aboutUs/AboutUs";
         {
             path: "/aboutUs",
             element: <AboutUs></AboutUs>
+        },
+        {
+            path: "/contactUs",
+            element: <ContactPage></ContactPage>
         },
         {
             path: "/doctorProfile",
