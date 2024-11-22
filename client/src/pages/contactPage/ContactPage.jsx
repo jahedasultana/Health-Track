@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import GetInTouchWithUs from "./GetInTouchWithUs";
 import GoogleMap from "./GoogleMap";
+import AdditionalSupportResource from "./AdditionalSupportResource";
 
 const ContactPage = () => {
     return (
@@ -34,6 +35,10 @@ const ContactPage = () => {
 
       <div>
         <GetInTouchWithUs/>
+      </div>
+      <div>
+        <AdditionalSupportResource/>
+        
       </div>
       <div>
         <GoogleMap/>
