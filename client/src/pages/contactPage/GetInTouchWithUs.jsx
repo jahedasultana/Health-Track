@@ -105,14 +105,20 @@ const GetInTouchWithUs = () => {
             </div>
 
             <p className="flex items-center gap-3 text-gray-600 mb-4">
-              <FiMapPin className="text-green-500 text-xl" /> 121 King St,
+              <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+              <FiMapPin className="text-white text-xl" /></div> 121 King St,
               Melbourne VIC 3000, Australia
             </p>
+            <hr className="opacity-95"/>
+            
             <p className="flex items-center gap-3 text-gray-600 mb-4">
-              <FiPhone className="text-green-500 text-xl" /> +00 0 0000 0000
+              <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+              <FiPhone className="text-white text-xl" />
+                </div> +00 0 0000 0000
             </p>
             <p className="flex items-center gap-3 text-gray-600 mb-4">
-              <FiMail className="text-green-500 text-xl" /> info@healthcare.com
+              <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+              <FiMail className="text-white text-xl" /></div> info@healthcare.com
             </p>
             <div className="flex items-center gap-4 mt-4">
               <FaFacebookF className="text-2xl text-green-500 cursor-pointer hover:text-green-600" />
