@@ -1,13 +1,50 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiMenuAddFill } from "react-icons/ri";
 import { VscChromeClose } from "react-icons/vsc";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+import { useUser } from '@clerk/clerk-react'
+import axios from 'axios';
 
 const Navbar = () => {
+  const { isSignedIn, user, isLoaded } = useUser()
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  let email;
+  let name;
+
+  if (isLoaded && isSignedIn) {
+    email = user?.primaryEmailAddress?.emailAddress;
+    name = user?.fullName;
+
+    console.log("User's email:", email);
+  } else {
+    console.log("User is not signed in or data is not loaded.");
+  }
+
+  
+  useEffect(() => {
+    const postDataToApi = async () => {
+
+      const sendData = {
+        email,
+        userRole: "user",
+        name,
+      }
+      try {
+        const response = await axios.post('http://localhost:3000/userCreate', sendData);
+     
+        console.log('Response:', response.data);
+      } catch (error) {
+        console.error('Error posting data:', error);
+      }
+    };
+
+    postDataToApi();
+ },[email,name]);
 
   return (
     <nav className="text-black bg-white relative">
@@ -29,9 +66,28 @@ const Navbar = () => {
               </button>
               {/* karpa start */}
 
-              <button className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
+              {!isLoaded ? (
+                <div className="bg-gray-300 animate-pulse w-[28px] h-[28px] rounded-full">
+                </div>
+              ) : (
+                // Render based on email existence after data is loaded
+                email ? (
+                 
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
+                ) : (
+                  <div className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
+                    <SignedOut>
+                      <SignInButton  />
+                    </SignedOut>
+                  </div>
+                )
+              )}
+
+              {/* <button className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
                 Login
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -61,11 +117,10 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`w-full md:hidden mt-4 absolute top-14 z-10 bg-white/90 py-7 transition-all duration-300 ease-in-out transform ${
-          isOpen
-            ? "translate-y-0 opacity-100"
-            : "translate-y-[-20px] opacity-0 pointer-events-none"
-        }`}
+        className={`w-full md:hidden mt-4 absolute top-14 z-10 bg-white/90 py-7 transition-all duration-300 ease-in-out transform ${isOpen
+          ? "translate-y-0 opacity-100"
+          : "translate-y-[-20px] opacity-0 pointer-events-none"
+          }`}
       >
         <div className="flex items-center flex-col space-y-2">
           <Link to={"/"}>Home</Link>
