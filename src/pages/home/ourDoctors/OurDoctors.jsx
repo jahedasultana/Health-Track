@@ -1,40 +1,54 @@
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { AiOutlinePlus } from "react-icons/ai";
-
+import { FaStarHalfAlt } from "react-icons/fa";
+import { GrLocation } from "react-icons/gr";
 const OurDoctors = () => {
   return (
-    <section className="w-[90%] mx-auto my-16">
+    <section className="w-[90%] mx-auto my-28">
       <div className="md:mb-10 mb-6">
-        <p className="text-[#1DBFCC]">Professionals</p>
-        <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]">Our Doctors</h1>
+       
+        <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]">
+          
+        </h1>
+      </div>
+      <div className="">
+      <p className="text-black/70 text-[14px] font-semibold">Professionals</p>
+        <h2 className="text-[#1ABC9C] text-4xl font-bold mb-3">
+        Our Doctors
+        </h2>
+        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
       </div>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
         {/* Card 1 */}
-        <div className="w-full bg-white flex flex-col h-full">
+        <div className="w-full cursor-pointer bg-white flex flex-col h-full">
           <div className="overflow-hidden flex justify-center items-center flex-col relative rounded-t-lg group">
             <img
-              className="group-hover:scale-105 transition-all duration-700"
+              className="group-hover:scale-105 transition-all duration-700 h-[250px] object-cover"
               src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
               alt="doctor"
             />
-            <div className="absolute inset-0 bg-[#1DBFCC] opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
+            <div className="absolute inset-0 bg-[#1ABC9C] opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
-          <div className="py-5 text-center border-r border-l border-b border-gray-400/50 flex-grow">
-            <h3 className="text-[24px] text-[#1DBFCC]">Dr. Emily Stone</h3>
-            <p className="text-lg opacity-70 text-gray-900">Cardiologist</p>
-            <hr className="opacity-95 mt-2" />
-            <p className="my-2 w-[250px] mx-auto opacity-50">
-              Expert in heart health and disease prevention for all patients.
+
+          {/* headline */}
+          <div className="p-5 border-r border-l border-b border-gray-400/50 flex-grow space-y-1 ">
+            <div className="flex items-center justify-between">
+              <h3 className="text-[18px] font-semibold text-black/70 hover:text-[#1ABC9C] cursor-pointer">
+                Dr. Emily Stone
+              </h3>
+              <p className="flex gap-1 items-center">
+                <FaStarHalfAlt className="text-[20px] block text-yellow-400" />
+                3.5k
+              </p>
+            </div>
+            <p className="text-[14px]  font-semibold opacity-50 text-gray-900">
+              Cardiologist
             </p>
-            <hr className="opacity-95 mb-2" />
-            <p className="flex items-center justify-center gap-2">
-              <FaPhoneAlt className="text-[#1DBFCC]" /> +1-555-123-4567
-            </p>
-            <p className="flex items-center justify-center gap-2">
-              <FaEnvelope className="text-[#1DBFCC]"/> emily.stone@hospital.com
-            </p>
+            <div className="flex items-center gap-1 pt-4">
+            <GrLocation className="text-[23px] opacity-20"/>
+              <p className="opacity-50 font-medium">Australia</p>
+            </div>
           </div>
         </div>
 
@@ -52,17 +66,6 @@ const OurDoctors = () => {
           <div className="py-5 text-center border-r border-l border-b border-gray-400/50 flex-grow">
             <h3 className="text-[24px] text-[#1DBFCC]">Dr. Sarah Smith</h3>
             <p className="text-lg opacity-70 text-gray-900">Pediatrician</p>
-            <hr className="opacity-95 mt-2" />
-            <p className="my-2 w-[250px] mx-auto opacity-50">
-              Specializes in child health and comprehensive pediatric treatments.
-            </p>
-            <hr className="opacity-95 mb-2" />
-            <p className="flex items-center justify-center gap-2">
-              <FaPhoneAlt className="text-[#1DBFCC]"/> +1-555-987-6543
-            </p>
-            <p className="flex items-center justify-center gap-2">
-              <FaEnvelope className="text-[#1DBFCC]"/> sarah.smith@hospital.com
-            </p>
           </div>
         </div>
 
@@ -79,17 +82,8 @@ const OurDoctors = () => {
           </div>
           <div className="py-5 text-center border-r border-l border-b border-gray-400/50 flex-grow">
             <h3 className="text-[24px] text-[#1DBFCC]">Dr. Michael Brown</h3>
-            <p className="text-lg opacity-70 text-gray-900">Orthopedic Surgeon</p>
-            <hr className="opacity-95 mt-2" />
-            <p className="my-2 w-[250px] mx-auto opacity-50">
-              Skilled in bone and joint surgeries, improving mobility, pain-free.
-            </p>
-            <hr className="opacity-95 mb-2" />
-            <p className="flex items-center justify-center gap-2">
-              <FaPhoneAlt className="text-[#1DBFCC]"/> +1-555-321-4567
-            </p>
-            <p className="flex items-center justify-center gap-2">
-              <FaEnvelope className="text-[#1DBFCC]"/> michael.br@hospital.com
+            <p className="text-lg opacity-70 text-gray-900">
+              Orthopedic Surgeon
             </p>
           </div>
         </div>
@@ -108,17 +102,6 @@ const OurDoctors = () => {
           <div className="py-5 text-center border-r border-l border-b border-gray-400/50 flex-grow">
             <h3 className="text-[24px] text-[#1DBFCC]">Dr. Olivia Green</h3>
             <p className="text-lg opacity-70 text-gray-900">Dermatologist</p>
-            <hr className="opacity-95 mt-2" />
-            <p className="my-2 w-[250px] mx-auto opacity-50">
-              Focused on skin health, treating conditions with expert guidance.
-            </p>
-            <hr className="opacity-95 mb-2" />
-            <p className="flex items-center justify-center gap-2">
-              <FaPhoneAlt className="text-[#1DBFCC]"/> +1-555-654-3210
-            </p>
-            <p className="flex items-center justify-center gap-2">
-              <FaEnvelope className="text-[#1DBFCC]"/> olivia.green@hospital.com
-            </p>
           </div>
         </div>
       </div>
