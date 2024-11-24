@@ -1,3 +1,5 @@
+import React from "react";
+
 const services = [
   { name: "Sugar Testing", icon: "🩸" },
   { name: "Antibody Testing", icon: "💉" },
@@ -11,7 +13,7 @@ const services = [
 
 const OurUrgentCareServiceS = () => {
   return (
-    <div className="py-20 mt-16 px-4 bg-blue-50 ">
+    <div className="py-20 mt-16 px-4 bg-blue-50">
       <div className="w-[90%] mx-auto">
         <p className="text-[#1DBFCC]">Services</p>
         <h2 className="md:text-3xl text-xl font-medium text-[#3f3f41] mb-14">
@@ -22,9 +24,9 @@ const OurUrgentCareServiceS = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-b from-blue-300 to-pink-300/30 p-[2px] rounded-lg"
+            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-blue-300  p-[0.5px] rounded-lg"
           >
-            <div className="flex flex-col items-center bg-white p-[52px] rounded-lg">
+            <div className="flex flex-col justify-center items-center bg-white p-4 rounded-lg h-[250px]">
               <div className="bg-blue-100 rounded-full p-4 mb-4">
                 <span className="text-3xl">{service.icon}</span>
               </div>
