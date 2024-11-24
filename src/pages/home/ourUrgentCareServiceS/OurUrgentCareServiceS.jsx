@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const services = [
   { name: "Sugar Testing", icon: "🩸" },
@@ -24,13 +24,13 @@ const OurUrgentCareServiceS = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-blue-300  p-[0.5px] rounded-lg"
+            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-blue-300  p-[0.5px] rounded-lg hover:rounded-t-lg hover:rounded-none"
           >
-            <div className="flex flex-col justify-center items-center bg-white p-4 rounded-lg h-[250px]">
+            <div className="flex flex-col justify-center items-center bg-white p-4 rounded-lg hover:rounded-t-lg hover:rounded-none h-[250px]">
               <div className="bg-blue-100 rounded-full p-4 mb-4">
                 <span className="text-3xl">{service.icon}</span>
               </div>
-              <h3 className="text-xl font-semibold text-center">{service.name}</h3>
+              <h3 className="text-xl w-[60%] font-semibold text-center">{service.name}</h3>
             </div>
           </div>
         ))}
