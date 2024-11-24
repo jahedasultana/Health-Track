@@ -23,6 +23,7 @@ const OurDoctors = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
+        
         {/* Card 1 */}
         <div className="w-full cursor-pointer bg-white flex flex-col h-full">
           <div className="overflow-hidden flex justify-center items-center flex-col relative rounded-t-lg group">
@@ -36,10 +37,10 @@ const OurDoctors = () => {
           </div>
 
           {/* Card Content Section */}
-   <div className="p-5 shadow-lg  rounded-lg flex-grow space-y-1 relative group">
+          <div className="p-5 shadow-lg  rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
               <h3 className="text-[18px] font-semibold text-black/70 hover:text-[#1ABC9C] cursor-pointer">
-              Dr. Michael Brown
+                Dr. Michael Brown
               </h3>
               <p className="flex gap-1 items-center">
                 <FaStarHalfAlt className="text-[20px] block text-yellow-400" />
@@ -70,9 +71,7 @@ const OurDoctors = () => {
                 <FaPhoneAlt className="text-black hover:text-[#FD9678] transition-colors duration-300" />
               </div>
             </div>
-
             {/* Bottom Border on Card Hover */}
-
             <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
@@ -89,11 +88,11 @@ const OurDoctors = () => {
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
-         {/* Card Content Section */}
-   <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
+          {/* Card Content Section */}
+          <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
               <h3 className="text-[18px] font-semibold text-black/70 hover:text-[#1ABC9C] cursor-pointer">
-              Dr. Michael Brown
+                Dr. Michael Brown
               </h3>
               <p className="flex gap-1 items-center">
                 <FaStarHalfAlt className="text-[20px] block text-yellow-400" />
@@ -107,8 +106,10 @@ const OurDoctors = () => {
               <GrLocation className="text-[23px] opacity-20" />
               <p className="opacity-50 font-medium">Australia</p>
             </div>
+
             {/* social icon */}
             <div className="flex pb-2 gap-2 pt-3 justify-center">
+
               {/* Facebook Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
                 <FaFacebookF className="text-black hover:text-[#FD9678] transition-colors duration-300" />
@@ -126,7 +127,6 @@ const OurDoctors = () => {
             </div>
 
             {/* Bottom Border on Card Hover */}
-
             <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
@@ -143,12 +143,11 @@ const OurDoctors = () => {
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
-        
-   {/* Card Content Section */}
-   <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
+          {/* Card Content Section */}
+          <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
               <h3 className="text-[18px] font-semibold text-black/70 hover:text-[#1ABC9C] cursor-pointer">
-              Dr. Michael Brown
+                Dr. Michael Brown
               </h3>
               <p className="flex gap-1 items-center">
                 <FaStarHalfAlt className="text-[20px] block text-yellow-400" />
@@ -162,6 +161,7 @@ const OurDoctors = () => {
               <GrLocation className="text-[23px] opacity-20" />
               <p className="opacity-50 font-medium">Australia</p>
             </div>
+
             {/* social icon */}
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
@@ -179,14 +179,11 @@ const OurDoctors = () => {
                 <FaPhoneAlt className="text-black hover:text-[#FD9678] transition-colors duration-300" />
               </div>
             </div>
-
             {/* Bottom Border on Card Hover */}
-
             <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
-
-
         </div>
+
 
         {/* Card 4 */}
         <div className="w-full cursor-pointer bg-white flex flex-col h-full">
@@ -242,6 +239,7 @@ const OurDoctors = () => {
             <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
+
       </div>
     </section>
   );
