@@ -26,7 +26,7 @@ const AboutUs = () => {
         <div className="w-full md:h-[600px] md:w-1/2 px-6 md:text-left">
       
           <div className=" mb-10">
-        <p className="text-black/70 text-[14px] font-semibold">About Us</p>
+        <p className="text-black/70 text-[14px] font-semibold mb-2">About Us</p>
         <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
         Consult A Doctor Anytime,<br /> Anywhere By Search
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
@@ -44,31 +44,31 @@ const AboutUs = () => {
           </p>
           <ul className="mt-4 space-y-4 text-gray-500">
             <div className="flex items-center gap-2 ">
-            <IoCheckmarkCircle  className="text-xl text-[#1ABC9C]"/>
+            <IoCheckmarkCircle  className="text-xl text-[#FD9678]"/>
             <p className="md:text-[16px] text-[13px]">
              Get latest news in your inbox. consectetur elit adipiscing.
             </p>
             </div>
             <div className="flex items-center gap-2 ">
-            <IoCheckmarkCircle  className="text-xl text-[#1ABC9C]"/>
+            <IoCheckmarkCircle  className="text-xl text-[#FD9678]"/>
             <p className="md:text-[16px] text-[14px]">
              Get latest news in your inbox. consectetur elit adipiscing.
             </p>
             </div>
             <div className="flex items-center gap-2 ">
-            <IoCheckmarkCircle  className="text-xl text-[#1ABC9C]"/>
+            <IoCheckmarkCircle  className="text-xl text-[#FD9678]"/>
             <p className="md:text-[16px] text-[14px]">
              Get latest news in your inbox. consectetur elit adipiscing.
             </p>
             </div>
             <div className="flex items-center gap-2 ">
-            <IoCheckmarkCircle  className="text-xl text-[#1ABC9C]"/>
+            <IoCheckmarkCircle  className="text-xl text-[#FD9678]"/>
             <p className="md:text-[16px] text-[14px]">
              Get latest news in your inbox. consectetur elit adipiscing.
             </p>
             </div>
             <div className="flex items-center gap-2 ">
-            <IoCheckmarkCircle  className="text-xl text-[#1ABC9C]"/>
+            <IoCheckmarkCircle  className="text-xl text-[#FD9678]"/>
             <p className="md:text-[16px] text-[14px]">
              Get latest news in your inbox. consectetur elit adipiscing.
             </p>
