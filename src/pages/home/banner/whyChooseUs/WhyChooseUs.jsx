@@ -1,74 +1,94 @@
-
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { FaUserDoctor } from "react-icons/fa6";
 import { GrUserExpert } from "react-icons/gr";
 import { MdGroups } from "react-icons/md";
 import { TiPlus } from "react-icons/ti";
+import { MdArrowRightAlt } from "react-icons/md";
 const WhyChooseUs = () => {
   return (
+    <div className=" pb-28 pt-8">
+      <div className="bg-[#1ABC9C] h-[400px]  py-20  ">
+        <div className=" text-center  mb-10">
+          <p className="text-white text-[14px] font-semibold mb-2">
+            Our Achievements
+          </p>
+          <h2 className=" relative text-white md:text-4xl text-2xl font-bold mb-3 w-[max-content] mx-auto">
+            Why Choose Us
+            <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
+            <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
+          </h2>
+          <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        </div>
 
-   <div className=" pb-28 pt-8">
-     <div className="bg-[#1ABC9C] h-[400px]  py-20  ">
-     
+        <div className="grid md:grid-cols-4 gap-6 px-4 md:px-16">
+          {/* card 1 */}
+          <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
+            {/* হোভার ইফেক্টে বর্ডার পরিবর্তন */}
+            <div className="absolute inset-0 border border-transparent group-hover:border-r-4 group-hover:border-b-4 group-hover:border-[#FD9678] rounded-lg transition-all duration-300"></div>
 
-     <div className=" text-center  mb-10">
-        <p className="text-white text-[14px] font-semibold mb-2">Our Achievements</p>
-        <h2 className=" relative text-white md:text-4xl text-2xl font-bold mb-3 w-[max-content] mx-auto">
-        Why Choose Us
-          <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
-          <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
-        </h2>
-        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">8600</h2>
+            <div className="flex justify-center items-center gap-2 mb-2">
+              <IoMdCheckmarkCircleOutline className="text-teal-500 text-7xl" />
+              <p className="text-xl text-black/70 font-bold">
+                Successful Cases
+              </p>
+            </div>
+            <p className="text-gray-500 mb-3">
+              Aenean facilisis sodales est neci Morbi vitapurus on Est
+              facilisisro convallis facilisisro
+            </p>
+
+            {/* হোভার ইফেক্টে বটন দেখাবে */}
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+              <button className="flex items-center p-[14px] bg-white text-black/70 rounded-full shadow-2xl hover:shadow-md">
+                <MdArrowRightAlt className="text-3xl"/>
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
+            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">145</h2>
+            <div className="flex justify-center items-center gap-2 mb-2">
+              <FaUserDoctor className="text-[#1ABC9C] text-7xl" />
+              <p className="text-xl font-bold text-black/70 ">
+                Qualified Doctors
+              </p>
+            </div>
+            <p className="text-gray-500">
+              Aenean facilisis sodales est neci Morbi vitapurus on Est
+              facilisisro convallis facilisisro
+            </p>
+          </div>
+
+          <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
+            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">25</h2>
+            <div className="flex justify-center items-center gap-2 mb-2">
+              <GrUserExpert className="text-[#1ABC9C] text-7xl" />
+              <p className="text-xl font-bold text-black/70 ">
+                Years of Experience
+              </p>
+            </div>
+            <p className="text-gray-500">
+              Aenean facilisis sodales est neci Morbi vitapurus on Est
+              facilisisro convallis facilisisro
+            </p>
+          </div>
+          <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
+            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">24x7</h2>
+            <div className="flex justify-center items-center gap-2 mb-2">
+              <MdGroups className="text-[#1ABC9C] text-7xl" />
+              <p className="text-xl font-bold text-black/70 ">
+                Staff Availability
+              </p>
+            </div>
+            <p className="text-gray-500">
+              Aenean facilisis sodales est neci Morbi vitapurus on Est
+              facilisisro convallis facilisisro
+            </p>
+          </div>
+        </div>
       </div>
-
-     <div className="grid md:grid-cols-4 gap-6 px-4 md:px-16">
-       <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
-         <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">8600</h2>
-         <div className="flex justify-center items-center gap-2 mb-2">
-           <IoMdCheckmarkCircleOutline className="text-teal-500 text-7xl" />
-           <p className="text-xl text-black/70 font-bold">Successful Cases</p>
-         </div>
-         <p className="text-gray-500">
-           Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
-           convallis facilisisro
-         </p>
-       </div>
-       <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
-         <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">145</h2>
-         <div className="flex justify-center items-center gap-2 mb-2">
-           <FaUserDoctor className="text-[#1ABC9C] text-7xl" />
-           <p className="text-xl font-bold text-black/70 ">Qualified Doctors</p>
-         </div>
-         <p className="text-gray-500">
-           Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
-           convallis facilisisro
-         </p>
-       </div>
-       <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
-         <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">25</h2>
-         <div className="flex justify-center items-center gap-2 mb-2">
-           <GrUserExpert  className="text-[#1ABC9C] text-7xl" />
-           <p className="text-xl font-bold text-black/70 ">Years of Experience</p>
-         </div>
-         <p className="text-gray-500">
-           Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
-           convallis facilisisro
-         </p>
-       </div>
-       <div className="bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md">
-         <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">24x7</h2>
-         <div className="flex justify-center items-center gap-2 mb-2">
-           <MdGroups className="text-[#1ABC9C] text-7xl" />
-           <p className="text-xl font-bold text-black/70 ">Staff Availability</p>
-         </div>
-         <p className="text-gray-500">
-           Aenean facilisis sodales est neci Morbi vitapurus on Est facilisisro
-           convallis facilisisro
-         </p>
-       </div>
-     </div>
-   </div>
-   </div>
+    </div>
   );
 };
 
