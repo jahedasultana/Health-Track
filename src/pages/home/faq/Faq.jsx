@@ -16,38 +16,38 @@ const Faq = () => {
   };
   const faqs = [
     {
-      question: "Why opt for our medical services for your family?",
+      question: "What specialties do your hospital provide?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "Our hospital offers cardiology, orthopedics, pediatrics, gynecology, and more for comprehensive care."
     },
     {
-      question: "Why choose our medical for your family?",
+      question: "Are emergency services available 24/7?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "Yes, we provide 24/7 emergency services with skilled doctors and advanced facilities."
     },
     {
-      question: "Why opt for our healthcare services for your family?",
+      question: "Do you offer online doctor consultations?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "Yes, we have an online consultation system for quick and convenient medical advice."
     },
     {
-      question: "Why choose our medical services for your family?",
+      question: "What insurance policies do you accept?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "We accept most major insurance providers. Please contact us for detailed coverage information."
     },
     {
-      question: "Why choose our medical services for your family?",
+      question: "Do you provide specialized care for children?",
       answer:
-        "Get latest news in your inbox. Consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-    },
+        "Yes, our pediatric department offers specialized care for infants, children, and adolescents."
+    }
   ];
-
+  
   return (
     <div className=" w-[90%] mx-auto my-14  md:my-28">
       <div className="md:mb-16 mb-10">
-        <p className="text-black/70 text-[14px] font-semibold">Trust</p>
+        <p className="text-black/70 text-[14px] font-semibold">FAQ</p>
         <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
-          Why Choose Us
+        Frequently Asked Questions
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
         </h2>
@@ -85,7 +85,7 @@ const Faq = () => {
                 <h3 className="text-base font-medium flex items-center gap-4 transition-[max-height] duration-1000 delay-700">
                   <FaQuestionCircle
                     className={`text-lg ${
-                      open === index ? "text-[#1ABC9C]" : "text-[#FD9678]"
+                      open === index ? "text-[#1ABC9C]" : "text-[#df1710]"
                     }`}
                   />
                   {faq.question}
