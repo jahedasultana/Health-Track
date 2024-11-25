@@ -14,7 +14,7 @@ const OurDoctors = () => {
       </div>
       <div className="md:mb-14 mb-10">
         <p className="text-black/70 text-[14px] font-semibold">Professionals</p>
-        <h2 className=" relative text-[#1ABC9C] text-4xl font-bold mb-3 w-[max-content]">
+        <h2 className=" relative text-[#1ABC9C] text-2xl md:text-4xl font-bold mb-3 w-[max-content]">
           Our Doctors
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />

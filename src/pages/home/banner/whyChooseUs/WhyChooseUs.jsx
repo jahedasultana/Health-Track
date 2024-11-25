@@ -2,7 +2,7 @@ import { CiBrightnessUp } from "react-icons/ci";
 
 const WhyChooseUs = () => {
   return (
-    <div className="bg-teal-500 py-16">
+    <div className="bg-teal-500  py-16">
       <div className="text-center mb-12">
         <h2 className="text-white text-3xl font-bold mb-2">Our Achievements</h2>
         <h1 className="text-white text-4xl font-extrabold">Why Choose Us</h1>

@@ -64,7 +64,7 @@ const Faq = () => {
         </div>
 
         {/* FAQ Section */}
-        <div className="md:w-[50%] w-full mx-auto h-[175px]">
+        <div className="md:w-[50%] w-full mx-auto md:h-[175px]">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4 bg-gray-200 border pb-2">
               <div
