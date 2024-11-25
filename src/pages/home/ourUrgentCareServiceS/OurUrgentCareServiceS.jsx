@@ -1,4 +1,4 @@
-
+import { TiPlus } from "react-icons/ti";
 
 const services = [
   { name: "Sugar Testing", icon: "🩸" },
@@ -13,24 +13,35 @@ const services = [
 
 const OurUrgentCareServiceS = () => {
   return (
-    <div className="py-20 mt-16 px-4 bg-blue-50">
+    <div className="pb-20 pt-14 my-28 px-4 bg-[#FFFAF9]">
       <div className="w-[90%] mx-auto">
-        <p className="text-[#1DBFCC]">Services</p>
-        <h2 className="md:text-3xl text-xl font-medium text-[#3f3f41] mb-14">
-          Our Urgent Care Services
+
+      <div className="md:mb-16 mb-10">
+        <p className="text-black/70 text-[14px] font-semibold">Services</p>
+        <h2 className=" relative text-[#1ABC9C] text-4xl font-bold mb-3 w-[max-content]">
+        Our Urgent Care Services
+          <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
+          <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
         </h2>
+        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-[90%] mx-auto gap-6">
+
+
+     
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-[90%]  mx-auto gap-6">
         {services.map((service, index) => (
           <div
             key={index}
-            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-blue-300  p-[0.5px] rounded-lg hover:rounded-t-lg hover:rounded-none"
+            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-[#FD9678]  p-[0.5px] hover:shadow-xl shadow-lg rounded-lg hover:rounded-t-lg hover:rounded-none hover:text-[#1ABC9C]"
           >
             <div className="flex flex-col justify-center items-center bg-white p-4 rounded-lg hover:rounded-t-lg hover:rounded-none h-[250px]">
-              <div className="bg-blue-100 rounded-full p-4 mb-4">
-                <span className="text-3xl">{service.icon}</span>
+              <div className="bg-[#f7eae7] py-3 px-[5px] rounded-full mb-4">
+                <span className="text-5xl">{service.icon}</span>
               </div>
-              <h3 className="text-xl w-[60%] font-semibold text-center">{service.name}</h3>
+              <h3 className="text-xl whitespace-pre-line text-black/70 font-semibold text-center">
+                {service.name}
+              </h3>
             </div>
           </div>
         ))}
