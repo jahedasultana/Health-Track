@@ -24,7 +24,7 @@ const WhyChooseUs = () => {
           {/* card 1 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-lg p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             {/* হোভার ইফেক্টে বর্ডার পরিবর্তন */}
-            <div className="absolute inset-0 border border-transparent group-hover:border-r-4 group-hover:border-b-4 group-hover:border-[#FD9678] rounded-lg transition-all duration-300"></div>
+            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px]  group-hover:border-b-[7px] group-hover:border-[#f2ded9] rounded-xl transition-all duration-300"></div>
 
             <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">8600</h2>
             <div className="flex justify-center items-center gap-2 mb-2">
@@ -33,15 +33,15 @@ const WhyChooseUs = () => {
                 Successful Cases
               </p>
             </div>
-            <p className="text-gray-500 mb-3">
+            <p className="text-gray-500 mb-4">
               Aenean facilisis sodales est neci Morbi vitapurus on Est
               facilisisro convallis facilisisro
             </p>
 
             {/* হোভার ইফেক্টে বটন দেখাবে */}
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-              <button className="flex items-center p-[14px] bg-white text-black/70 rounded-full shadow-2xl hover:shadow-md">
-                <MdArrowRightAlt className="text-3xl"/>
+              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border  hover:border-[#FD9678]/20 hover:text-white hover:bg-[#FD9678] rounded-full shadow-2xl hover:shadow-lg transition-all duration-300 ease-in-out">
+                <MdArrowRightAlt className="text-3xl" />
               </button>
             </div>
           </div>
