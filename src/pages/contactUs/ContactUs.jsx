@@ -1,15 +1,24 @@
 import { FaLocationDot } from "react-icons/fa6";
+import { TiPlus } from "react-icons/ti";
 
 const ContactUs = () => {
   return (
-    <section className="bg-[#FFFFFF]">
+    <section className="bg-[#FFFFFF] mt-16">
       <div className="md:w-[80%] w-full px-6 py-8 mx-auto">
         <div className="flex flex-wrap mt-8">
           <div className="w-full lg:w-1/2 ">
-            <h2 className="text-xl font-medium text-[#1ABC9C]">Contact Us_</h2>
-            <p className="mt-1 text-4xl font-bold text-gray-600">
-              Get In Touch
-            </p>
+         
+
+            <div className="mt-5">
+        <p className="text-black/70 text-[14px] font-semibold">Contact Us</p>
+        <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+        Get In Touch
+          <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
+          <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
+        </h2>
+        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+      </div>
+
             <div className=" relative md:pt-16 pt-8 ">
               <img
                 className=""
@@ -73,7 +82,7 @@ const ContactUs = () => {
                   <label className="block text-[16px] text-gray-700">Message</label>
                   <textarea
                     placeholder="Message"
-                    className="w-full text-[15px] px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500/40"
+                    className="w-full text-[15px] px-4 py-2 mt-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-teal-500/40 resize-none h-[140px]"
                     rows="4"
                   ></textarea>
                 </div>

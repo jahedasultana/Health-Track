@@ -33,7 +33,7 @@ const OurUrgentCareServiceS = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-[#FD9678]  p-[0.5px] hover:shadow-2xl shadow-md rounded-lg hover:rounded-t-lg hover:rounded-none hover:text-[#1ABC9C]"
+            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-[#FD9678]  p-[0.8px] hover:shadow-2xl shadow-md rounded-lg hover:rounded-t-lg hover:rounded-none hover:text-[#1ABC9C]"
           >
             <div className="flex flex-col justify-center items-center bg-white p-4 rounded-lg hover:rounded-t-lg hover:rounded-none h-[250px]">
               <div className="bg-[#f7eae7] py-[14px] px-[5px] rounded-full mb-4">
