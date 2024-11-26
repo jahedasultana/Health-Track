@@ -33,8 +33,8 @@ const WhyChooseUs = () => {
   }, []);
 
   return (
-    <div className="pb-36 pt-8" ref={sectionRef}>
-      <div className="bg-[#1ABC9C] h-[400px] py-20">
+    <div className="md:pb-36 pb-6 pt-8" ref={sectionRef}>
+      <div className="bg-[#1ABC9C] md:h-[400px] py-20">
         <div className="text-center mb-10">
           <p className="text-white text-[14px] font-semibold mb-2">
             Our Achievements
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
 
-            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">
+            <h2 className="text-[#FD9678]/80 text-4xl md:text-6xl font-bold mb-4">
               {startCounter && <CountUp start={0} end={8600} duration={3} />}
             </h2>
             <div className="flex justify-center items-center gap-2 mb-2">
@@ -76,7 +76,7 @@ const WhyChooseUs = () => {
           {/* Card 2 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
-            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">
+            <h2 className="text-[#FD9678]/80 text-4xl md:text-6xl font-bold mb-4">
               {startCounter && (
                 <CountUp start={0} end={145} duration={3} delay={1} />
               )}
@@ -102,7 +102,7 @@ const WhyChooseUs = () => {
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
 
-            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">
+            <h2 className="text-[#FD9678]/80 text-4xl md:text-6xl font-bold mb-4">
               {startCounter && (
                 <CountUp start={0} end={25} duration={3} delay={2} />
               )}
@@ -127,7 +127,7 @@ const WhyChooseUs = () => {
           {/* Card 4 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
-            <h2 className="text-[#FD9678]/80 text-6xl font-bold mb-4">24X7</h2>
+            <h2 className="text-[#FD9678]/80 text-4xl md:text-6xl font-bold mb-4">24X7</h2>
             <div className="flex justify-center items-center gap-2 mb-2">
               <MdGroups className="text-[#1ABC9C] text-7xl" />
               <p className="text-xl font-bold text-black/70">

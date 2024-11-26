@@ -4,7 +4,7 @@ import { FaHeartbeat, FaTooth, FaBrain, FaEye } from "react-icons/fa";
 
 const Specialties = () => {
   return (
-    <div className="w-[90%] space-y-24 mt-[90px] mb-28 mx-auto ">
+    <div className="w-[90%] space-y-2 mt-[20px] md:mt-[90px] mb-10 md:mb-28 mx-auto ">
   
 
       <div className=" mb-16">

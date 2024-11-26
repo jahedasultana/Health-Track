@@ -46,7 +46,7 @@ const Faq = () => {
     <div className=" w-[90%] mx-auto my-14  md:my-28">
       <div className="md:mb-16 mb-10">
         <p className="text-black/70 text-[14px] font-semibold">FAQ</p>
-        <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+        <h2 className=" relative text-[#1ABC9C] md:text-4xl text-xl font-bold mb-3 w-[max-content]">
         Frequently Asked Questions
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
