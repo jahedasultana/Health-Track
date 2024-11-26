@@ -25,10 +25,8 @@ const Home = () => {
          <Parallax></Parallax>  
          <Specialties></Specialties>
          <WhyChooseUs></WhyChooseUs>
-         <Faq></Faq>
-       
-        <OurUrgentCareServiceS></OurUrgentCareServiceS>
-     
+         <Faq></Faq>       
+        <OurUrgentCareServiceS></OurUrgentCareServiceS>  
        <AboutUs></AboutUs>
        <Testimonial></Testimonial>
         <ContactUs></ContactUs>
