@@ -1,15 +1,22 @@
+import { TiPlus } from "react-icons/ti";
 import { InfoCard } from "./InfoCard";
 import { FaHeartbeat, FaTooth, FaBrain, FaEye } from "react-icons/fa";
 
 const Specialties = () => {
   return (
-    <div className="w-[90%] space-y-24 mt-[70px] mb-24 mx-auto ">
-      <div className="">
-        <p className="text-[#1DBFCC]">Professionals</p>
-        <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]">
-          Our Specialties
-        </h1>
+    <div className="w-[90%] space-y-24 mt-[90px] mb-28 mx-auto ">
+  
+
+      <div className=" mb-16">
+        <p className="text-black/70 text-[14px] font-semibold mb-2">Professionals</p>
+        <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+        Our Specialties
+          <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
+          <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
+        </h2>
+        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
       </div>
+
 
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
         {doctorCards.map((card) => (
