@@ -2,7 +2,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 export const InfoCard = ({ title, Icon, description, isEven, color }) => {
   return (
     <div
-      className={`relative flex  flex-col items-center justify-center bg-white/80 shadow-md p-8 text-center w-full h-40 sm:h-48 lg:h-56 border border-gray-900/55 hover:bg-[${color}]`}
+      className={`relative flex  flex-col items-center justify-center bg-white/80 shadow-md p-8 text-center w-full h-56 border border-gray-900/55 hover:bg-[${color}]`}
     >
       {/* Background Icon */}
       <Icon className="absolute text-blue-300 opacity-10 text-7xl sm:text-8xl lg:text-9xl" />

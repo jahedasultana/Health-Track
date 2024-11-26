@@ -4,7 +4,7 @@ import { FaHeartbeat, FaTooth, FaBrain, FaEye } from "react-icons/fa";
 
 const Specialties = () => {
   return (
-    <div className="w-[90%] space-y-2 mt-[20px] md:mt-[90px] mb-10 md:mb-28 mx-auto ">
+    <div className="w-[90%] space-y-2 pt-[30px] md:mt-[90px] mb-10 md:mb-28 mx-auto ">
   
 
       <div className=" mb-16">
@@ -18,7 +18,7 @@ const Specialties = () => {
       </div>
 
 
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 space-y-14 md:space-y-0">
         {doctorCards.map((card) => (
           <InfoCard
             key={card.title}
