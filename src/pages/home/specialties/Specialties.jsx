@@ -7,7 +7,7 @@ const Specialties = () => {
     <div className="w-[90%] space-y-2 pt-[30px] md:mt-[90px] mb-10 md:mb-28 mx-auto ">
   
 
-      <div className=" mb-16">
+      <div className=" mb-20">
         <p className="text-black/70 text-[14px] font-semibold mb-2">Professionals</p>
         <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
         Our Specialties
@@ -18,7 +18,7 @@ const Specialties = () => {
       </div>
 
 
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-4 space-y-14 md:space-y-0">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 space-y-14 md:space-y-0">
         {doctorCards.map((card) => (
           <InfoCard
             key={card.title}

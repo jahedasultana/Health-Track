@@ -1,17 +1,18 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 export const InfoCard = ({ title, Icon, description, isEven, color }) => {
+  console.log(color);
   return (
     <div
-      className={`relative flex  flex-col items-center justify-center bg-white/80 shadow-md p-8 text-center w-full h-56 border border-gray-900/55 hover:bg-[${color}]`}
+      className={`relative flex  flex-col items-center justify-center bg-white/80 shadow-md p-10 text-center w-full h-56 border border-gray-900/55 hover:bg-[${color}]`}
     >
       {/* Background Icon */}
-      <Icon className="absolute text-blue-300 opacity-10 text-7xl sm:text-8xl lg:text-9xl" />
+      <Icon className="absolute text-blue-300 opacity-10 text-7xl sm:text-8xl lg:text-9xl space-y-3" />
 
       {/* Title */}
-      <h2 className="text-lg font-semibold text-blue-700">{title}</h2>
-
-      <p className="text-sm mt-2 text-gray-600">{description}</p>
-
+      <h2 className="text-2xl pt-3 font-semibold text-black/80">{title}</h2>
+      <div className="w-[80px] h-[2px]  mt-2 bg-[#e0e4e4]"></div>
+      <p className="text-sm mt-2 text-black/50">{description}</p>
+      
       <div
         className="absolute -top-[51px] flex items-center justify-center"
         style={{
@@ -41,7 +42,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
           </div>
         </div>
       </div>
-      <div className="absolute -bottom-4 bg-white text-gray-400 border border-gray-400 px-6 pt-1 rounded-full">
+      <div className="absolute   -bottom-4 bg-white text-gray-400 border border-gray-400 px-6 pt-1 rounded-full">
         <button>
           <FaLongArrowAltRight />
         </button>
