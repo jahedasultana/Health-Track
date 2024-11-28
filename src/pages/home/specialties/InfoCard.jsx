@@ -42,7 +42,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
           </div>
         </div>
       </div>
-      <div className="absolute   -bottom-4 bg-white text-gray-400 border border-gray-400 px-6 pt-1 rounded-full">
+      <div className="absolute -bottom-4 bg-white text-gray-400 border border-gray-400 px-6 pt-1 rounded-full">
         <button>
           <FaLongArrowAltRight />
         </button>
