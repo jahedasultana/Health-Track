@@ -40,14 +40,14 @@ const doctorCards = [
     Icon: FaHeartbeat,
     description:
       "Experienced cardiologist specializing in heart health and treatments.",
-    color: "#FD9678",
+    color: "#D46B9A",
     isEven: false,
   },
   {
     title: "Dentist",
     Icon: FaTooth,
     description: "Expert dentist offering advanced dental care and cleanings.",
-    color: "#FD9678",
+    color: "#36C777",
     isEven: true,
   },
   {
@@ -55,7 +55,7 @@ const doctorCards = [
     Icon: FaBrain,
     description:
       "Neurologist focused on brain disorders and nervous system issues.",
-    color: "#FD9678",
+    color: "#AD6BD8",
     isEven: false,
   },
   {
@@ -63,7 +63,7 @@ const doctorCards = [
     Icon: FaEye,
     description:
       "Ophthalmologist skilled in eye health and vision care services.",
-    color: "#FD9678",
+    color: "#E78970",
     isEven: true,
   },
 ];
