@@ -1,32 +1,110 @@
+// import reviews from "/reviews.json";
+import { useEffect, useState } from "react";
 import TestimonialSlide from "./TestimonialSlide";
+import { motion } from "framer-motion";
 
 const Testimonial = () => {
+  const [reviews,setReviews] = useState([])
+  const [duration,setDuration] = useState(0)
+
+  useEffect(() =>{
+    fetch('/reviews.json')
+    .then(res => res.json())
+    .then(data => setReviews(data))
+  },[])
+
+const firstcolum = reviews.slice(0, 3);
+const secondColum = reviews.slice(3, 6);
+const lastColum = reviews.slice(6, 9);
 
   return (
-    <div className="flex md:flex-row flex-col  w-[90%] mx-auto mt-10 md:mt-16">
-      {/* Left side heading and description */}
-      <div className="md:w-[35%] bg-[#FFFFFF] md:space-y-4 space-y-2">
-        <h6 className="md:text-lg font-semibold text-[#1DBFCC]">
-          20+ Years Of Experiences
-        </h6>
-        <h1 className="md:text-4xl text-2xl font-bold text-[#3f3f41]">
-          What Our Patients Say About Us
-        </h1>
-        <p className="text-gray-600">
-          Adipiscing elitadi piscing elits eddo eusmod teo mpor incididunt
-          utlabore edolor magnased doe iusmod tempor incididunt utlaboreet
-          dolore magna aliqua. Quis ipsum suspend isseultrices and gravida.
-          Consectetur adipiscing elitadipiscing in elitserissed aliqua.
+    <section className="mx-auto my-7">
+      <div className="m-5">
+        <p className="text-2xl text-center font-semibold text-primary">
+          Reviews
         </p>
-
+        <h2 className="md:text-4xl text-3xl text-center font-bold my-2">
+          What Our Learners Say
+        </h2>
       </div>
 
-      {/* Right side testimonial cards */}
-      <div className="md:w-[65%] bg-[#F4F7F9] mt-6 md:mt-0 space-x-4 p-4">
-     
-            <TestimonialSlide></TestimonialSlide>
+      
+
+      <div className="relative w-full">
+        <div className="section-gradient h-full w-full"></div>
+        <div className="overflow-hidden md:flex gap-5 w-[90%] h-[780px] mx-auto">
+          {/* first col */}
+        <motion.div
+          animate={{
+            translateY: "-50%",
+          }}
+          transition={{
+            duration: 7,
+            repeat: Infinity,
+            ease: "linear",
+            repeatType: "loop",
+          }}
+          className=" w-full flex flex-col gap-5">
+          <div className="flex flex-col w-full gap-5" duration={15}>
+            {firstcolum.map((first, idx) => (
+              <TestimonialSlide key={idx} first={first} />
+            ))}
+          </div>
+          <div className="flex flex-col w-full gap-5" duration={15}>
+            {firstcolum.map((first, idx) => (
+              <TestimonialSlide key={idx} first={first} />
+            ))}
+          </div>
+        </motion.div>
+        {/* second col */}
+        <motion.div
+          animate={{
+            translateY: "-50%",
+          }}
+          transition={{
+            duration: 15,
+            repeat: Infinity,
+            ease: "linear",
+            repeatType: "loop",
+          }}
+          className=" w-full flex flex-col gap-5">
+          <div className="flex flex-col w-full gap-5" duration={15}>
+            {secondColum.map((first, idx) => (
+              <TestimonialSlide key={idx} first={first} />
+            ))}
+          </div>
+          <div className="flex flex-col w-full gap-5" duration={15}>
+            {secondColum.map((first, idx) => (
+              <TestimonialSlide key={idx} first={first} />
+            ))}
+          </div>
+        </motion.div>
+        {/* last col */}
+        <motion.div
+          animate={{
+            translateY: "-50%",
+          }}
+          transition={{
+            duration: 9,
+            repeat: Infinity,
+            ease: "linear",
+            repeatType: "loop",
+          }}
+          className=" w-full flex flex-col gap-5">
+          <div className="flex flex-col w-full gap-5" duration={15}>
+            {lastColum.map((first, idx) => (
+              <TestimonialSlide key={idx} first={first} />
+            ))}
+          </div>
+          <div className="flex flex-col w-full gap-5" duration={15}>
+            {lastColum.map((first, idx) => (
+              <TestimonialSlide key={idx} first={first} />
+            ))}
+          </div>
+        </motion.div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

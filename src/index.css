@@ -8,6 +8,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Testimonial class */
+
+:root {
+  --gradient-top: #fff 15%; 
+  --gradient-bottom: #fff 85%; 
+  --scrollbar-color: color-mix(in oklch, currentColor 35%, transparent);
+}
+
+.section-gradient {
+  position: absolute;
+  background: linear-gradient(var(--gradient-top), transparent),
+              linear-gradient(transparent, var(--gradient-bottom)) bottom;
+  background-size: 100% 100px; /* Adjust the height of the gradients */
+  background-repeat: no-repeat;
+  padding-top: 100px; /* Match the top gradient height */
+  padding-bottom: 100px; /* Match the bottom gradient height */
+  z-index: 100;
+}
+
+
+
+/* dashboard */
+
 :root {
     --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
     --orange: #fca61f;
