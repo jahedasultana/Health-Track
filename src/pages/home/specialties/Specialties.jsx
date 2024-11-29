@@ -7,7 +7,7 @@ const Specialties = () => {
     <div className="relative w-full ">
       {/* Rotated Background Image */}
       <div
-        className="absolute md:block hidden  -left-[100px] top-0 inset-0 h-[450px] w-[390px] bg-no-repeat bg-cover"
+        className="absolute md:block hidden -left-[100px] top-0 inset-0 h-[450px] w-[390px] bg-no-repeat bg-cover"
         style={{
           backgroundImage: `url('https://kamleshyadav.com/html/healthcare/bootstrap5/images/service/wedobg.png')`,
         }}
