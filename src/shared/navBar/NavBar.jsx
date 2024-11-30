@@ -33,6 +33,10 @@ const Navbar = () => {
         email,
         userRole: "user",
         name,
+        dateOfBirth: "",
+        bloodGroup: "",
+        contactNumber: ""
+
       }
       try {
         const response = await axios.post('http://localhost:3000/userCreate', sendData);
