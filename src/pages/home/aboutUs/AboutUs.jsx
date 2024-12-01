@@ -4,11 +4,11 @@ import bgImage from "../../../assets/homeImage/slove.png"; // Import the backgro
 
 const AboutUs = () => {
   return (
-    <div className="md:w-[100%] relative md:pl-20 mb-36 w-full mx-auto">
+    <div className="md:w-[100%] relative md:pl-20 mb-10 md:mb-28 w-full mx-auto">
       {/* Title Section */}
       <div className="absolute -top-8">
-        <p className="text-black/70 text-[14px] font-semibold mb-2">About Us</p>
-        <h2 className="relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+        <p className="text-black/50 text-[14px] font-semibold mb-2">About Us</p>
+        <h2 className="relative text-black md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
           Your Trusted Healthcare <br /> Partner Anytime
           <TiPlus className="absolute text-[#FD9678] -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
@@ -38,7 +38,7 @@ const AboutUs = () => {
 
         {/* Right Section with Main Image */}
         <div className="w-full md:w-[60%] flex justify-end items-center h-full">
-          <img className="h-auto" src={mainImg} alt="images" />
+          <img className="h-auto border-b-[1px] border-[#1ABC9C]" src={mainImg} alt="images" />
         </div>
       </div>
     </div>

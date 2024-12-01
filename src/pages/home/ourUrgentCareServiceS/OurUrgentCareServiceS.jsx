@@ -17,8 +17,8 @@ const OurUrgentCareServiceS = () => {
       <div className="w-[90%] mx-auto">
 
       <div className="md:mb-16 mb-10">
-        <p className="text-black/70 text-[14px] font-semibold">Services</p>
-        <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+        <p className="text-black/50 text-[14px] font-semibold">Services</p>
+        <h2 className=" relative text-black md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
         Our Urgent Care Services
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />

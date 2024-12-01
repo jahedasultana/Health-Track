@@ -16,10 +16,10 @@ const Specialties = () => {
       {/* Content Section */}
       <div className="relative w-[90%] space-y-2 pt-[30px] md:mt-[90px] mb-10 md:mb-28 mx-auto">
         <div className="mb-20">
-          <p className="text-black/70 text-[14px] font-semibold mb-2">
+          <p className="text-black/50 text-[14px] font-semibold mb-2">
             Professionals
           </p>
-          <h2 className="relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+          <h2 className="relative text-black md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
             Our Specialties
             <TiPlus className="absolute text-[#FD9678] -right-6 -top-4" />
             <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
