@@ -2,7 +2,7 @@ const TestimonialSlide = ({ first }) => {
   console.log(first);
   return (
     <div>
-      <div className="bg-[#dbeafe] p-[30px] rounded-2xl"
+      <div className="bg-[#faf4f2] p-[30px] rounded-2xl"
       style={{boxShadow: '0 0 1px gray'}}
       >
         <div>
