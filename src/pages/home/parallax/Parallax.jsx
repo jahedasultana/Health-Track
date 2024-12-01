@@ -20,7 +20,7 @@ const Parallax = () => {
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6">
             Stay Healthy, Stay Happy!
           </h1>
-          <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+          <p className="text-base text-[16px] leading-relaxed">
             Your health is your most valuable asset. By incorporating simple
             habits like eating a balanced diet, drinking plenty of water, and
             maintaining regular physical activity, you can significantly improve
