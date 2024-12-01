@@ -43,7 +43,7 @@ const Promotional = () => {
             alt="book"
             width={360}
             height={100}
-            className="absolute -left-[30px] -top-[137px] hidden lg:inline"
+            className="absolute -left-[20px] -top-[137px]  hidden lg:inline"
             style={{
               translateY,
             }}></motion.img>
@@ -53,7 +53,7 @@ const Promotional = () => {
             alt="book"
             width={260}
             height={100}
-            className="absolute -right-[30px] -top-[-30px] hidden lg:inline"
+            className="absolute  right-[10px] -top-[-30px] hidden lg:inline"
             style={{
               translateY,
             }}></motion.img>

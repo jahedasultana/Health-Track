@@ -7,8 +7,8 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
 
   return (
     <div
-      className={`relative flex flex-col items-center justify-center shadow-md p-10 text-center 
-            w-full h-56 border border-gray-900/55`}
+      className={`relative rounded-sm flex flex-col items-center justify-center shadow-md p-10 text-center 
+            w-full h-56 border border-[#FD9678]/50`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -50,7 +50,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
         style={{
           width: "110px",
           height: "100px",
-          backgroundColor: "gray",
+          backgroundColor: "#FD96788F",
           clipPath:
             "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
         }}
@@ -66,7 +66,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
           }}
         >
           <div
-            className={`flex items-center text-2xl ${
+            className={`flex items-center  text-2xl ${
               isEven ? "border" : ""
             } sm:text-3xl lg:text-4xl h-full p-[8px]`}
             style={{ color: color }}
@@ -77,9 +77,9 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
       </div>
 
       {/* Button */}
-      <div className="absolute -bottom-4 bg-white text-gray-400 border border-gray-400 px-6 pt-1 rounded-full">
+      <div className="absolute text-lg -bottom-4 bg-white text-[#1ABC9C] border border-[#FD9678]/50 px-6 pt-1 rounded-full">
         <button>
-          <FaLongArrowAltRight />
+          <FaLongArrowAltRight/>
         </button>
       </div>
     </div>

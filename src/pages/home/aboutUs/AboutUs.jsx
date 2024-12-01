@@ -1,11 +1,11 @@
 import { TiPlus } from "react-icons/ti";
 import mainImg from "../../../assets/homeImage/team.png";
-import sideImg from "../../../assets/homeImage/aboutme.png";
+// import sideImg from "../../../assets/homeImage/aboutme.png";
 
 const AboutUs = () => {
   return (
     <div className=" md:w-[90%]  w-full mx-auto">
-      <div>
+      <div className="">
         <p className="text-black/70 text-[14px] font-semibold mb-2">About Us</p>
         <h2 className=" relative text-[#1ABC9C] md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
           Consult A Doctor Anytime,
@@ -28,7 +28,7 @@ const AboutUs = () => {
         </div>
 
         <div className="w-full md:w-[60%] flex justify-center items-center  h-full">
-          <img src={mainImg} alt="images" />
+          <img className="h-" src={mainImg} alt="images" />
         </div>
       </div>
     </div>
