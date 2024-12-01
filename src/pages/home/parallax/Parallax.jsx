@@ -14,7 +14,7 @@ const Parallax = () => {
       <div className="absolute inset-0 bg-[#1ABC9C] opacity-70 z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 justify-between items-center md:h-[500px] h-auto px-4 md:px-8">
+      <div className="relative z-10 flex flex-col md:flex-row  justify-between items-center md:h-[500px] h-auto pl-0 md:pl-8">
         {/* Left Side (Text Content) */}
         <div className="md:w-[50%] w-full text-white text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 md:mb-6">
@@ -30,11 +30,11 @@ const Parallax = () => {
         </div>
 
         {/* Right Side (Image) */}
-        <div className="md:w-[50%] w-full">
+        <div className="md:w-[50%] pr-8 md:pr-0 md:mt-0 mt-5 w-full">
           <img
             src={img}
             alt="Stay Healthy"
-            className="w-full h-[200px] sm:h-[250px] md:h-[400px] object-cover rounded-lg"
+            className="w-full h-[200px]  sm:h-[250px] md:h-[400px] object-cover rounded-lg"
           />
         </div>
       </div>
