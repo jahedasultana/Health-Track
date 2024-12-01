@@ -1,12 +1,12 @@
 import { TiPlus } from "react-icons/ti";
 import mainImg from "../../../assets/homeImage/team2.png";
-import bgImage from "../../../assets/homeImage/slove.png"; // Import the background image
+
 
 const AboutUs = () => {
   return (
-    <div className="md:w-[100%] relative md:pl-20 mb-10 md:mb-28 w-full mx-auto">
+    <div className="md:w-[100%] px-6 md:px-0 relative md:pl-20 mb-10 md:mb-28  w-full mx-auto">
       {/* Title Section */}
-      <div className="absolute -top-8">
+      <div className="md:absolute -top-8">
         <p className="text-black/50 text-[14px] font-semibold mb-2">About Us</p>
         <h2 className="relative text-black md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
           Your Trusted Healthcare <br /> Partner Anytime
@@ -16,12 +16,21 @@ const AboutUs = () => {
         <div className="w-[80px] h-[2px] bg-[#1ABC9C]"></div>
       </div>
 
+    
+
       {/* Content Section */}
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="flex relative flex-col md:flex-row items-center">
         {/* Left Section with Background Image */}
+
         <div
-          className="w-full md:w-[40%] bg-cover bg-center bg-no-repeat relative"
-          style={{ backgroundImage: `url(${bgImage})` }}
+        className="absolute md:block hidden -left-[100px] -top-20 inset-0 h-[450px] w-[390px] bg-no-repeat bg-cover"
+        style={{
+          backgroundImage: `url('https://kamleshyadav.com/html/healthcare/bootstrap5/images/service/wedobg.png')`,
+        }}
+      ></div>
+        <div
+          className="w-full md:w-[40%]"
+          
         >
           <div className="bg-white/70 backdrop-blur-sm">
             <p>

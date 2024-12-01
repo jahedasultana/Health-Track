@@ -20,7 +20,7 @@ const Testimonial = () => {
 
   return (
     <section className="mx-auto my-7">
-      <div className="md:mb-14 pl-20 mb-10">
+      <div className="md:mb-14 md:pl-20 pl-6 mb-10">
         <p className="text-black/50 text-[16px] font-semibold">Reviews</p>
         <h2 className=" relative text-black text-2xl md:text-4xl font-bold mb-3 w-[max-content]">
         Here's What Our Patients <br /> Have to Say

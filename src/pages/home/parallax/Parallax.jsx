@@ -1,8 +1,19 @@
-import img from '../../../assets/homeImage/Sheard.png';
+import { useRef } from "react";
+import img from "../../../assets/homeImage/Sheard.png";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Parallax = () => {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
   return (
     <div
+    ref={sectionRef}
       className="relative bg-cover bg-center md:h-[500px] h-auto md:mt-32 md:mb-10 my-8 py-8 md:py-0"
       style={{
         backgroundImage: "url('https://i.postimg.cc/T39sQfrX/health.jpg')",
@@ -31,11 +42,14 @@ const Parallax = () => {
 
         {/* Right Side (Image) */}
         <div className="md:w-[50%] pr-8 md:pr-0 md:mt-0 mt-5 w-full">
-          <img
+          <motion.img
             src={img}
+            style={{
+              translateY,
+            }}
             alt="Stay Healthy"
             className="w-full h-[200px]  sm:h-[250px] md:h-[400px] object-cover rounded-lg"
-          />
+          ></motion.img>
         </div>
       </div>
     </div>
