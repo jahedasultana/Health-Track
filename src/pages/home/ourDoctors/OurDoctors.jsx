@@ -9,9 +9,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 const OurDoctors = () => {
   return (
     <section className="w-[90%] mx-auto md:my-28 my-12">
-      <div className="md:mb-10 mb-6">
-        <h1 className="md:text-3xl text-xl font-medium text-[#3f3f41]"></h1>
-      </div>
+    
       <div className="md:mb-14 mb-10">
         <p className="text-black/70 text-[14px] font-semibold">Professionals</p>
         <h2 className=" relative text-[#1ABC9C] text-2xl md:text-4xl font-bold mb-3 w-[max-content]">
