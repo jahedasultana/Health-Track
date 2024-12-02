@@ -69,7 +69,7 @@ const Promotional = () => {
           onSubmit={handleSubmitNewsletter}
           className="flex justify-center gap-5 ">
             <input
-              className="input px-3 rounded-sm py-2  border border-[#FD9678] focus:outline-none shadow-md"
+              className="input px-3 rounded-md py-2  border border-[#FD9678] focus:outline-none shadow-md"
               type="email"
               required
               placeholder="Your Email"
