@@ -47,7 +47,7 @@ const AboutUs = () => {
 
         {/* Right Section with Main Image */}
         <div className="w-full md:w-[60%] flex justify-end items-center h-full">
-          <img className="h-auto border-b-[1px] border-[#1ABC9C]" src={mainImg} alt="images" />
+          <img className="h-auto border-b-[1px] border-[#FD9678]" src={mainImg} alt="images" />
         </div>
       </div>
     </div>

@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
               {startCounter && <CountUp start={0} end={8600} duration={3} />}
             </h2>
             <div className="flex justify-center items-center gap-2 mb-2">
-              <IoMdCheckmarkCircleOutline className="text-teal-500 text-7xl" />
+              <IoMdCheckmarkCircleOutline className="text-[#1ABC9C] text-7xl" />
               <p className="text-xl text-black/70 font-bold">
                 Successful Cases
               </p>

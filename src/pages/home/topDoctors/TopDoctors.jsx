@@ -2,17 +2,17 @@
 const TopDoctors = () => {
     return (
         <div className="grid md:grid-cols-3 grid-cols-1 w-[90%] mx-auto">
-            <div className="p-10 bg-[#4fcfd3] text-white space-y-4">
+            <div className="p-10 bg-gradient-to-r from-[#FD9678] to-[#FFA477]/60 text-white space-y-4">
                 <h2 className="text-[25px]">Top Doctors</h2>
             <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augue tristique sed volutpat.</p>
             <button className="px-3 py-2 border border-gray-100/50">Read More</button>
             </div>
-            <div className="p-10 bg-[#05bdca] text-white space-y-4">
+            <div className="p-10 bg-gradient-to-r from-[#FD9678]/90 to-[#FD9678]/65 text-white space-y-4">
                 <h2 className="text-[25px]">24 Hours Service</h2>
             <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augue tristique sed volutpat.</p>
             <button className="px-3 py-2 border border-gray-100/50">Read More</button>
             </div>
-            <div className="p-10 bg-[#FD9678] text-white space-y-4">
+            <div className="p-10 bg-gradient-to-r from-[#FD9678] to-[#FD9678]/75 text-white space-y-4">
                 <h2 className="text-[25px]">Opening Hours</h2>
            <div className="flex justify-between">
            <p>Monday-friday</p>
