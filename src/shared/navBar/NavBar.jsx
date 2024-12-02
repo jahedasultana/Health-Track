@@ -1,141 +1,128 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { RiMenuAddFill } from "react-icons/ri";
-import { VscChromeClose } from "react-icons/vsc";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
-import { useUser } from '@clerk/clerk-react'
-import axios from 'axios';
+import { Link, useLocation } from "react-router-dom";
+import TopContact from "./TopContant";
 
-const Navbar = () => {
-  const { isSignedIn, user, isLoaded } = useUser()
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
-  let email;
-  let name;
+const Navbar2 = () => {
+  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
-  if (isLoaded && isSignedIn) {
-    email = user?.primaryEmailAddress?.emailAddress;
-    name = user?.fullName;
-
-    console.log("User's email:", email);
-  } else {
-    console.log("User is not signed in or data is not loaded.");
-  }
-
-  
+  // Top content scroll
   useEffect(() => {
-    const postDataToApi = async () => {
+    if (location.pathname === '/') {
+      const handleScroll = () => {
+        setScrollY(window.scrollY);
+      };
 
-      const sendData = {
-        email,
-        userRole: "user",
-        name,
-        dateOfBirth: "",
-        bloodGroup: "",
-        contactNumber: ""
+      window.addEventListener('scroll', handleScroll);
 
-      }
-      try {
-        const response = await axios.post('http://localhost:3000/userCreate', sendData);
-     
-        console.log('Response:', response.data);
-      } catch (error) {
-        console.error('Error posting data:', error);
-      }
-    };
-
-    postDataToApi();
- },[email,name]);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [location.pathname]);
 
   return (
-    <nav className="text-black bg-white relative">
-      <div className="mx-auto flex justify-between items-center">
-        <div className="w-full">
-          {/* first part */}
-          <div className="flex justify-between items-center w-full py-3 md:px-10 px-3">
-            <div className="w-92">
-              <img
-                className="md:w-[55%] w-[45%]"
-                src="/health-track.png"
-                alt="logo"
-              />
-            </div>
+    <section>
+      <nav className={`${location.pathname === '/' ? "fixed top-0 z-20" : ""} w-full`}>
+        <div className={`mx-auto ${location.pathname === '/' ? "bg-[#ebeff5] bg-opacity-90" : "bg-gray-200"} absolute top-0 w-full z-10 shadow-lg`}>
+          {/* Top Navbar */}
+          <div className={`w-full md:block hidden transition-all duration-1000`}>
+            {location.pathname === '/' && scrollY <= 50 && <TopContact />}
+            {location.pathname !== '/' && <TopContact />}
+          </div>
 
-            <div className="hidden md:flex items-center justify-center gap-5">
-              <button className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
-                Doctor
+          {/* Desktop Menu */}
+          <div className="hidden md:flex justify-between items-center md:px-4 px-0">
+            <div className="flex justify-between w-full">
+              {/* Logo */}
+              <div className="z-10">
+                <Link to={"/"} className="flex items-center px-2">
+                  <img src="/logo.webp" alt="Logo" className="w-28 mr-2 py-2" />
+                </Link>
+              </div>
+              {/* Primary Navbar items */}
+              <div className="flex items-center space-x-1 z-20">
+                <Link to="/" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                  Home
+                </Link>
+                <Link to="/about" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                  About
+                </Link>
+                <Link to="/services" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                  Services
+                </Link>
+                <Link to="/contact" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                  Contact
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="md:hidden flex items-center flex-col">
+            {/* Logo */}
+            <div className="md:hidden flex flex-col items-center">
+              <div>
+                <Link to={"/"} className="flex items-center px-2">
+                  <img src="/logo.webp" alt="Logo" className="w-28 mr-2" />
+                </Link>
+              </div>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                className="outline-none mobile-menu-button"
+              >
+                <svg
+                  className="w-10 h-10 text-black"
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
               </button>
-              {/* karpa start */}
-
-              {!isLoaded ? (
-                <div className="bg-gray-300 animate-pulse w-[28px] h-[28px] rounded-full">
-                </div>
-              ) : (
-                // Render based on email existence after data is loaded
-                email ? (
-                 
-                  <SignedIn>
-                    <UserButton />
-                  </SignedIn>
-                ) : (
-                  <div className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
-                    <SignedOut>
-                      <SignInButton  />
-                    </SignedOut>
-                  </div>
-                )
-              )}
-
-              {/* <button className="px-3 font-semibold py-2 border bg-[#1DBFCC] text-white">
-                Login
-              </button> */}
             </div>
-          </div>
 
-          {/* second part */}
-          <div className="hidden md:flex bg-[#E4FEFF] text-black/70 py-5 pl-10">
-            <div className="hidden md:flex lg:gap-16 md:gap-5 text-center font-semibold">
-              <Link to={"/"}>Home</Link>
-              <Link to={"/appointment"}>Appointment</Link>
-              <Link to={"/getAvailableDoctor"}>GetAvailableDoctor</Link>
-              <Link to={"/aboutUs"}>About Us</Link>
-              <Link to={"/contactUs"}>Contact Us</Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Hamburger Icon */}
-        <div className="md:hidden pr-3">
-          <button id="btn" onClick={toggleMenu}>
-            {isOpen ? (
-              <VscChromeClose size={30} />
-            ) : (
-              <RiMenuAddFill size={30} />
+            {/* Mobile Menu Items */}
+            {menuOpen && (
+              <div className="absolute top-[151px] w-full bg-black/90 text-white">
+                <nav>
+                  <ul className="space-y-2">
+                    <li>
+                      <Link to="/" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/about" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                        Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/contact" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             )}
-          </button>
+          </div>
         </div>
-      </div>
-
-      {/* Mobile Menu */}
-      <div
-        className={`w-full md:hidden mt-4 absolute top-14 z-10 bg-white/90 py-7 transition-all duration-300 ease-in-out transform ${isOpen
-          ? "translate-y-0 opacity-100"
-          : "translate-y-[-20px] opacity-0 pointer-events-none"
-          }`}
-      >
-        <div className="flex items-center flex-col space-y-2">
-          <Link to={"/"}>Home</Link>
-          <Link to={"/appointment"}>Appointment</Link>
-          <Link to={"/blog"}>Blog</Link>
-          <Link to={"/"}>Funding</Link>
-          <Link to={"/login"}>Login</Link>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
   );
 };
 
-export default Navbar;
+export default Navbar2;
