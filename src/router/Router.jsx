@@ -29,9 +29,9 @@ import ContactPage from "../pages/contactPage/ContactPage";
             element: <Appointment></Appointment>
         },
         {
-            path: "/getAvailableDoctor",
-            element: <GetAvailableDoctor></GetAvailableDoctor>
-        },
+          path: "/getAvailableDoctor/:id",
+          element: <Details></Details>
+      },
         {
             path: "/details",
             element: <Details></Details>

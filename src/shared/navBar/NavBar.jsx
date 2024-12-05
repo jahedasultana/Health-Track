@@ -25,10 +25,10 @@ const Navbar2 = () => {
 
   return (
     <section>
-      <nav className={`${location.pathname === '/' ? "fixed top-0 z-20" : ""} w-full`}>
-        <div className={`mx-auto ${location.pathname === '/' ? "bg-[#ebeff5] bg-opacity-90" : "bg-gray-200"} absolute top-0 w-full z-10 shadow-lg`}>
+      <nav className={${location.pathname === '/' ? "fixed top-0 z-20" : ""} w-full}>
+        <div className={mx-auto ${location.pathname === '/' ? "bg-[#ebeff5] bg-opacity-90" : "bg-gray-200"} absolute top-0 w-full z-10 shadow-lg}>
           {/* Top Navbar */}
-          <div className={`w-full md:block hidden transition-all duration-1000`}>
+          <div className={w-full md:block hidden transition-all duration-1000}>
             {location.pathname === '/' && scrollY <= 50 && <TopContact />}
             {location.pathname !== '/' && <TopContact />}
           </div>
@@ -50,7 +50,7 @@ const Navbar2 = () => {
                 <Link to="/about" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
                   About
                 </Link>
-                <Link to="/services" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                <Link to="/getAvailableDoctor" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
                   Services
                 </Link>
                 <Link to="/contact" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">

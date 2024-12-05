@@ -1,4 +1,27 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import axios from 'axios';
+
 const Details = () => {
+    const { id } = useParams()
+    const [doctors, setDoctor] = useState([]);
+
+    console.log(doctors);
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        try {
+            const response = await axios.get(http://localhost:3000/doctors/${id});
+            // console.log(response.data);
+            setDoctor(response.data);
+        } catch (error) {
+            console.error("Error fetching doctors:", error);
+        }
+    };
+
     return (
         <div className="flex flex-col lg:flex-row gap-8 p-8">
             {/* Doctor Details Section */}
@@ -12,7 +35,7 @@ const Details = () => {
                     />
                 </div>
                 <div className="text-gray-700 mb-4">
-                    <p><span className="font-semibold">Name:</span> Dr. John Doe</p>
+                    <p><span className="font-semibold">Name:</span> {doctors?.name}</p>
                     <p><span className="font-semibold">Total Service:</span> 15 years</p>
                     <p><span className="font-semibold">Specialization:</span> Heart Surgery</p>
                 </div>
@@ -39,13 +62,13 @@ const Details = () => {
                             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                     </div>
-                
+
                     <input
                         type="text"
                         placeholder="Patient Condition"
                         className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                 
+
                     <textarea
                         placeholder="Additional Details"
                         className="w-full p-7 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"

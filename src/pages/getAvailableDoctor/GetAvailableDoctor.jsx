@@ -1,69 +1,91 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa";
+import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const GetAvailableDoctor = () => {
+  const [doctors, setDoctors] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios("http://localhost:3000/doctors");
+      // console.log(response.data);
+      setDoctors(response.data);
+    } catch (error) {
+      console.error("Error fetching doctors:", error);
+    }
+  };
+
+
   return (
-    <div className="md:w-[90%] grid grid-cols-3 w-full mx-auto py-10">
-      <div className="relative group w-[300px]">
-        {/* Doctor Image */}
-        <img
-          className="h-[350px] w-full object-cover object-top"
-          src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
-          alt="Doctor"
-        />
+    <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-2 gap-4 w-full mx-auto py-10">
+     {
+      doctors.map((doctor) =>  <div key={doctor._id} className="relative group">
+      {/* Doctor Image */}
+      <img
+        className="h-[350px] w-full object-cover object-top"
+        src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
+        alt="Doctor"
+      />
 
-        {/* Hover Full Overlay */}
+      {/* Hover Full Overlay */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileHover={{ opacity: 1 }}
+        className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100"
+      >
+        <motion.h3
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-xl font-semibold"
+        >
+          Melissa Lombardo
+        </motion.h3>
+        <motion.p
+          initial={{ y: 0, opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-sm mb-4"
+        >
+          Cardiologists
+        </motion.p>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-          className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100"
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="flex space-x-4 mt-4"
         >
-          <motion.h3
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-xl font-semibold"
-          >
-            Melissa Lombardo
-          </motion.h3>
-          <motion.p
-            initial={{ y: 0, opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-sm mb-4"
-          >
-            Cardiologists
-          </motion.p>
-          <motion.div
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="flex space-x-4 mt-4"
-          >
-            <FaFacebookF className="text-lg" />
-            <FaLinkedinIn className="text-lg" />
-            <FaTwitter className="text-lg" />
-            <FaYoutube className="text-lg" />
-          </motion.div>
-          {/* New Button on Hover */}
-          <motion.button
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors"
-          >
-            View Profile
-          </motion.button>
+          <FaFacebookF className="text-lg" />
+          <FaLinkedinIn className="text-lg" />
+          <FaTwitter className="text-lg" />
+          <FaYoutube className="text-lg" />
         </motion.div>
-
-        {/* Bottom Overlay (Initially Visible, Hidden on Hover) */}
-        <div
-          className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+        {/* New Button on Hover */}
+        <motion.button
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors"
         >
-          <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
-          <p className="text-sm">Cardiologists</p>
-        </div>
+          <Link to={/getAvailableDoctor/${doctor._id}}>View Profile</Link>
+        </motion.button>
+      </motion.div>
+
+      {/* Bottom Overlay (Initially Visible, Hidden on Hover) */}
+      <div
+        className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+      >
+        <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
+        <p className="text-sm">Cardiologists</p>
       </div>
+    </div>)
+     }
     </div>
   );
 };
