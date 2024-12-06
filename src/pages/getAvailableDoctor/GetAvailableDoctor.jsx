@@ -45,7 +45,7 @@ const GetAvailableDoctor = () => {
           transition={{ duration: 0.5 }}
           className="text-xl font-semibold"
         >
-          Melissa Lombardo
+         {doctor?.name}
         </motion.h3>
         <motion.p
           initial={{ y: 0, opacity: 0 }}
@@ -53,7 +53,8 @@ const GetAvailableDoctor = () => {
           transition={{ duration: 0.5 }}
           className="text-sm mb-4"
         >
-          Cardiologists
+        {doctor?.service_category
+        }
         </motion.p>
         <motion.div
           initial={{ y: 50, opacity: 0 }}
@@ -81,8 +82,9 @@ const GetAvailableDoctor = () => {
       <div
         className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
       >
-        <h3 className="text-lg font-semibold">Melissa Lombardo</h3>
-        <p className="text-sm">Cardiologists</p>
+        <h3 className="text-lg font-semibold">{doctor?.name}</h3>
+        <p className="text-sm">{doctor?.service_category
+        }</p>
       </div>
     </div>)
      }

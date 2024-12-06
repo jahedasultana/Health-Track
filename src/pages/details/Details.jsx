@@ -36,14 +36,18 @@ const Details = () => {
                 </div>
                 <div className="text-gray-700 mb-4">
                     <p><span className="font-semibold">Name:</span> {doctors?.name}</p>
-                    <p><span className="font-semibold">Total Service:</span> 15 years</p>
-                    <p><span className="font-semibold">Specialization:</span> Heart Surgery</p>
-                    <p></p>
+                    <p><span className="font-semibold">Total Service:</span> {doctors.service_experience
+                    }</p>
+                    <p><span className="font-semibold">Specialization:</span> {doctors?.service_category
+                    }</p>
+                    <p><span className="font-semibold">Email :</span> {doctors?.email
+                    }</p>
+                
                 </div>
                 <div className="bg-gray-300 p-3 rounded-lg">
                     <h4 className="font-semibold mb-2">Which Services:</h4>
 
-                    <p>Heart Surgery, Cardiology, General Consultation</p>
+                    <p>{doctors.service_give}</p>
                 </div>
             </div>
 
