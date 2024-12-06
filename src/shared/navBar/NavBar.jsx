@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import TopContact from "./TopContant";
 
 
-const Navbar2 = () => {
+const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -25,10 +25,10 @@ const Navbar2 = () => {
 
   return (
     <section>
-      <nav className={${location.pathname === '/' ? "fixed top-0 z-20" : ""} w-full}>
-        <div className={mx-auto ${location.pathname === '/' ? "bg-[#ebeff5] bg-opacity-90" : "bg-gray-200"} absolute top-0 w-full z-10 shadow-lg}>
+      <nav className={`${location.pathname === '/' ? "fixed top-0 z-20" : ""} w-full`}>
+        <div className={`mx-auto ${location.pathname === '/' ? "bg-[#ebeff5] bg-opacity-90" : "bg-gray-200"} absolute top-0 w-full z-10 shadow-lg`}>
           {/* Top Navbar */}
-          <div className={w-full md:block hidden transition-all duration-1000}>
+          <div className={`w-full md:block hidden transition-all duration-1000`}>
             {location.pathname === '/' && scrollY <= 50 && <TopContact />}
             {location.pathname !== '/' && <TopContact />}
           </div>
@@ -125,4 +125,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar;

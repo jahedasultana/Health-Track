@@ -7,7 +7,9 @@ const Root = () => {
     return (
         <div className="font-poppins">
             <Navbar></Navbar>
+            <div className="mt-[100px]">
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );

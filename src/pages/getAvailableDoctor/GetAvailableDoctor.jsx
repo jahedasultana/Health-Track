@@ -73,7 +73,7 @@ const GetAvailableDoctor = () => {
           transition={{ duration: 0.5 }}
           className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors"
         >
-          <Link to={/getAvailableDoctor/${doctor._id}}>View Profile</Link>
+          <Link to={`/getAvailableDoctor/${doctor._id}`}>View Profile</Link>
         </motion.button>
       </motion.div>
 

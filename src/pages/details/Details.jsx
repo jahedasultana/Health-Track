@@ -14,7 +14,7 @@ const Details = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(http://localhost:3000/doctors/${id});
+            const response = await axios.get(`http://localhost:3000/doctors/${id}`);
             // console.log(response.data);
             setDoctor(response.data);
         } catch (error) {
@@ -38,9 +38,11 @@ const Details = () => {
                     <p><span className="font-semibold">Name:</span> {doctors?.name}</p>
                     <p><span className="font-semibold">Total Service:</span> 15 years</p>
                     <p><span className="font-semibold">Specialization:</span> Heart Surgery</p>
+                    <p></p>
                 </div>
                 <div className="bg-gray-300 p-3 rounded-lg">
                     <h4 className="font-semibold mb-2">Which Services:</h4>
+
                     <p>Heart Surgery, Cardiology, General Consultation</p>
                 </div>
             </div>

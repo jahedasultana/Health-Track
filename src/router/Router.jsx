@@ -1,6 +1,6 @@
 import {
-    createBrowserRouter,
-  } from "react-router-dom";
+  createBrowserRouter,
+} from "react-router-dom";
 import Root from "../layout/Root";
 import Home from "../pages/home/home/Home";
 import Error from "../pages/error/Error";
@@ -14,60 +14,60 @@ import AboutUs from "../pages/aboutUs/AboutUs";
 import ContactPage from "../pages/contactPage/ContactPage";
 
 
- export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Root></Root>,
-      errorElement: <Error></Error>,
-      children: [
-        {
-            path: "/",
-            element: <Home></Home>
-        },
-        {
-            path: "/appointment",
-            element: <Appointment></Appointment>
-        },
-        {
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root></Root>,
+    errorElement: <Error></Error>,
+    children: [
+      {
+          path: "/",
+          element: <Home></Home>
+      },
+      {
+          path: "/appointment",
+          element: <Appointment></Appointment>
+      },
+      {
+          path: "/getAvailableDoctor",
+          element: <GetAvailableDoctor></GetAvailableDoctor>
+      },
+      {
           path: "/getAvailableDoctor/:id",
           element: <Details></Details>
       },
-        {
-            path: "/details",
-            element: <Details></Details>
-        },
-        {
-            path: "/aboutUs",
-            element: <AboutUs></AboutUs>
-        },
-        {
-            path: "/contactUs",
-            element: <ContactPage></ContactPage>
-        },
-        {
-            path: "/doctorProfile",
-            element: <DoctorProfile></DoctorProfile>
-        },
-        {
-            path: "/userProfile",
-            element: <UserProfile></UserProfile>
-        },
+      {
+          path: "/aboutUs",
+          element: <AboutUs></AboutUs>
+      },
+      {
+          path: "/contactUs",
+          element: <ContactPage></ContactPage>
+      },
+      {
+          path: "/doctorProfile",
+          element: <DoctorProfile></DoctorProfile>
+      },
+      {
+          path: "/userProfile",
+          element: <UserProfile></UserProfile>
+      },
+    
       
-        
-      ]
-    },
+    ]
+  },
 
-    {
-      path: '/dashboard',
-      element: <Dashboard></Dashboard>,
-      // children: [
+  {
+    path: '/dashboard',
+    element: <Dashboard></Dashboard>,
+    // children: [
 
-      //   {
-      //     index: true,
-      //     element: <MainDash></MainDash>
-      //   },
+    //   {
+    //     index: true,
+    //     element: <MainDash></MainDash>
+    //   },
 
-      // ], 
-    }
-  ]);
+    // ], 
+  }
+]);
 
