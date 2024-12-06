@@ -42,6 +42,11 @@ const Details = () => {
                     }</p>
                     <p><span className="font-semibold">Email :</span> {doctors?.email
                     }</p>
+                    
+                    <p><span className="font-semibold">
+                    Availability :</span> {doctors?.availability
+                    }</p>
+                    
                 
                 </div>
                 <div className="bg-gray-300 p-3 rounded-lg">
