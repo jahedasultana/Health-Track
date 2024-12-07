@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 
 const Details = () => {
-    const { id } = useParams()
+    const { id } = useParams();
     const [doctors, setDoctor] = useState([]);
+    const [formData, setFormData] = useState({
+        name: "",
+        age: "",
+        condition: "",
+        details: "",
+    });
 
     console.log(doctors);
 
@@ -15,11 +21,20 @@ const Details = () => {
     const fetchData = async () => {
         try {
             const response = await axios.get(`http://localhost:3000/doctors/${id}`);
-            // console.log(response.data);
             setDoctor(response.data);
         } catch (error) {
             console.error("Error fetching doctors:", error);
         }
+    };
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Prevent form from reloading the page
+        console.log("Form Data Submitted:", formData);
     };
 
     return (
@@ -36,22 +51,25 @@ const Details = () => {
                 </div>
                 <div className="text-gray-700 mb-4">
                     <p><span className="font-semibold">Name:</span> {doctors?.name}</p>
-                    <p><span className="font-semibold">Total Service:</span> {doctors.service_experience
-                    }</p>
-                    <p><span className="font-semibold">Specialization:</span> {doctors?.service_category
-                    }</p>
-                    <p><span className="font-semibold">Email :</span> {doctors?.email
-                    }</p>
-                    
-                    <p><span className="font-semibold">
-                    Availability :</span> {doctors?.availability
-                    }</p>
-                    
-                
+                    <p><span className="font-semibold">Total Service:</span> {doctors.service_experience}</p>
+                    <p><span className="font-semibold">Specialization:</span> {doctors?.service_category}</p>
+                    <p><span className="font-semibold">Email :</span> {doctors?.email}</p>
+
+                    <p>
+                        <span className="font-semibold">Availability :</span>{" "}
+                        <span
+                            className={`px-[3px] pb-[1px] rounded-md ${
+                                doctors?.availability === "busy"
+                                    ? "bg-red-400/50 border border-red-600/80"
+                                    : "bg-green-400/50 border border-green-600/50"
+                            }`}
+                        >
+                            {doctors?.availability}
+                        </span>
+                    </p>
                 </div>
                 <div className="bg-gray-300 p-3 rounded-lg">
                     <h4 className="font-semibold mb-2">Which Services:</h4>
-
                     <p>{doctors.service_give}</p>
                 </div>
             </div>
@@ -59,16 +77,22 @@ const Details = () => {
             {/* Patient Details Form Section */}
             <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold mb-4">Patient Details - Input Form</h2>
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                     {/* Row for Patient Name and Age */}
                     <div className="flex gap-4">
                         <input
                             type="text"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleInputChange}
                             placeholder="Patient Name"
                             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
                         <input
                             type="text"
+                            name="age"
+                            value={formData.age}
+                            onChange={handleInputChange}
                             placeholder="Patient Age"
                             className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                         />
@@ -76,17 +100,23 @@ const Details = () => {
 
                     <input
                         type="text"
+                        name="condition"
+                        value={formData.condition}
+                        onChange={handleInputChange}
                         placeholder="Patient Condition"
                         className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
 
                     <textarea
+                        name="details"
+                        value={formData.details}
+                        onChange={handleInputChange}
                         placeholder="Additional Details"
-                        className="w-full p-7 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="w-full h-[170px] resize-none p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
                     <button
                         type="submit"
-                        className=" bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
+                        className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
                     >
                         Submit
                     </button>
