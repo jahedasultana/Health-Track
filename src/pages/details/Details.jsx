@@ -32,9 +32,19 @@ const Details = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault(); // Prevent form from reloading the page
-        console.log("Form Data Submitted:", formData);
+        const data = {usersData:formData,doctors}
+
+        console.log(data);
+
+        try {
+            const res = await axios.post('http://localhost:3000/service_request',data)
+            console.log(res.data);
+        } catch (error) {
+            console.log(error);
+        }
+        
     };
 
     return (

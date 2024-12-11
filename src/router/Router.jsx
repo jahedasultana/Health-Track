@@ -45,11 +45,11 @@ export const router = createBrowserRouter([
           element: <ContactPage></ContactPage>
       },
       {
-          path: "/doctorProfile",
+          path: "/dashboard/doctorProfile",
           element: <DoctorProfile></DoctorProfile>
       },
       {
-          path: "/userProfile",
+          path: "/dashboard/user",
           element: <UserProfile></UserProfile>
       },
     
@@ -57,17 +57,17 @@ export const router = createBrowserRouter([
     ]
   },
 
-  {
-    path: '/dashboard',
-    element: <Dashboard></Dashboard>,
-    // children: [
+  // {
+  //   path: 'dashboard',
+  //   element: <Dashboard></Dashboard>,
+  //   children: [
 
-    //   {
-    //     index: true,
-    //     element: <MainDash></MainDash>
-    //   },
+  //     {
+  //       path: 'user',
+  //       element: <UserProfile></UserProfile>
+  //     },
 
-    // ], 
-  }
+  //   ], 
+  // }
 ]);
 
