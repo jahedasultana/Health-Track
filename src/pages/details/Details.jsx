@@ -113,7 +113,7 @@ const Details = () => {
                         name="condition"
                         value={formData.condition}
                         onChange={handleInputChange}
-                        placeholder="Patient Condition"
+                        placeholder="Patient  Condition"
                         className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
 
@@ -126,7 +126,7 @@ const Details = () => {
                     />
                     <button
                         type="submit"
-                        className="bg-blue-500  text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
+                        className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
                     >
                         Submit
                     </button>
