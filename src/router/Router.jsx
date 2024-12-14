@@ -12,6 +12,8 @@ import UserProfile from "../pages/usserProfile/UserProfile";
 import DoctorProfile from "../pages/doctorProfile/DoctorProfile";
 import AboutUs from "../pages/aboutUs/AboutUs";
 import ContactPage from "../pages/contactPage/ContactPage";
+import SignUp from "../pages/signUp/SignUp";
+import SignIn from "../pages/signin/SignIn";
 
 
 export const router = createBrowserRouter([
@@ -27,6 +29,14 @@ export const router = createBrowserRouter([
       {
           path: "/appointment",
           element: <Appointment></Appointment>
+      },
+      {
+        path: "/signup",
+        element: <SignUp></SignUp>
+      },
+      {
+        path: 'sign-in',
+        element: <SignIn></SignIn>
       },
       {
           path: "/getAvailableDoctor",
