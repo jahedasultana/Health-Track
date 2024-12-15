@@ -37,7 +37,7 @@ const GetAvailableDoctor = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileHover={{ opacity: 1 }}
-        className="absolute inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100"
+        className="absolute  inset-0 bg-black bg-opacity-60 transition-opacity duration-300 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100"
       >
         <motion.h3
           initial={{ y: -50, opacity: 0 }}
