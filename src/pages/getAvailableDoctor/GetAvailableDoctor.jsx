@@ -28,7 +28,7 @@ const GetAvailableDoctor = () => {
       doctors.map((doctor) =>  <div key={doctor._id} className="relative group">
       {/* Doctor Image */}
       <img
-        className="h-[350px] w-full object-cover object-top"
+        className="h-[350px] w-full   object-cover object-top"
         src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
         alt="Doctor"
       />
