@@ -23,7 +23,7 @@ const GetAvailableDoctor = () => {
 
 
   return (
-    <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-2 gap-4 w-full mx-auto py-10">
+    <div className="md:w-[90%]    grid md:grid-cols-4 grid-cols-2 gap-4 w-full mx-auto py-10">
      {
       doctors.map((doctor) =>  <div key={doctor._id} className="relative group">
       {/* Doctor Image */}
