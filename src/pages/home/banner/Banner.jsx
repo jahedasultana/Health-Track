@@ -51,7 +51,7 @@ const Banner = () => {
               <img
                 src={image.src}
                 alt={`Slide ${index + 1}`}
-                className="w-full   md:h-[600px] h-[280px] object-cover object-top"
+                className="w-full  md:h-[600px] h-[280px] object-cover object-top"
               />
 
               <motion.div

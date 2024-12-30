@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import useAuth from "../../provider/useAuth";
 
 const Details = () => {
+    const {user}= useAuth()
     const { id } = useParams();
     const [doctors, setDoctor] = useState([]);
     const [formData, setFormData] = useState({
@@ -11,8 +13,10 @@ const Details = () => {
         condition: "",
         details: "",
     });
+    const email = user?.email;
+    const name = user?.displayName;
 
-    console.log(doctors);
+    console.log(user);
 
     useEffect(() => {
         fetchData();
@@ -33,10 +37,13 @@ const Details = () => {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Prevent form from reloading the page
-        const data = {usersData:formData,doctors}
-
-        console.log(data);
+        e.preventDefault();
+        const userDetaild = {
+            ...formData,
+            name,
+            email,
+        }
+        const data = {userDetaild, doctors, status: 'pending'}
 
         try {
             const res = await axios.post('http://localhost:3000/service_request',data)
@@ -48,7 +55,7 @@ const Details = () => {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row gap-8 p-8">
+        <div className="flex flex-col lg:flex-row gap-8 p-8 mt-36">
             {/* Doctor Details Section */}
             <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold mb-4">Doctor Details</h2>
