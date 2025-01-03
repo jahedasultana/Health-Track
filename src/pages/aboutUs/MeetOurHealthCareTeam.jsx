@@ -23,7 +23,7 @@ const MeetOurHealthCareTeam = () => {
           </h3>
           <p className="text-sm text-gray-600">Surgeon</p>
           <p className="px-4 py-2 text-gray-500 text-xs">
-            Donec suscipit, nulla nec dapib arcu arcu sodales urna, nec auctor
+            Donec suscipit, nulla nec dapib arcu arcu sodales urna, auctor
             odio.
           </p>
         </div>
