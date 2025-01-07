@@ -61,7 +61,7 @@ const UserProfile = () => {
                     For further updates, check your patient portal regularly.
                 </p>
             </div>
-            <p>Service Time 24 Hours</p>
+            <p>Service Time 24 Hours 24/7</p>
         </div>
     );
 };
