@@ -5,7 +5,7 @@ import SocialLink from "../../components/SocialLink";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // React Icons
-
+import signUp from "../../../public/leady.jpg";
 const SignUp = () => {
   const { userCreate } = useAuth();
   const navigate = useNavigate();
@@ -54,13 +54,20 @@ const SignUp = () => {
 
   return (
     <div className="mx-auto bg-secondary/40 flex flex-col items-center justify-center pt-48 pb-20">
-      <form
-        className="bg-white border p-8 rounded-lg border-gray-300 lg:w-4/12 md:w-6/12 w-full"
+      
+      
+
+  <div className="flex md:flex-row flex-col gap-6 ">
+        <div className="md:w-[50%]">
+          <img src={signUp} alt="" className="mix-blend-multiply" />
+        </div>
+        <form
+        className=" p-8  lg:w-4/12 md:w-6/12 w-full flex-1 flex items-center justify-center flex-col"
         onSubmit={onSubmit}
       >
         {/* Name Field */}
-        <div className="mb-4">
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+        <div className="mb-4 w-full">
+          <label htmlFor="name" className="block text-lg font-medium text-gray-700">
             Name
           </label>
           <input
@@ -75,8 +82,8 @@ const SignUp = () => {
         </div>
 
         {/* Email Field */}
-        <div className="mb-4">
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <div className="mb-4 w-full">
+          <label htmlFor="email" className="block text-lg font-medium text-gray-700">
             Email
           </label>
           <input
@@ -91,8 +98,8 @@ const SignUp = () => {
         </div>
 
         {/* Password Field */}
-        <div className="mb-4 relative">
-          <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+        <div className="mb-4 relative w-full">
+          <label htmlFor="password" className="block text-lg font-medium text-gray-700">
             Password
           </label>
           <div className="relative">
@@ -116,8 +123,8 @@ const SignUp = () => {
         </div>
 
         {/* Confirm Password Field */}
-        <div className="mb-4 relative">
-          <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">
+        <div className="mb-4 relative w-full">
+          <label htmlFor="confirmPassword" className="block text-lg font-medium text-gray-700">
             Confirm Password
           </label>
           <div className="relative">
@@ -141,8 +148,8 @@ const SignUp = () => {
         </div>
 
         {/* Role Selection */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">Select Role</label>
+        <div className="mb-4 w-full">
+          <label className="block text-lg font-medium text-gray-700">Select Role</label>
           <div className="flex items-center">
             <label className="mr-4">
               <input
@@ -169,8 +176,6 @@ const SignUp = () => {
           </div>
         </div>
 
-        {/* Divider */}
-        <hr className="my-4 border-gray-300" />
 
         {/* Google Signup */}
         <SocialLink />
@@ -190,6 +195,9 @@ const SignUp = () => {
           </Link>
         </p>
       </form>
+      </div>
+    
+
     </div>
   );
 };
