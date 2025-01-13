@@ -4,10 +4,10 @@ const PageBanner = ({ title, pageDirection, pageAddress }) => {
   return (
     <div>
       <div
-        className="relative h-[230px] bg-fixed bg-cover flex items-end"
+        className="relative h-[230px] bg-fixed bg-cover flex items-end "
         style={{
           backgroundImage:
-            "url('https://i.postimg.cc/rpP7MZcq/3d-medical-background.jpg')",
+            "url('https://i.postimg.cc/d1nW2d8N/Whats-App-Image-2025-03-27-at-22-14-12-9084dfe6.jpg')",
         }}
       >
         {/* Overlay */}
