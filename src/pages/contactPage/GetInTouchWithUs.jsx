@@ -29,7 +29,7 @@ const GetInTouchWithUs = () => {
               <h2 className="text-primary text-2xl mb-3">Leave a Message</h2>
               <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
             </div>
-            <div className="bg-[#FFFAF9] border-b-2 border-primary p-6">
+            <div className="bg-primary/10 border-b-2 border-primary/80 p-6">
               <form className="space-y-4">
                 <div className="flex gap-4">
                   {/* Full Name Field */}

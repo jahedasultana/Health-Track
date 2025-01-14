@@ -1,22 +1,26 @@
-import { useState } from 'react';
-import useAuth from '../../provider/useAuth';
-import { frameData } from 'framer-motion';
-import { Link, useNavigate } from 'react-router-dom';
-import SocialLink from '../../components/SocialLink';
-import Swal from 'sweetalert2';
-import useAxiosPublic from '../../hooks/useAxiosPublic';
+import { useState } from "react";
+import useAuth from "../../provider/useAuth";
+import { Link, useNavigate } from "react-router-dom";
+import SocialLink from "../../components/SocialLink";
+import Swal from "sweetalert2";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { FaEye, FaEyeSlash } from "react-icons/fa"; // React Icons
 
 const SignUp = () => {
   const { userCreate } = useAuth();
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-    role: 'user', // Default role
-  });
   const axiosPublic = useAxiosPublic();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    role: "user", // Default role
+  });
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,23 +38,22 @@ const SignUp = () => {
           email,
           role, // Send the selected role
         };
-        axiosPublic.post('/users', userInfo)
-          .then((res) => {
-            if (res.data.insertedId) {
-              navigate('/');
-              Swal.fire({
-                title: "Account created successfully!",
-                text: "Please log in using your email address.",
-                icon: "success",
-              });
-            }
-          });
+        axiosPublic.post("/users", userInfo).then((res) => {
+          if (res.data.insertedId) {
+            navigate("/");
+            Swal.fire({
+              title: "Account created successfully!",
+              text: "Please log in using your email address.",
+              icon: "success",
+            });
+          }
+        });
       })
       .catch((error) => console.error(error));
   };
 
   return (
-    <div className="mx-auto bg-secondary/40 flex flex-col  items-center justify-center pt-48 pb-20">
+    <div className="mx-auto bg-secondary/40 flex flex-col items-center justify-center pt-48 pb-20">
       <form
         className="bg-white border p-8 rounded-lg border-gray-300 lg:w-4/12 md:w-6/12 w-full"
         onSubmit={onSubmit}
@@ -88,52 +91,65 @@ const SignUp = () => {
         </div>
 
         {/* Password Field */}
-        <div className="mb-4">
+        <div className="mb-4 relative">
           <label htmlFor="password" className="block text-sm font-medium text-gray-700">
             Password
           </label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 focus:outline-none"
-            placeholder="Enter your password"
-          />
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full p-2 border border-gray-300 focus:outline-none pr-10"
+              placeholder="Enter your password"
+            />
+            <button
+              type="button"
+              className="absolute top-3 right-3 text-gray-600"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <FaEyeSlash size={20} /> : <FaEye size={20} />}
+            </button>
+          </div>
         </div>
 
         {/* Confirm Password Field */}
-        <div className="mb-4">
-          <label
-            htmlFor="confirmPassword"
-            className="block text-sm font-medium text-gray-700"
-          >
+        <div className="mb-4 relative">
+          <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700">
             Confirm Password
           </label>
-          <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            className="w-full p-2 border border-gray-300 focus:outline-none"
-            placeholder="Confirm your password"
-          />
+          <div className="relative">
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              id="confirmPassword"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              className="w-full p-2 border border-gray-300 focus:outline-none pr-10"
+              placeholder="Confirm your password"
+            />
+            <button
+              type="button"
+              className="absolute top-3 right-3 text-gray-600"
+              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+            >
+              {showConfirmPassword ? <FaEyeSlash size={20} /> : <FaEye size={20} />}
+            </button>
+          </div>
         </div>
 
         {/* Role Selection */}
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">
-            Select Role
-          </label>
+          <label className="block text-sm font-medium text-gray-700">Select Role</label>
           <div className="flex items-center">
             <label className="mr-4">
               <input
                 type="radio"
                 name="role"
                 value="user"
-                checked={formData.role === 'user'}
+                checked={formData.role === "user"}
                 onChange={handleChange}
                 className="mr-1"
               />
@@ -144,7 +160,7 @@ const SignUp = () => {
                 type="radio"
                 name="role"
                 value="doctor"
-                checked={formData.role === 'doctor'}
+                checked={formData.role === "doctor"}
                 onChange={handleChange}
                 className="mr-1"
               />
@@ -162,14 +178,14 @@ const SignUp = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="mt-4 w-full py-2 bg-primary text-white text-sm font-medium hover:bg-[#f76c41] rounded-lg focus:outline-none"
+          className="mt-4 w-full py-2 bg-primary text-white text-sm font-medium hover:bg-primary/80 rounded-lg focus:outline-none"
         >
           Submit
         </button>
 
         <p className="text-center pt-3">
-          Have an account?{' '}
-          <Link className="text-blue-500 font-bold" to={'/sign-in'}>
+          Have an account?{" "}
+          <Link className="text-blue-500 font-bold" to={"/sign-in"}>
             Login
           </Link>
         </p>

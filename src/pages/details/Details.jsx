@@ -104,7 +104,7 @@ console.log(formData);
 
       <div className="flex flex-col lg:flex-row gap-8 py-10 ">
         {/* Doctor Details Section */}
-        <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="flex-1 bg-primary/10 p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Doctor Details</h2>
           <div className="bg-gray-200 h-64 w-full mb-4 rounded-lg overflow-hidden flex items-center justify-center">
             <img
@@ -142,14 +142,14 @@ console.log(formData);
               </span>
             </p>
           </div>
-          <div className="bg-gray-300/90 p-3 rounded-lg">
+          <div className="bg-primary/30 p-3 rounded-lg">
             <h4 className="font-semibold mb-2">Which Services:</h4>
             <p>{doctors.service_give}</p>
           </div>
         </div>
 
         {/* Patient Details Form Section */}
-        <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
+        <div className="flex-1 bg-primary/10 p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">
             Patient Details - Input Form
           </h2>
