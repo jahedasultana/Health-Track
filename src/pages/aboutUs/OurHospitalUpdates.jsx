@@ -44,7 +44,7 @@ const OurHospitalUpdates = () => {
         {/* FAQ Section */}
         <div className="md:w-[72%]">
           {faqs.map((faq, index) => (
-            <div key={index} className="mb-4 bg-[#FFFAF9] border pb-2">
+            <div key={index} className="mb-4 bg-primary/10 border pb-2">
               <div
                 className="flex justify-between items-center cursor-pointer p-[14px]"
                 onClick={() => toggleFAQ(index)}
@@ -88,7 +88,7 @@ const OurHospitalUpdates = () => {
         <div className="md:w-[28%] group">
           <div className="relative">
             <img
-              className="h-[406px] w-full object-cover border-b-2 border-[#FD9678] rounded-lg"
+              className="h-[406px] w-full object-cover border-b-2 border-primary/80 rounded-lg"
                  src="https://i.postimg.cc/ZY7K1tWH/cool-doctor.jpg"
               alt="Doctor"
             />

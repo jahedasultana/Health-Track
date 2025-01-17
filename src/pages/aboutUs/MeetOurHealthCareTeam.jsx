@@ -16,7 +16,7 @@ const MeetOurHealthCareTeam = () => {
               alt="Doctor Image"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
           </div>
           <h3 className="mt-4 text-lg font-semibold text-gray-800">
             Dr. Johnathan Treat
@@ -34,7 +34,7 @@ const MeetOurHealthCareTeam = () => {
               alt="Doctor Image"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
           </div>
           <h3 className="mt-4 text-lg font-semibold text-gray-800">
             Dr. Johnathan Treat
@@ -52,7 +52,7 @@ const MeetOurHealthCareTeam = () => {
               alt="Doctor Image"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
           </div>
           <h3 className="mt-4 text-lg font-semibold text-gray-800">
             Dr. Johnathan Treat
@@ -70,7 +70,7 @@ const MeetOurHealthCareTeam = () => {
               alt="Doctor Image"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-green-500 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
           </div>
           <h3 className="mt-4 text-lg font-semibold text-gray-800">
             Dr. Johnathan Treat

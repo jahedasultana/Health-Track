@@ -15,7 +15,8 @@ const WhoWeAre = () => {
             alt="team"
           />
         </div>
-        <div className="md:w-[50%] bg-[#FFFAF9] border-b-2 border-[#FD9678]">
+        <div className="md:w-[50%] bg-primary/10 border-b-2
+         border-primary/60">
           <div className="p-8">
             <h2 className="text-primary text-2xl mb-2">
               Praesent massa orci, condimen vitae mattis quis, imperdiet non
