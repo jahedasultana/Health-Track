@@ -55,22 +55,22 @@ const OurDoctors = () => {
             {/* social icon */}
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaPhoneAlt className="text-black hover:text-primary transition-colors duration-300" />
               </div>
             </div>
             {/* Bottom Border on Card Hover */}
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary/80 ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
@@ -109,23 +109,23 @@ const OurDoctors = () => {
             <div className="flex pb-2 gap-2 pt-3 justify-center">
 
               {/* Facebook Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaPhoneAlt className="text-black hover:text-primary transition-colors duration-300" />
               </div>
             </div>
 
             {/* Bottom Border on Card Hover */}
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary/80 ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
@@ -163,22 +163,22 @@ const OurDoctors = () => {
             {/* social icon */}
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaPhoneAlt className="text-black hover:text-primary transition-colors duration-300" />
               </div>
             </div>
             {/* Bottom Border on Card Hover */}
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary/80 ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
@@ -217,24 +217,24 @@ const OurDoctors = () => {
             {/* social icon */}
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
-              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
+              <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/50">
                 <FaPhoneAlt className="text-black  hover:text-primary transition-colors duration-300" />
               </div>
             </div>
 
             {/* Bottom Border on Card Hover */}
 
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary/80 ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
