@@ -3,19 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 import TopContact from "./TopContant";
 import useAuth from "../../provider/useAuth";
 
-
 const Navbar = () => {
-  const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const {user,logout} = useAuth()
+  const { user, logout } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
-
-  console.log(user);
 
   const handleLogout = () => {
     logout()
-      .then(() => console.log('done'))
+      .then(() => console.log("Logged out"))
       .catch((error) => console.error(error));
     setIsOpen(false);
   };
@@ -24,25 +20,27 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  // Top content scroll
+  // Scroll effect for all pages
   useEffect(() => {
-    if (location.pathname === '/') {
-      const handleScroll = () => {
-        setScrollY(window.scrollY);
-      };
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
 
-      window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, [location.pathname]);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <section>
-      <nav className={`${location.pathname === '/' ? "fixed top-0 z-20" : ""} w-full`}>
-        <div className={`mx-auto ${scrollY <= 50 ? 'bg-transparent h-[140px]' : 'bg-[#FD9678]'} absolute top-0 w-full z-20 shadow-lg`}>
+      <nav className={`fixed top-0 z-20 w-full`}>
+        <div
+          className={`mx-auto ${
+            scrollY <= 50 ? "bg-transparent h-[140px]" : "bg-[#FD9678]"
+          } absolute top-0 w-full z-20 shadow-lg`}
+        >
           {/* Top Navbar */}
           <div className={`w-full md:block hidden transition-all duration-1000`}>
             {scrollY <= 50 && <TopContact />}
@@ -50,7 +48,11 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex md:w-[90%] mx-auto">
-            <div className={`flex justify-between items-center w-full ${scrollY <= 50 ? 'mt-[18px]' : '' }`}>
+            <div
+              className={`flex justify-between items-center w-full ${
+                scrollY <= 50 ? "mt-[18px]" : ""
+              }`}
+            >
               {/* Logo */}
               <div className="z-10">
                 <Link to={"/"} className="flex items-center px-2">
@@ -59,49 +61,58 @@ const Navbar = () => {
               </div>
               {/* Primary Navbar items */}
               <div className="flex items-center space-x-1 z-20">
-                <Link to="/" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                <Link
+                  to="/"
+                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                >
                   Home
                 </Link>
-                <Link to="/about" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                <Link
+                  to="/aboutUs"
+                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                >
                   About
                 </Link>
-                <Link to="/getAvailableDoctor" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                <Link
+                  to="/getAvailableDoctor"
+                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                >
                   Services
                 </Link>
-                <Link to="/contact" className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg">
+                <Link
+                  to="/contactUs"
+                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                >
                   Contact
                 </Link>
-                {user && location.pathname !== '/sign-in' ?  (
-                <div className="relative flex items-center">
-                  <button onClick={toggleMenu}>
-                    <img
-                      className="h-[42px] w-[42px] rounded-full"
-                      src={`${user?.photoURL}`}
-                      alt="user photo"
-                    />
-                  </button>
-                  {isOpen && (
-                    <div className="bg-[#991747]/70 z-50 text-white px-4 py-5 w-44 space-y-5 absolute top-14 right-0">
-                      <Link
-                        className="block text-lg"
-                        to={"dashboard"}
-                      >
-                        Dashboard
-                      </Link>
-                      <button
-                        onClick={handleLogout}
-                        className="block text-lg p-2 bg-[#CE3D61] w-full border border-white/55"
-                      >
-                        Logout
-                      </button>
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link className="p-2 border" to={"/sign-in"}>
-                  Sign In
-                </Link>
-              )}
+                {user ? (
+                  <div className="relative flex items-center">
+                    <button onClick={toggleMenu}>
+                      <img
+                        className="h-[42px] w-[42px] rounded-full"
+                        src={`${user?.photoURL}`}
+                        alt="user photo"
+                      />
+                    </button>
+                    {isOpen && (
+                      <div className="bg-[#991747]/70 z-50 text-white px-4 py-5 w-44 space-y-5 absolute top-14 right-0">
+                        <Link className="block text-lg" to={"dashboard"}>
+                          Dashboard
+                        </Link>
+                        <button
+                          onClick={handleLogout}
+                          className="block text-lg p-2 bg-[#CE3D61] w-full border border-white/55"
+                        >
+                          Logout
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link className="p-2 border" to={"/sign-in"}>
+                    Sign In
+                  </Link>
+                )}
               </div>
             </div>
           </div>
@@ -141,22 +152,38 @@ const Navbar = () => {
                 <nav>
                   <ul className="space-y-2">
                     <li>
-                      <Link to="/" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                      <Link
+                        to="/"
+                        className="block py-2 px-4"
+                        onClick={() => setMenuOpen(false)}
+                      >
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link to="/about" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                      <Link
+                        to="/aboutUs"
+                        className="block py-2 px-4"
+                        onClick={() => setMenuOpen(false)}
+                      >
                         About
                       </Link>
                     </li>
                     <li>
-                      <Link to="/services" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                      <Link
+                        to="/getAvailableDoctor"
+                        className="block py-2 px-4"
+                        onClick={() => setMenuOpen(false)}
+                      >
                         Services
                       </Link>
                     </li>
                     <li>
-                      <Link to="/contact" className="block py-2 px-4" onClick={() => setMenuOpen(false)}>
+                      <Link
+                        to="/contactUs"
+                        className="block py-2 px-4"
+                        onClick={() => setMenuOpen(false)}
+                      >
                         Contact
                       </Link>
                     </li>
