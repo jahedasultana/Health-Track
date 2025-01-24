@@ -6,17 +6,17 @@ import SocialLink from '../../components/SocialLink';
 import Swal from 'sweetalert2';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
 
-
 const SignUp = () => {
-  const { userCreate, } = useAuth()
-  const navigate = useNavigate()
+  const { userCreate } = useAuth();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     confirmPassword: '',
+    role: 'user', // Default role
   });
-  const axiosPublic = useAxiosPublic()
+  const axiosPublic = useAxiosPublic();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,31 +25,28 @@ const SignUp = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    // console.log(formData.email);
-    const email = formData.email;
-    const password = formData.confirmPassword;
-    
-    userCreate(email, password)
+    const { email, confirmPassword, role, name } = formData;
+
+    userCreate(email, confirmPassword)
       .then(() => {
         const userInfo = {
-          name: frameData.name,
-          email: email,
-          role: 'user',
-        }
+          name,
+          email,
+          role, // Send the selected role
+        };
         axiosPublic.post('/users', userInfo)
-          .then(res => {
+          .then((res) => {
             if (res.data.insertedId) {
               Swal.fire({
-                title: "Account create Done!",
-                text: "Login use your email address!",
-                icon: "success"
+                title: "Account created successfully!",
+                text: "Please log in using your email address.",
+                icon: "success",
               });
             }
-          })
+          });
       })
-      .catch(error => console.error(error))
+      .catch((error) => console.error(error));
   };
-
 
   return (
     <div className="mx-auto bg-gray-500 flex flex-col items-center justify-center pt-48 pb-20">
@@ -124,6 +121,37 @@ const SignUp = () => {
           />
         </div>
 
+        {/* Role Selection */}
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700">
+            Select Role
+          </label>
+          <div className="flex items-center">
+            <label className="mr-4">
+              <input
+                type="radio"
+                name="role"
+                value="user"
+                checked={formData.role === 'user'}
+                onChange={handleChange}
+                className="mr-1"
+              />
+              User
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="role"
+                value="doctor"
+                checked={formData.role === 'doctor'}
+                onChange={handleChange}
+                className="mr-1"
+              />
+              Doctor
+            </label>
+          </div>
+        </div>
+
         {/* Divider */}
         <hr className="my-4 border-gray-300" />
 
@@ -138,7 +166,12 @@ const SignUp = () => {
           Submit
         </button>
 
-        <p className='text-center pt-3'>Have not account <Link className='text-blue-500' to={'/sign-in'}>Login</Link></p>
+        <p className="text-center pt-3">
+          Have an account?{' '}
+          <Link className="text-blue-500" to={'/sign-in'}>
+            Login
+          </Link>
+        </p>
       </form>
     </div>
   );

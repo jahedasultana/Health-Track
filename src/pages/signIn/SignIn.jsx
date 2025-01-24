@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import useAuth from '../../provider/useAuth';
 import Swal from 'sweetalert2';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import SocialLink from '../../components/SocialLink';
 
 const SignIn = () => {
@@ -10,13 +10,14 @@ const SignIn = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const {loginUser} = useAuth()
+  const {loginUser,userCreate} = useAuth();
+  const navigate = useNavigate()
 
   const onSubmit = (data) => {
     // console.log(data);
     const email = data.email;
     const password = data.password;
-    console.log(email,password);
+
     loginUser(email, password)
       .then((result) => {
         // console.log(result.user);
@@ -27,7 +28,7 @@ const SignIn = () => {
             icon: "success",
           });
         }
-        // navigate(from, { replace: true });
+        navigate('/');
       })
       .catch((error) => {
         Swal.fire({
@@ -55,10 +56,10 @@ const SignIn = () => {
             id="email"
             {...register('email', {
               required: 'Email is required',
-              pattern: {
-                value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
-                message: 'Must be a valid Gmail address',
-              },
+              // pattern: {
+              //   value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
+              //   message: 'Must be a valid Gmail address',
+              // },
             })}
             className="w-full p-2 border border-gray-300 focus:outline-none"
             placeholder="Enter your Gmail address"
@@ -78,10 +79,10 @@ const SignIn = () => {
             id="password"
             {...register('password', {
               required: 'Password is required',
-              minLength: {
-                value: 8,
-                message: 'Password must be at least 8 characters long',
-              },
+              // minLength: {
+              //   value: 8,
+              //   message: 'Password must be at least 8 characters long',
+              // },
             })}
             className="w-full p-2 border border-gray-300 focus:outline-none"
             placeholder="Enter your password"

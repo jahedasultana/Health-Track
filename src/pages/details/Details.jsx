@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import useAuth from "../../provider/useAuth";
+import useRole from "../../hooks/useRole";
 
 const Details = () => {
-    const {user}= useAuth()
+    const { user } = useAuth()
     const { id } = useParams();
     const [doctors, setDoctor] = useState([]);
     const [formData, setFormData] = useState({
@@ -14,9 +15,10 @@ const Details = () => {
         details: "",
     });
     const email = user?.email;
-    const name = user?.displayName;
-
-    console.log(user);
+    const name = user?.displayName || 'Guest';
+    const { role } = useRole()
+    const doctorEmail = doctors?.email;
+    console.log(doctorEmail);
 
     useEffect(() => {
         fetchData();
@@ -38,21 +40,28 @@ const Details = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const userDetaild = {
-            ...formData,
-            name,
-            email,
-        }
-        const data = {userDetaild, doctors, status: 'pending'}
-
-        try {
-            const res = await axios.post('http://localhost:3000/service_request',data)
-            console.log(res.data);
-        } catch (error) {
-            console.log(error);
-        }
         
-    };
+        const userDetaild = {
+          ...formData,
+          name,
+          email,
+        };
+        const data = {
+          userDetaild, 
+          doctorEmail,
+          userEmail: email,
+          status: 'pending',
+        };
+      
+        try {
+          const res = await axios.post('http://localhost:3000/service_request', data);
+          console.log(res.data);
+          
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      
 
     return (
         <div className="flex flex-col lg:flex-row gap-8 p-8 mt-36">
@@ -75,11 +84,10 @@ const Details = () => {
                     <p>
                         <span className="font-semibold">Availability :</span>{" "}
                         <span
-                            className={`px-[3px] pb-[1px] rounded-md ${
-                                doctors?.availability === "busy"
-                                    ? "bg-red-400/50 border border-red-600/80"
-                                    : "bg-green-400/50 border border-green-600/50"
-                            }`}
+                            className={`px-[3px] pb-[1px] rounded-md ${doctors?.availability === "busy"
+                                ? "bg-red-400/50 border border-red-600/80"
+                                : "bg-green-400/50 border border-green-600/50"
+                                }`}
                         >
                             {doctors?.availability}
                         </span>
@@ -131,12 +139,41 @@ const Details = () => {
                         placeholder="Additional Details"
                         className="w-full h-[170px] resize-none p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
-                    <button
+                    {
+                        doctors?.availability == 'busy' ?
+                            <button
+                                type="submit"
+                                disabled={doctors?.availability == 'busy'}
+                                className={`text-white py-2 px-4 rounded-lg
+                        ${doctors?.availability == 'busy' && 'cursor-not-allowed bg-slate-500'}
+                        transition-colors`}
+                            >
+                                Not Allow
+                            </button>
+
+                            :
+                            <button
+                                type="submit"
+                                disabled={role === 'doctor'}
+                                className={`text-white py-2 px-4 rounded-lg
+                                ${role === 'doctor' ? 'cursor-not-allowed bg-slate-500' : 'cursor-auto bg-blue-500'}
+                                transition-colors cursor-pointer`}
+                            >
+                                Submit
+                            </button>
+
+                    }
+                    {/* <button
                         type="submit"
-                        className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors"
+                        disabled={role === 'doctor'}
+                        className={`text-white py-2 px-4 rounded-lg
+                        ${role === 'doctor' ? 'cursor-not-allowed bg-slate-500' : 'cursor-auto bg-blue-500'}
+                        transition-colors`}
+                        title={role === 'doctor' ? 'You are a doctor' : ''}
                     >
                         Submit
-                    </button>
+                    </button> */}
+
                 </form>
             </div>
         </div>
