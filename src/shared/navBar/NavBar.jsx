@@ -9,7 +9,7 @@ const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const { user, logout } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
-
+  const localiton = useLocation()
   const handleLogout = () => {
     logout()
       .then(() => console.log("Logged out"))
@@ -39,7 +39,7 @@ const Navbar = () => {
       <nav className={`fixed top-0 z-20 w-full`}>
         <div
           className={`mx-auto ${
-            scrollY <= 50 ? "bg-transparent h-[140px]" : "bg-[#FD9678]"
+            scrollY <= 50 ? "bg-transparent h-[140px]" : (localiton.pathname == '/' ? 'bg-[#FD9678]' : "bg-[#1ABC9C]" )
           } absolute top-0 w-full z-20 shadow-lg`}
         >
           {/* Top Navbar */}

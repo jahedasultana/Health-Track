@@ -121,10 +121,10 @@ const GetInTouchWithUs = () => {
               <FiMail className="text-white text-xl" /></div> info@healthcare.com
             </p>
             <div className="flex items-center gap-4 mt-4">
-              <FaFacebookF className="text-2xl text-green-500 cursor-pointer hover:text-green-600" />
-              <FaTwitter className="text-2xl text-green-500 cursor-pointer hover:text-green-600" />
-              <FaLinkedinIn className="text-2xl text-green-500 cursor-pointer hover:text-green-600" />
-              <FaYoutube className="text-2xl text-green-500 cursor-pointer hover:text-green-600" />
+              <FaFacebookF className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
+              <FaTwitter className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
+              <FaLinkedinIn className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
+              <FaYoutube className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
             </div>
           </div>
         </div>
