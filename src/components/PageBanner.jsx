@@ -4,7 +4,7 @@ const PageBanner = ({title,pageDirection,pageAddress}) => {
     return (
         <div>
             <div
-                    className="relative h-[230px] bg-fixed bg-cover bg-contain flex items-end"
+                    className="relative h-[230px] bg-fixed bg-cover flex items-end"
                     style={{
                       backgroundImage:
                         "url('https://i.postimg.cc/j5FZBZ7N/viras.jpg')",
@@ -15,7 +15,7 @@ const PageBanner = ({title,pageDirection,pageAddress}) => {
                     {/* Content */}
                     <div className="relative  z-10 flex justify-between w-full px-10 pb-6">
                       {/* Section Name */}
-                      <h1 className="text-white text-4xl">{title}</h1>
+                      <h1 className="text-black text-4xl">{title}</h1>
                       {/* Navigation Links */}
                       <div className="text-white flex items-center space-x-4">
                         <Link to="/" className="text-lg hover:underline">
