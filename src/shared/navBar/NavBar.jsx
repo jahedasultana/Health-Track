@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import TopContact from "./TopContant";
 import useAuth from "../../provider/useAuth";
+import logo from "../../../public/logo.png";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,32 +57,32 @@ const Navbar = () => {
               {/* Logo */}
               <div className="z-10">
                 <Link to={"/"} className="flex items-center px-2">
-                  <img src="/logo.webp" alt="Logo" className="w-28 mr-2 py-2" />
+                  <img src={logo} alt="Logo" className="w-36 mr-2 py-2" />
                 </Link>
               </div>
               {/* Primary Navbar items */}
-              <div className="flex items-center space-x-1 z-20">
+              <div className="flex items-center text-white space-x-1 z-20">
                 <Link
                   to="/"
-                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                  className="py-4 lg:px-3 md:px-1 px-0  font-semibold text-lg"
                 >
                   Home
                 </Link>
                 <Link
                   to="/aboutUs"
-                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                  className="py-4 lg:px-3 md:px-1 px-0  font-semibold text-lg"
                 >
                   About
                 </Link>
                 <Link
                   to="/getAvailableDoctor"
-                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                  className="py-4 lg:px-3 md:px-1 px-0  font-semibold text-lg"
                 >
                   Services
                 </Link>
                 <Link
                   to="/contactUs"
-                  className="py-4 lg:px-3 md:px-1 px-0 text-black font-semibold text-lg"
+                  className="py-4 lg:px-3 md:px-1 px-0  font-semibold text-lg"
                 >
                   Contact
                 </Link>

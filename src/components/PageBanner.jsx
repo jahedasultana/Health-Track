@@ -4,14 +4,14 @@ const PageBanner = ({title,pageDirection,pageAddress}) => {
     return (
         <div>
             <div
-                    className="relative h-[230px] bg-fixed bg-center bg-cover flex items-end"
+                    className="relative h-[230px] bg-fixed bg-cover bg-contain flex items-end"
                     style={{
                       backgroundImage:
-                        "url('https://i.postimg.cc/Kj77stLH/image-profession.jpg')",
+                        "url('https://i.postimg.cc/j5FZBZ7N/viras.jpg')",
                     }}
                   >
                     {/* Overlay */}
-                    <div className="absolute inset-0 bg-black/50"></div>
+                    <div className="absolute inset-0 "></div>
                     {/* Content */}
                     <div className="relative  z-10 flex justify-between w-full px-10 pb-6">
                       {/* Section Name */}

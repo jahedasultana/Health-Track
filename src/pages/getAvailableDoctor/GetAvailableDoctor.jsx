@@ -24,7 +24,7 @@ const GetAvailableDoctor = () => {
 
 
   return (
-    <section>
+    <section className="min-h-screen">
       <PageBanner title={'Conatct Us'} pageAddress={'/contactUs'} pageDirection={'Contact Us'} />
 
       <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-2 gap-4 w-full mx-auto py-10">
@@ -33,7 +33,7 @@ const GetAvailableDoctor = () => {
             {/* Doctor Image */}
             <img
               className="h-[350px] w-full object-cover object-top"
-              src="https://img.freepik.com/free-photo/portrait-beautiful-blonde-female-doctor_329181-1230.jpg?t=st=1730196307~exp=1730199907~hmac=950ae6d3d8ebc20c4fa11509fd920e737d2af6cf91dfdd7f331922e5afed2dd0&w=360"
+              src="https://i.postimg.cc/nVk5tCgC/similar.jpg"
               alt="Doctor"
             />
 

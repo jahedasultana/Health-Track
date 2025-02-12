@@ -1,5 +1,5 @@
 import { FaPhoneAlt } from "react-icons/fa";
-import img from "../../assets/homeImage/footer.png";
+import logo from "../../../public/logo.png";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 const Footer = () => {
@@ -7,9 +7,9 @@ const Footer = () => {
     <footer className="bg-[#1F2732] text-white">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         <div className="pt-20 pb-12 text-center">
-          <img
-            className="mx-auto mix-blend-color-burn md:w-[20%] w-[45%]"
-            src={img}
+        <img
+            className="mx-auto md:w-[20%] w-[45%] bg-slate-50 rounded-md px-2 py-1"
+            src={logo}
             alt="logo"
           />
         </div>
