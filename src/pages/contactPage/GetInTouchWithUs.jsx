@@ -15,16 +15,16 @@ const GetInTouchWithUs = () => {
           Get in touch with us
         </h2>
         <div className="w-[80px] mx-auto h-[2px] mb-6 bg-[#1ABC9C]"></div>
-        <p className="text-center w-[700px] mx-auto text-gray-400 mb-8">
+        <p className="text-center md:w-[700px] mx-auto text-gray-400 mb-8">
           Suspendisse ultrices sapien sit amet accumsan pharetra. Phasellus nec
           turpis neque. Sed tortor lacus, eleifend vitae eros at, fermentum
           pellentesque leo.
         </p>
 
         {/* Main Section */}
-        <div className="flex gap-4">
+        <div className="flex md:flex-row flex-col gap-4">
           {/* Message Form */}
-          <div className="w-[65%] ">
+          <div className="md:w-[65%] ">
             <div className="">
               <h2 className="text-[#1ABC9C] text-2xl mb-3">Leave a Message</h2>
               <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
@@ -98,7 +98,7 @@ const GetInTouchWithUs = () => {
           </div>
 
           {/* Contact Details */}
-          <div className="w-[35%]">
+          <div className="md:w-[35%]">
             <div className="">
               <h2 className="text-[#1ABC9C] text-2xl mb-3">Contact</h2>
               <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>

@@ -10,7 +10,7 @@ const AdditionalSupportResource = () => {
         Additional Support Resource
         </h2>
         <div className="w-[80px] mx-auto h-[2px] mb-6 bg-[#1ABC9C]"></div>
-        <p className="text-center w-[700px] mx-auto text-gray-400 mb-8">
+        <p className="text-center md:w-[700px] mx-auto text-gray-400 mb-8">
           Suspendisse ultrices sapien sit amet accumsan pharetra. Phasellus nec
           turpis neque. Sed tortor lacus, eleifend vitae eros at, fermentum
           pellentesque leo.

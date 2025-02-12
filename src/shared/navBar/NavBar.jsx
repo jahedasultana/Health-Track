@@ -110,7 +110,7 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <Link className="p-2 border" to={"/sign-in"}>
+                  <Link className="p-2 border rounded-sm" to={"/sign-in"}>
                     Sign In
                   </Link>
                 )}

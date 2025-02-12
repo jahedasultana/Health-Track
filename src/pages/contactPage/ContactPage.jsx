@@ -5,23 +5,27 @@ import AdditionalSupportResource from "./AdditionalSupportResource";
 import PageBanner from "../../components/PageBanner";
 
 const ContactPage = () => {
-    return (
+  return (
+    <div>
+      {/* Parallax Section */}
+      <PageBanner title={'Conatct Us'} pageAddress={'/contactUs'} pageDirection={'Contact Us'} />
+
+
+      <div className="flex flex-col">
         <div>
-            {/* Parallax Section */}
-            <PageBanner title={'Conatct Us'} pageAddress={'/contactUs'} pageDirection={'Contact Us'}/>
+          <GetInTouchWithUs />
+        </div>
+        <div>
+          <AdditionalSupportResource />
+
+        </div>
+      </div>
 
       <div>
-        <GetInTouchWithUs/>
+        <GoogleMap />
       </div>
-      <div>
-        <AdditionalSupportResource/>
-        
-      </div>
-      <div>
-        <GoogleMap/>
-      </div>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default ContactPage;
