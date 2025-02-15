@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Button from '../../components/Button';
 
 const DoctorProfile = () => {
   const [doctor, setDoctor] = useState(null);
@@ -118,24 +119,25 @@ const DoctorProfile = () => {
             />
           </div>
           <div className="flex gap-3 mt-3">
-            <button className="p-2 bg-green-300" type="button" onClick={handleSave}>
-              Save
-            </button>
-            <button className="p-2 bg-red-300" type="button" onClick={() => setIsEditing(false)}>
-              Cancel
-            </button>
+          
+            <Button buttonText={'Save'} handelButton={handleSave}/>
+            <Button buttonText={'Cancel'} handelButton={() => setIsEditing(false)}/>
+           
           </div>
         </form>
       </div>
     ) : (
-      <div>
+      <div className='space-y-1 '>
         <p><strong>Role:</strong> {doctor.role}</p>
         <p><strong>Experience:</strong> {doctor.service_experience} years</p>
         <p><strong>Service Category:</strong> {doctor.service_category}</p>
         <p><strong>Availability:</strong> {doctor.availability}</p>
         <p><strong>Service Given:</strong> {doctor.service_give}</p>
   
-        <button className="p-2 bg-orange-400" onClick={() => setIsEditing(true)}>Edit</button>
+        {/* <button className="p-2 bg-orange-400" onClick={() => setIsEditing(true)}>Edit</button> */}
+       <div className='pt-3'>
+       <Button buttonText={'Edit'} handelButton={() => setIsEditing(true)}/>
+       </div>
       </div>
     )}
   </div>
