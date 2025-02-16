@@ -15,7 +15,7 @@ const UserProfile = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`http://localhost:3000/user_service/${email}`);
+            const response = await axios.get(`https://health-track-server-ruddy.vercel.app/user_service/${email}`);
             setUserDetails(response.data); // Assuming response.data is an array of user details
         } catch (error) {
             console.error("Error fetching user data:", error);

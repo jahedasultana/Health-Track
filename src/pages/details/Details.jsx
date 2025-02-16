@@ -26,7 +26,7 @@ const Details = () => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`http://localhost:3000/doctors/${id}`);
+            const response = await axios.get(`https://health-track-server-ruddy.vercel.app/doctors/${id}`);
             setDoctor(response.data);
         } catch (error) {
             console.error("Error fetching doctors:", error);
@@ -54,7 +54,7 @@ const Details = () => {
         };
       
         try {
-          const res = await axios.post('http://localhost:3000/service_request', data);
+          const res = await axios.post('https://health-track-server-ruddy.vercel.app/service_request', data);
           console.log(res.data);
           
         } catch (error) {

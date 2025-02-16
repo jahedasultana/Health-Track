@@ -10,7 +10,7 @@ const DoctorService = () => {
     const fetchData = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:3000/doctor_service/${email}`
+                `https://health-track-server-ruddy.vercel.app/doctor_service/${email}`
             );
             setDoctorDetails(response.data); // Assuming the backend returns the relevant document
         } catch (error) {
@@ -23,7 +23,7 @@ const DoctorService = () => {
         console.log(newStatus);
         try {
             const response = await axios.put(
-                `http://localhost:3000/doctor_service/update_status/${id}`,
+                `https://health-track-server-ruddy.vercel.app/doctor_service/update_status/${id}`,
                 { status: newStatus }
             );
 

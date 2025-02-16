@@ -14,7 +14,7 @@ const GetAvailableDoctor = () => {
 
   const fetchData = async () => {
     try {
-      const response = await axios("http://localhost:3000/doctors");
+      const response = await axios("https://health-track-server-ruddy.vercel.app/doctors");
       // console.log(response.data);
       setDoctors(response.data);
     } catch (error) {

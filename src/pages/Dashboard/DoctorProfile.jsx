@@ -12,7 +12,7 @@ const DoctorProfile = () => {
   useEffect(() => {
     const fetchDoctorData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/doctor-profile?email=${email}`);
+        const response = await axios.get(`https://health-track-server-ruddy.vercel.app/doctor-profile?email=${email}`);
         const data = response.data;
         setDoctor(data);
         setEditedDoctor(data); // Set initial edited doctor data
@@ -42,7 +42,7 @@ const DoctorProfile = () => {
     const { _id, ...updateWithoutId } = updatedData;
 
     try {
-      const response = await axios.put(`http://localhost:3000/doctor-profile/${doctor._id}`, updateWithoutId);
+      const response = await axios.put(`https://health-track-server-ruddy.vercel.app/doctor-profile/${doctor._id}`, updateWithoutId);
       if (response.status === 200) {
         const updatedDoctor = response.data;
         setDoctor(updatedDoctor);

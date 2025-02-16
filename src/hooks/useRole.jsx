@@ -27,7 +27,7 @@ const useRole = () => {
       }
 
       try {
-        const res = await axios.get(`http://localhost:3000/user_role/${userEmail}`);
+        const res = await axios.get(`https://health-track-server-ruddy.vercel.app/user_role/${userEmail}`);
         const userRole = res.data.role;
 
         setRole(userRole);

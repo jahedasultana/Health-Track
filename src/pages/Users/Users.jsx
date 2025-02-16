@@ -7,7 +7,7 @@ const Users = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get("http://localhost:3000/all-users");
+                const response = await axios.get("https://health-track-server-ruddy.vercel.app/all-users");
                 setUsers(response.data);
             } catch (error) {
                 console.error("Error fetching users:", error);
