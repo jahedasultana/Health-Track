@@ -5,15 +5,15 @@ const WhoWeAre = () => {
         <h2 className="text-[#1ABC9C] text-2xl mb-3">Who We Are</h2>
         <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
       </div>
-      <div className="flex">
-        <div className="w-[50%]">
+      <div className="md:flex">
+        <div className="md:w-[50%]">
           <img
             className=""
             src="https://i.postimg.cc/grFv3ZqN/team-doctors.jpg"
             alt="team"
           />
         </div>
-        <div className="w-[50%] bg-[#FFFAF9] border-b-2 border-[#FD9678]">
+        <div className="md:w-[50%] bg-[#FFFAF9] border-b-2 border-[#FD9678]">
           <div className="p-8">
             <h2 className="text-[#1ABC9C] text-2xl mb-2">
               Praesent massa orci, condimen vitae mattis quis, imperdiet non

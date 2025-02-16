@@ -13,11 +13,11 @@ const PageBanner = ({title,pageDirection,pageAddress}) => {
                     {/* Overlay */}
                     <div className="absolute inset-0 "></div>
                     {/* Content */}
-                    <div className="relative  z-10 flex justify-between w-full px-10 pb-6">
+                    <div className="relative  z-10 flex justify-between w-full px-2 md:px-10 pb-6">
                       {/* Section Name */}
                       <h1 className="text-black md:text-4xl">{title}</h1>
                       {/* Navigation Links */}
-                      <div className="text-white flex items-center space-x-4">
+                      <div className= " md:text-white flex items-center space-x-4">
                         <Link to="/" className="text-lg hover:underline">
                           Home
                         </Link>

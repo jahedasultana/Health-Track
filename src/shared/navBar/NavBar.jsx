@@ -123,8 +123,8 @@ const Navbar = () => {
             {/* Logo */}
             <div className="md:hidden flex flex-col items-center">
               <div>
-                <Link to={"/"} className="flex items-center px-2">
-                  <img src="/logo.webp" alt="Logo" className="w-28 mr-2" />
+                <Link to={"/"} className="flex items-center px-2 pt-3">
+                  <img src={logo} alt="Logo" className="w-28 mr-2" />
                 </Link>
               </div>
 

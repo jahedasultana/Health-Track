@@ -21,7 +21,7 @@ const GetInTouchWithUs = () => {
           pellentesque leo.
         </p>
 
-        {/* Main Section */}
+        {/* Main Section */}    
         <div className="flex md:flex-row flex-col gap-4">
           {/* Message Form */}
           <div className="md:w-[65%] ">

@@ -8,7 +8,7 @@ const MeetOurHealthCareTeam = () => {
         <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
       </div>
       {/* card */}
-      <div className="grid grid-cols-1 md:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center gap-2">
         <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-300">
           <div className="relative group h-52 overflow-hidden">
             <img

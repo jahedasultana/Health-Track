@@ -42,7 +42,7 @@ const OurHospitalUpdates = () => {
 
       <div className="flex flex-col md:flex-row gap-6">
         {/* FAQ Section */}
-        <div className="w-[72%]">
+        <div className="md:w-[72%]">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4 bg-[#FFFAF9] border pb-2">
               <div
@@ -85,7 +85,7 @@ const OurHospitalUpdates = () => {
 
 
         {/* image */}
-        <div className="w-[28%] group">
+        <div className="md:w-[28%] group">
           <div className="relative">
             <img
               className="h-[406px] w-full object-cover border-b-2 border-[#FD9678] rounded-lg"

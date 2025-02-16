@@ -27,7 +27,7 @@ const GetAvailableDoctor = () => {
     <section className="min-h-screen">
       <PageBanner title={'Conatct Us'} pageAddress={'/contactUs'} pageDirection={'Contact Us'} />
 
-      <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-2 gap-4 w-full mx-auto py-10">
+      <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-1 gap-4 w-full mx-auto py-10 px-5 md:px-0">
         {
           doctors.map((doctor) => <div key={doctor._id} className="relative group">
             {/* Doctor Image */}
