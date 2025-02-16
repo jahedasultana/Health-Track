@@ -37,6 +37,7 @@ const SignUp = () => {
         axiosPublic.post('/users', userInfo)
           .then((res) => {
             if (res.data.insertedId) {
+              navigate('/');
               Swal.fire({
                 title: "Account created successfully!",
                 text: "Please log in using your email address.",

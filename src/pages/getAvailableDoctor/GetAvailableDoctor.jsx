@@ -25,7 +25,7 @@ const GetAvailableDoctor = () => {
 
   return (
     <section className="min-h-screen">
-      <PageBanner title={'Conatct Us'} pageAddress={'/contactUs'} pageDirection={'Contact Us'} />
+      <PageBanner title={'Service'} pageAddress={'/getAvailableDoctor'} pageDirection={'Service'} />
 
       <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-1 gap-4 w-full mx-auto py-10 px-5 md:px-0">
         {
@@ -84,7 +84,7 @@ const GetAvailableDoctor = () => {
 
             {/* Bottom Overlay (Initially Visible, Hidden on Hover) */}
             <div
-              className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1DBFCC] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
+              className="absolute bottom-6 left-0 w-[80%] px-4 py-2 bg-[#1ABC9C] text-white rounded-br-[90px] transition-opacity duration-300 opacity-100 group-hover:opacity-0"
             >
               <h3 className="text-lg font-semibold">{doctor?.name}</h3>
               <p className="text-sm">{doctor?.service_category

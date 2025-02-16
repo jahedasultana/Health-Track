@@ -11,9 +11,9 @@ const TopContact = () => {
     <div className="py-3 bg-transparent text-black shadow-2xl">
       <div className="flex justify-between items-center md:w-[90%] mx-auto">
         <div className="flex gap-x-3">
-          <p className="border-r-[2px] pr-3">cheapmytrip365@gmail.com
+          <p className="border-r-[2px] pr-3">healthtrack@gmail.com
           </p>
-          <p>+8801725939352</p>
+          <p>+8801999999999</p>
         </div>
         {/* social */}
         <div className="flex gap-x-3">

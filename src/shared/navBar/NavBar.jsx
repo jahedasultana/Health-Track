@@ -96,13 +96,13 @@ const Navbar = () => {
                       />
                     </button>
                     {isOpen && (
-                      <div className="bg-[#991747]/70 z-50 text-white px-4 py-5 w-44 space-y-5 absolute top-14 right-0">
+                      <div className="bg-[#FD9678] z-50 text-white px-4 py-5 w-44 space-y-5 absolute top-14 right-0">
                         <Link className="block text-lg" to={"dashboard"}>
                           Dashboard
                         </Link>
                         <button
                           onClick={handleLogout}
-                          className="block text-lg p-2 bg-[#CE3D61] w-full border border-white/55"
+                          className="block text-lg p-2 bg-red-600 rounded-sm w-full border border-white/55"
                         >
                           Logout
                         </button>

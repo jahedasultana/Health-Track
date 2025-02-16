@@ -49,19 +49,17 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-amber-500 w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
+        className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-[#FD9678] w-64 space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
           isActive && "-translate-x-full"
         }  md:translate-x-0  transition duration-200 ease-in-out`}
       >
         <div>
           <div>
-            <div className="w-full hidden md:flex px-4 py-2 shadow-lg rounded-lg justify-center items-center bg-amber-600 mx-auto">
+            <div className="w-full hidden md:flex px-4 py-2 shadow-2xl rounded-lg justify-center items-center bg-[#FD9678]/40  mx-auto border border-gray-400 ">
               <Link to="/">
                 <div className="flex items-center justify-center">
-                  <IoChevronBackCircleSharp className="text-2xl"></IoChevronBackCircleSharp>
-                  <h2 className="text-xl border-none font-bold text-gray-600">
-                    Back to home
-                  </h2>
+                  <IoChevronBackCircleSharp className="text-4xl text-white"></IoChevronBackCircleSharp>
+                  
                 </div>
               </Link>
             </div>

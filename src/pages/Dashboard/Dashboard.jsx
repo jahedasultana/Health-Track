@@ -1,7 +1,7 @@
 
 const Dashboard = () => {
     return (
-        <div className="h-screen bg-green-300 w-full">
+        <div className=" w-full">
 <h1>this is dashboard , default view</h1>            
         </div>
     );

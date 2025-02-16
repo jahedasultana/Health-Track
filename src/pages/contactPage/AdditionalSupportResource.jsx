@@ -2,7 +2,7 @@
 
 const AdditionalSupportResource = () => {
     return (
-        <div className="my-28 ">
+        <div className="md:mb-24 mb-12 ">
             <div className="w-[90%] mx-auto">
             <div className="mb-14">
                  {/* Header Section */}

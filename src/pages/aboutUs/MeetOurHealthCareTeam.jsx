@@ -1,6 +1,6 @@
 const MeetOurHealthCareTeam = () => {
   return (
-    <div className="w-[90%] mx-auto my-12">
+    <div className="w-[90%] mx-auto md:my-24 my-8">
       <div className="">
         <h2 className="text-[#1ABC9C] text-2xl mb-3">
           Meet Our Health Care Team
@@ -8,8 +8,8 @@ const MeetOurHealthCareTeam = () => {
         <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
       </div>
       {/* card */}
-      <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center gap-2">
-        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-300">
+      <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center md:justify-items-start gap-2">
+        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-700">
           <div className="relative group h-52 overflow-hidden">
             <img
               src="https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg"
@@ -27,7 +27,7 @@ const MeetOurHealthCareTeam = () => {
             odio.
           </p>
         </div>
-        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-300">
+        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-700">
           <div className="relative group h-52 overflow-hidden">
             <img
               src="https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg"
@@ -45,7 +45,7 @@ const MeetOurHealthCareTeam = () => {
             odio.
           </p>
         </div>
-        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-300">
+        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-700">
           <div className="relative group h-52 overflow-hidden">
             <img
               src="https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg"
@@ -63,7 +63,7 @@ const MeetOurHealthCareTeam = () => {
             odio.
           </p>
         </div>
-        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-300">
+        <div className="bg-white border border-gray-300 rounded-lg shadow-md overflow-hidden w-64 text-center hover:-translate-y-2 transition-transform duration-700">
           <div className="relative group h-52 overflow-hidden">
             <img
               src="https://i.postimg.cc/T2c8PvfM/cheerful-woman.jpg"

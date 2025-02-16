@@ -8,7 +8,7 @@ import {
 
 const GetInTouchWithUs = () => {
   return (
-    <div  className="w-[90%] mx-auto my-20">
+    <div  className="w-[90%] mx-auto my-12 md:my-24">
       <div className="">
         {/* Header Section */}
         <h2 className="text-2xl text-center text-[#1ABC9C] mb-4">
@@ -121,10 +121,10 @@ const GetInTouchWithUs = () => {
               <FiMail className="text-white text-xl" /></div> info@healthcare.com
             </p>
             <div className="flex items-center gap-4 mt-4">
-              <FaFacebookF className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
-              <FaTwitter className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
-              <FaLinkedinIn className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
-              <FaYoutube className="text-2xl text-[#FD9678] cursor-pointer hover:text-[#1ABC9C]" />
+              <FaFacebookF className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
+              <FaTwitter className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
+              <FaLinkedinIn className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
+              <FaYoutube className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
             </div>
           </div>
         </div>
