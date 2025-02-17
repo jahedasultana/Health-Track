@@ -60,7 +60,8 @@ const DoctorProfile = () => {
   }
 
   return (
-    <div className='w-[50%] mx-auto'>
+   <div className='bg-gray-100 py-5'>
+     <div className='w-[50%] mx-auto '>
     <h1 className='font-semibold text-xl pb-4 '>{doctor?.name}'s Profile</h1>
   
     {isEditing ? (
@@ -138,6 +139,7 @@ const DoctorProfile = () => {
       </div>
     )}
   </div>
+   </div>
   
   );
 };
