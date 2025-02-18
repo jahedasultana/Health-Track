@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Title Section */}
       <div className="md:absolute -top-8">
         <p className="text-black/50 text-[14px] font-semibold mb-2">About Us</p>
-        <h2 className="relative text-black md:text-4xl text-2xl font-bold mb-3 w-[max-content]">
+        <h2 className="relative text-black md:text-4xl text-xl font-bold mb-3 w-[max-content]">
           Your Trusted Healthcare <br /> Partner Anytime
           <TiPlus className="absolute text-[#FD9678] -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />

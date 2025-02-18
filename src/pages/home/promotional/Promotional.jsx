@@ -33,7 +33,7 @@ const Promotional = () => {
         <div className="relative">
           <div className="text-center pb-2">
 
-            <h2 className="relative text-black md:text-4xl text-2xl font-bold mb-3 w-[max-content] mx-auto">
+            <h2 className="relative text-black md:text-4xl text-xl font-bold mb-3 w-[max-content] mx-auto">
               Sign up for newsletter
               <TiPlus className="absolute text-[#FD9678] -right-6 -top-4" />
               <TiPlus className="absolute  text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
@@ -67,7 +67,7 @@ const Promotional = () => {
         </div>
         <form
           onSubmit={handleSubmitNewsletter}
-          className="flex justify-center gap-5 flex-col md:flex-row">
+          className="flex justify-center md:flex-row flex-col gap-5">
           <input
             className="input px-3 rounded-md py-2  border border-[#FD9678] focus:outline-none shadow-md block"
             type="email"
