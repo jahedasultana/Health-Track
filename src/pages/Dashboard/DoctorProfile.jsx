@@ -60,79 +60,85 @@ const DoctorProfile = () => {
   }
 
   return (
-    <div>
-      <h1>{doctor?.name}'s Profile</h1>
-
-      {isEditing ? (
-        <div>
-          <form onSubmit={(e) => e.preventDefault()}>
-            <div>
-              <label>Role:</label>
-              <input
-                type="text"
-                name="role"
-                value={editedDoctor.role || ''}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label>Experience:</label>
-              <input
-                type="number"
-                name="service_experience"
-                value={editedDoctor.service_experience || ''}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label>Service Category:</label>
-              <input
-                type="text"
-                name="service_category"
-                value={editedDoctor.service_category || ''}
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label>Availability:</label>
-              <input
-                type="text"
-                name="availability"
-                value={editedDoctor.availability || 'available'} // default to 'available'
-                onChange={handleChange}
-              />
-            </div>
-            <div>
-              <label>Service Given:</label>
-              <input
-                type="text"
-                name="service_give"
-                value={editedDoctor.service_give || ''}
-                onChange={handleChange}
-              />
-            </div>
-            <div className='flex gap-3'>
-              <button className='p-2 bg-green-300' type="button" onClick={handleSave}>
-                Save
-              </button>
-              <button className='p-2 bg-red-300' type="button" onClick={() => setIsEditing(false)}>
-                Cancel
-              </button>
-            </div>
-          </form>
-        </div>
-      ) : (
-        <div>
-          <p><strong>Role:</strong> {doctor.role}</p>
-          <p><strong>Experience:</strong> {doctor.service_experience} years</p>
-          <p><strong>Service Category:</strong> {doctor.service_category}</p>
-          <p><strong>Availability:</strong> {doctor.availability}</p>
-          <p><strong>Service Given:</strong> {doctor.service_give}</p>
-
-          <button className='p-2 bg-orange-400' onClick={() => setIsEditing(true)}>Edit</button>
-        </div>
-      )}
-    </div>
+    <div className='w-[50%] mx-auto'>
+    <h1 className='font-semibold text-xl pb-4 '>{doctor?.name}'s Profile</h1>
+  
+    {isEditing ? (
+      <div>
+        <form className='space-y-3' onSubmit={(e) => e.preventDefault()}>
+          <div className='space-y-1'>
+            <label>Role:</label>
+            <input
+              type="text"
+              name="role"
+              value={editedDoctor.role || ''}
+              onChange={handleChange}
+              className="border rounded-md p-2 w-full"
+            />
+          </div>
+          <div className='space-y-1'>
+            <label>Experience:</label>
+            <input
+              type="number"
+              name="service_experience"
+              value={editedDoctor.service_experience || ''}
+              onChange={handleChange}
+              className="border rounded-md p-2 w-full"
+            />
+          </div>
+          <div className='space-y-1'>
+            <label>Service Category:</label>
+            <input
+              type="text"
+              name="service_category"
+              value={editedDoctor.service_category || ''}
+              onChange={handleChange}
+              className="border rounded-md p-2 w-full"
+            />
+          </div>
+          <div className='space-y-1'>
+            <label>Availability:</label>
+            <input
+              type="text"
+              name="availability"
+              value={editedDoctor.availability || 'available'}
+              onChange={handleChange}
+              className="border rounded-md p-2 w-full"
+            />
+          </div>
+          <div className='space-y-1'>
+            <label>Service Given:</label>
+            <input
+              type="text"
+              name="service_give"
+              value={editedDoctor.service_give || ''}
+              onChange={handleChange}
+              className="border rounded-md p-2 w-full"
+            />
+          </div>
+          <div className="flex gap-3 mt-3">
+            <button className="p-2 bg-green-300" type="button" onClick={handleSave}>
+              Save
+            </button>
+            <button className="p-2 bg-red-300" type="button" onClick={() => setIsEditing(false)}>
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    ) : (
+      <div>
+        <p><strong>Role:</strong> {doctor.role}</p>
+        <p><strong>Experience:</strong> {doctor.service_experience} years</p>
+        <p><strong>Service Category:</strong> {doctor.service_category}</p>
+        <p><strong>Availability:</strong> {doctor.availability}</p>
+        <p><strong>Service Given:</strong> {doctor.service_give}</p>
+  
+        <button className="p-2 bg-orange-400" onClick={() => setIsEditing(true)}>Edit</button>
+      </div>
+    )}
+  </div>
+  
   );
 };
 

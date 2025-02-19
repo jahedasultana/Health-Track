@@ -66,7 +66,7 @@ const Details = () => {
 
     return (
         <section className="min-h-screen ">
-                 <PageBanner title={'Details'} pageAddress={'/getAvailableDoctor'} pageDirection={'Details'} />
+                 <PageBanner title={'Details'} pageAddress={`/getAvailableDoctor/${id}`} pageDirection={'Details'} />
 
  <div className="flex flex-col lg:flex-row gap-8 py-10 ">
             {/* Doctor Details Section */}
