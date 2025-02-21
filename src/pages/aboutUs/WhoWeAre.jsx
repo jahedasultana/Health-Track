@@ -1,3 +1,5 @@
+import Button from "../../components/Button";
+
 const WhoWeAre = () => {
   return (
     <div className="my-12 w-[90%] mx-auto">
@@ -19,16 +21,14 @@ const WhoWeAre = () => {
               Praesent massa orci, condimen vitae mattis quis, imperdiet non
               massa.
             </h2>
-            <p>
+            <p className="pb-3">
               Lorem ipsum dolor sit amet, consectetur ag elit. Proin ipsum
               augue, rhoncus ac arcu ut, auclum est. AEtiam ligula orci, condim
               at turpis sed.Ppulvinar, poserat vitae, ultrices quis semper nisi
               porttitor. Aenean vel libero at nulla pulvinar placerat mauris
               Phasellus..
             </p>
-            <button className="border border-gray-400 p-3 mt-2">
-              Read More
-            </button>
+            <Button buttonText={'Read More'}/>
           </div>
         </div>
       </div>

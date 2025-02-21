@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 import image1 from '../../../assets/homeImage/clender.png';
 import image2 from '../../../assets/homeImage/heard.png';
 import { TiPlus } from "react-icons/ti";
+import Button from "../../../components/Button";
 
 
 const Promotional = () => {
@@ -74,9 +75,7 @@ const Promotional = () => {
             required
             placeholder="Your Email"
           />
-          <button type="submit" className="px-4 py-2 rounded-md bg-secondary text-white bg-[#FD9678] shadow-md transition-opacity font-semibold hover:opacity-80">
-            Subscribe
-          </button>
+          <Button type={'button'} buttonText={'subscribe'}/>
         </form>
       </div>
     </section>

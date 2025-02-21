@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import TopContact from "./TopContant";
 import useAuth from "../../provider/useAuth";
 import logo from "../../../public/logo.png";
+import Button from "../../components/Button";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -96,16 +97,18 @@ const Navbar = () => {
                       />
                     </button>
                     {isOpen && (
-                      <div className="bg-[#FD9678] z-50 text-white px-4 py-5 w-44 space-y-5 absolute top-14 right-0">
-                        <Link className="block text-lg" to={"dashboard"}>
+                      <div className="bg-gray-400/40 border border-gray-600/40  z-50 text-white px-3 py-4 rounded-lg  w-44 space-y-5 absolute top-14 right-0  ">
+                        <div className="flex flex-col justify-center items-center">
+                        <Link className="block text-lg pb-1" to={"dashboard"}>
                           Dashboard
                         </Link>
-                        <button
-                          onClick={handleLogout}
-                          className="block text-lg p-2 bg-red-600 rounded-sm w-full border border-white/55"
-                        >
-                          Logout
-                        </button>
+                       
+                        <div>
+                        <Button buttonText={'LogOut'} handelButton={handleLogout}/>
+                        </div>
+                        </div>
+                        
+                     
                       </div>
                     )}
                   </div>

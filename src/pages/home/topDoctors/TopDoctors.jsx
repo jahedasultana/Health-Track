@@ -1,3 +1,4 @@
+import Button from "../../../components/Button";
 
 const TopDoctors = () => {
     return (
@@ -5,12 +6,12 @@ const TopDoctors = () => {
             <div className="p-10 bg-gradient-to-r from-[#FD9678] to-[#FFA477]/60 text-white space-y-4">
                 <h2 className="text-[25px]">Top Doctors</h2>
             <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augue tristique sed volutpat.</p>
-            <button className="px-3 py-2 border border-gray-100/50">Read More</button>
+           <Button buttonText={'Read More'}/>
             </div>
             <div className="p-10 bg-gradient-to-r from-[#FD9678]/90 to-[#FD9678]/65 text-white space-y-4">
                 <h2 className="text-[25px]">24 Hours Service</h2>
             <p>Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augue tristique sed volutpat.</p>
-            <button className="px-3 py-2 border border-gray-100/50">Read More</button>
+            <Button buttonText={'Read More'}/>
             </div>
             <div className="p-10 bg-gradient-to-r from-[#FD9678] to-[#FD9678]/75 text-white space-y-4">
                 <h2 className="text-[25px]">Opening Hours</h2>
