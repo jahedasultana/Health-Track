@@ -1,7 +1,9 @@
 
-import { FaSubscript } from "react-icons/fa";
+
 import { MdHomeWork } from "react-icons/md";
 import MenuItem from "./ManuItem";
+import { FaUser } from "react-icons/fa";
+import { FaUserDoctor } from "react-icons/fa6";
 
 const AdminMenu = () => {
     return (
@@ -9,14 +11,14 @@ const AdminMenu = () => {
                 <MenuItem
               label='All Users'
               address='all-users'
-              icon={FaSubscript}
+              icon={FaUser}
               ></MenuItem>
              
               {/* All Trainers*/}
               <MenuItem
               label='All Doctors'
               address='all-doctors'
-              icon={MdHomeWork}
+              icon={FaUserDoctor}
               ></MenuItem>
               {/* add doctor */}
               

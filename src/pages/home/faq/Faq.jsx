@@ -58,7 +58,7 @@ const Faq = () => {
         {/* FAQ Image with Overlay Text */}
         <div className="md:w-[50%] w-full mt-6 md:mt-0 relative">
           <img
-            src="https://kamleshyadav.com/html/healthcare/bootstrap5/demo9/assets/images/faq.png"
+            src="https://i.postimg.cc/bYFKnMNW/faq.png"
             alt="faq"
             className="w-full h-auto"
           />

@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { AiOutlineBars } from "react-icons/ai";
-import { BsGraphUp } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { IoChevronBackCircleSharp } from "react-icons/io5";
 import useAuth from "../../provider/useAuth";
 import useRole from "../../hooks/useRole";
 import UserManu from "./manu/UserManu";
 import DoctorManu from "./manu/DoctorManu";
 import MenuItem from "./manu/ManuItem";
 import AdminMenu from "./manu/AdminManu";
+import { MdOutlineKeyboardBackspace } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
 
 const Sidebar = () => {
   const { logOut } = useAuth();
@@ -54,16 +54,11 @@ const Sidebar = () => {
         }  md:translate-x-0  transition duration-200 ease-in-out`}
       >
         <div>
-          <div>
-            <div className="w-full hidden md:flex px-4 py-2 shadow-2xl rounded-lg justify-center items-center bg-[#FD9678]/40  mx-auto border border-gray-400 ">
-              <Link to="/">
-                <div className="flex items-center justify-center">
-                  <IoChevronBackCircleSharp className="text-4xl text-white"></IoChevronBackCircleSharp>
-                  
-                </div>
-              </Link>
-            </div>
-          </div>
+       <div>
+       <Link to={'/'}>
+       <MdOutlineKeyboardBackspace className="text-[#1ABC9C] text-3xl" />
+       </Link>
+       </div>
 
           {/* Nav Items */}
           <div className="flex flex-col justify-between flex-1 mt-6">
@@ -75,7 +70,7 @@ const Sidebar = () => {
               <MenuItem
                 label="Dashboard"
                 address="/dashboard"
-                icon={BsGraphUp}
+                icon={MdDashboard}
               ></MenuItem>
 
               {/* Manage Slots*/}
