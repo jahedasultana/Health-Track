@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import useAuth from "../../provider/useAuth";
 import useRole from "../../hooks/useRole";
+import PageBanner from "../../components/PageBanner";
 
 const Details = () => {
     const { user } = useAuth()
@@ -64,15 +65,18 @@ const Details = () => {
       
 
     return (
-        <div className="flex flex-col lg:flex-row gap-8 p-8 mt-36">
+        <section className="min-h-screen ">
+                 <PageBanner title={'Details'} pageAddress={'/getAvailableDoctor'} pageDirection={'Details'} />
+
+ <div className="flex flex-col lg:flex-row gap-8 py-10 ">
             {/* Doctor Details Section */}
             <div className="flex-1 bg-gray-100 p-6 rounded-lg shadow-md">
                 <h2 className="text-xl font-semibold mb-4">Doctor Details</h2>
-                <div className="bg-gray-200 h-32 w-full mb-4 rounded-lg overflow-hidden flex items-center justify-center">
+                <div className="bg-gray-200 h-64 w-full mb-4 rounded-lg overflow-hidden flex items-center justify-center">
                     <img
                         src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
                         alt="Doctor"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                     />
                 </div>
                 <div className="text-gray-700 mb-4">
@@ -93,7 +97,7 @@ const Details = () => {
                         </span>
                     </p>
                 </div>
-                <div className="bg-gray-300 p-3 rounded-lg">
+                <div className="bg-gray-300/90 p-3 rounded-lg">
                     <h4 className="font-semibold mb-2">Which Services:</h4>
                     <p>{doctors.service_give}</p>
                 </div>
@@ -156,7 +160,7 @@ const Details = () => {
                                 type="submit"
                                 disabled={role === 'doctor'}
                                 className={`text-white py-2 px-4 rounded-lg
-                                ${role === 'doctor' ? 'cursor-not-allowed bg-slate-500' : 'cursor-auto bg-blue-500'}
+                                ${role === 'doctor' ? 'cursor-not-allowed bg-slate-500' : 'cursor-auto bg-[#FD9678] hover:bg-[#1ABC9C]'}
                                 transition-colors cursor-pointer`}
                             >
                                 Submit
@@ -177,6 +181,8 @@ const Details = () => {
                 </form>
             </div>
         </div>
+        </section>
+       
     );
 };
 

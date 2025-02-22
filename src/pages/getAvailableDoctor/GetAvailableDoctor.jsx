@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube } from "react-icons/fa"
 import axios from 'axios';
 import { Link } from "react-router-dom";
 import PageBanner from "../../components/PageBanner";
-
+import Button from "../../components/Button";
 const GetAvailableDoctor = () => {
   const [doctors, setDoctors] = useState([]);
 
@@ -24,7 +24,7 @@ const GetAvailableDoctor = () => {
 
 
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen ">
       <PageBanner title={'Service'} pageAddress={'/getAvailableDoctor'} pageDirection={'Service'} />
 
       <div className="md:w-[90%] grid md:grid-cols-4 grid-cols-1 gap-4 w-full mx-auto py-10 px-5 md:px-0">
@@ -76,9 +76,10 @@ const GetAvailableDoctor = () => {
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors"
+                className="mt-4 rounded-lg transition-colors"
               >
-                <Link to={`/getAvailableDoctor/${doctor._id}`}>View Profile</Link>
+                {/* <Link to={`/getAvailableDoctor/${doctor._id}`}>View Profile</Link> */}
+                <Button buttonText={'View Profile'} link={`/getAvailableDoctor/${doctor._id}`}/>
               </motion.button>
             </motion.div>
 
