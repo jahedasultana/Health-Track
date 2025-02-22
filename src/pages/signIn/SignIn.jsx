@@ -41,9 +41,9 @@ const SignIn = () => {
   };
 
   return (
-    <div className="mx-auto pt-48 pb-20 bg-gray-500 flex flex-col items-center justify-center">
+    <div className="mx-auto pt-48 pb-20 bg-[#1ABC9C]/40 flex flex-col items-center justify-center">
       <form
-        className="bg-white p-4 border border-gray-300 lg:w-3/12 md:w-4/12 w-full"
+        className="bg-white p-8 border border-gray-300 rounded-lg lg:w-4/12 md:w-4/12 w-full"
         onSubmit={handleSubmit(onSubmit)}
       >
         {/* Email Field */}
@@ -95,7 +95,7 @@ const SignIn = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="mt-4 w-full py-2 bg-green-500 text-white text-sm font-medium hover:bg-green-600 focus:outline-none"
+          className="mt-4 w-full py-2 bg-[#FD9678] text-white text-sm font-medium hover:bg-[#ec6f49] rounded-lg focus:outline-none"
         >
           Submit
         </button>
@@ -106,7 +106,7 @@ const SignIn = () => {
         {/* Google Signup */}
         <SocialLink/>
 
-      <p className='text-center pt-3'>Have not account <Link className='text-blue-500' to={'/signup'}>Create Account</Link></p>
+      <p className='text-center pt-3'>Have not account <Link className='text-blue-500 font-bold' to={'/signup'}>Create Account</Link></p>
       </form>
     </div>
   );

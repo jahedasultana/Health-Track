@@ -56,7 +56,7 @@ const SocialLink = () => {
         <>
          <button
           type="button"
-          className="w-full py-2 bg-blue-500 text-white text-sm font-medium hover:bg-blue-600 focus:outline-none"
+          className="w-full py-2 bg-[#1ABC9C] text-white text-sm font-medium hover:bg-[#267e6c] rounded-lg focus:outline-none"
           onClick={handleGoogleSignIn}
         >
           Sign up with Google

@@ -50,9 +50,9 @@ const SignUp = () => {
   };
 
   return (
-    <div className="mx-auto bg-gray-500 flex flex-col items-center justify-center pt-48 pb-20">
+    <div className="mx-auto bg-[#1ABC9C]/40 flex flex-col  items-center justify-center pt-48 pb-20">
       <form
-        className="bg-white p-4 border border-gray-300 lg:w-4/12 md:w-6/12 w-full"
+        className="bg-white border p-8 rounded-lg border-gray-300 lg:w-4/12 md:w-6/12 w-full"
         onSubmit={onSubmit}
       >
         {/* Name Field */}
@@ -162,14 +162,14 @@ const SignUp = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="mt-4 w-full py-2 bg-green-500 text-white text-sm font-medium hover:bg-green-600 focus:outline-none"
+          className="mt-4 w-full py-2 bg-[#FD9678] text-white text-sm font-medium hover:bg-[#f76c41] rounded-lg focus:outline-none"
         >
           Submit
         </button>
 
         <p className="text-center pt-3">
           Have an account?{' '}
-          <Link className="text-blue-500" to={'/sign-in'}>
+          <Link className="text-blue-500 font-bold" to={'/sign-in'}>
             Login
           </Link>
         </p>
