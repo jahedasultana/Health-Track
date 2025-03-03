@@ -182,7 +182,7 @@ const Details = () => {
             </div>
         </div>
         </section>
-       
+    
     );
 };
 
