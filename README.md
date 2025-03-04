@@ -23,10 +23,10 @@ Health Track is a web-based platform that connects users with doctors for online
   - Approve or remove doctors  
 
 ## 🛠️ Technologies Used
-- **Frontend**: React.js, Tailwind CSS  
+- **Frontend**: React.js, Tailwind CSS , firebase, motion
 - **Backend**: Node.js, Express.js  
 - **Database**: MongoDB  
-- **Authentication**: JWT  
+
 
 ## 📌 Installation & Setup
 1. Clone the repositories  
@@ -42,8 +42,8 @@ Health Track is a web-based platform that connects users with doctors for online
    npm install
    ```
 3. Start the development server  
-   - Client: `npm start`  
-   - Server: `npm run dev`  
+   - Client: `npm run dev`  
+   - Server:  `nodemon index.js`
 
 ## 📧 Contact  
 For any queries, reach out to [Jaheda Sultana Sathi](https://github.com/jahedasultana).  
