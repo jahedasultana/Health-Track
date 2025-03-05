@@ -2,14 +2,14 @@ const TestimonialSlide = ({ first }) => {
   console.log(first);
   return (
     <div>
-      <div className="bg-[#faf4f2] p-[30px] rounded-2xl"
-      style={{boxShadow: '0 0 1px #FD9678'}}
+      <div className="bg-primary/10 p-[30px] rounded-2xl"
+      style={{boxShadow: '0 0 1px #3F8EFC'}}
       >
         <div>
           <p className="text-sm">{first.review_text}</p>
 
           <div className="flex items-center gap-3 my-6">
-            <div className="h-10 w-10 rounded-full overflow-hidden p-1 border border-[#FD9678]">
+            <div className="h-10 w-10 rounded-full overflow-hidden p-1 border border-primary">
                 <img
                   src={first.userImage}
                   className="object-cover w-full h-full rounded-full"
