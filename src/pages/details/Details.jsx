@@ -16,9 +16,9 @@ const Details = () => {
     condition: "",
     details: "",
   });
-
+console.log(formData);
   const email = user?.email;
-  const name = user?.displayName || "Guest";
+  const nameOfUser = user?.displayName || "Guest";
   const { role } = useRole();
   const doctorEmail = doctors?.email;
 
@@ -47,15 +47,17 @@ const Details = () => {
 
     const userDetaild = {
       ...formData,
-      name,
+      name: formData.name, // Ensure name is stored correctly
       email,
     };
+
     const data = {
       userDetaild,
       doctorEmail,
       userEmail: email,
       status: "pending",
     };
+    console.log(data);
 
     try {
       const res = await axios.post(
@@ -64,7 +66,7 @@ const Details = () => {
       );
       console.log(res.data);
 
-      // success
+      // Success alert
       Swal.fire({
         title: "Success!",
         text: "Your request has been sent successfully.",
@@ -72,7 +74,7 @@ const Details = () => {
         confirmButtonText: "OK",
       });
 
-      // reset
+      // Reset form data
       setFormData({
         name: "",
         age: "",
@@ -82,7 +84,7 @@ const Details = () => {
     } catch (error) {
       console.log(error);
 
-      // error
+      // Error alert
       Swal.fire({
         title: "Error!",
         text: "Something went wrong. Please try again.",
