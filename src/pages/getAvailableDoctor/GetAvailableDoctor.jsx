@@ -29,7 +29,7 @@ const GetAvailableDoctor = () => {
 
   return (
     <section className="bg-gray-50">
-      <PageBanner title={"Contact Us"} pageAddress={"/contactUs"} pageDirection={"Contact Us"} />
+      <PageBanner title={"Services"} pageAddress={"/getAvailableDoctor"} pageDirection={"Services"} />
 
       <div className="container mx-auto px-4 py-16">
         {isLoading ? (
