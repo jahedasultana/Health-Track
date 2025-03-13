@@ -13,7 +13,7 @@ const services = [
 
 const OurUrgentCareServiceS = () => {
   return (
-    <div className="pb-20 pt-14 my-14  md:my-28 px-4 bg-[#FFFAF9]">
+    <div className="pb-20 pt-14 my-14  md:my-28 px-4 bg-primary/10">
       <div className="w-[90%] mx-auto">
 
       <div className="md:mb-16 mb-10">
@@ -33,10 +33,10 @@ const OurUrgentCareServiceS = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-[#FD9678]  p-[0.8px] hover:shadow-2xl shadow-md rounded-lg hover:rounded-t-lg hover:rounded-none hover:text-primary"
+            className="hover:-translate-y-[12px] transition-all duration-700 hover:bg-gradient-to-t from-primary  p-[0.8px] hover:shadow-2xl shadow-md rounded-lg hover:rounded-t-lg hover:rounded-none hover:text-primary"
           >
             <div className="flex flex-col justify-center items-center bg-white p-4 rounded-lg hover:rounded-t-lg hover:rounded-none h-[250px]">
-              <div className="bg-[#f7eae7] py-[14px] px-[5px] rounded-full mb-4">
+              <div className="bg-primary/30 py-[14px] px-[5px] rounded-full mb-4">
                 <span className="text-5xl">{service.icon}</span>
               </div>
               <h3 className="text-xl whitespace-pre-line text-black/70 font-semibold text-center">
