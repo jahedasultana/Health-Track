@@ -20,7 +20,7 @@ const AdditionalSupportResource = () => {
                 {Array(3).fill(0).map((_, index) => (
                     <div
                         key={index}
-                        className="shadow-2xl p-6  text-center hover:shadow-lg  transition-shadow border-b-2 border-[#1ABC9C]"
+                        className="shadow-2xl p-6  text-center hover:shadow-lg  transition-shadow border-b-2 border-primary"
                     >
                         <h3 className="text-2xl text-gray-800">Manuals</h3>
                         <p className="mt-2 text-gray-600">
