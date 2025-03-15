@@ -6,7 +6,7 @@ const AdditionalSupportResource = () => {
             <div className="w-[90%] mx-auto">
             <div className="mb-14">
                  {/* Header Section */}
-        <h2 className="text-2xl text-center text-secondary mb-4">
+        <h2 className="text-2xl text-center text-primary mb-4">
         Additional Support Resource
         </h2>
         <div className="w-[80px] mx-auto h-[2px] mb-6 bg-secondary"></div>

@@ -37,7 +37,7 @@ const OurDoctors = () => {
           {/* Card Content Section */}
           <div className="p-5 shadow-lg  rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
-              <h3 className="text-[18px] font-semibold text-black/70 hover:text-secondary cursor-pointer">
+              <h3 className="text-[18px] font-semibold text-black/70 hover:text-primary cursor-pointer">
                 Dr. Michael Brown
               </h3>
               <p className="flex gap-1 items-center">
@@ -89,7 +89,7 @@ const OurDoctors = () => {
           {/* Card Content Section */}
           <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
-              <h3 className="text-[18px] font-semibold text-black/70 hover:text-secondary cursor-pointer">
+              <h3 className="text-[18px] font-semibold text-black/70 hover:text-primary cursor-pointer">
                 Dr. Michael Brown
               </h3>
               <p className="flex gap-1 items-center">
@@ -144,7 +144,7 @@ const OurDoctors = () => {
           {/* Card Content Section */}
           <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
-              <h3 className="text-[18px] font-semibold text-black/70 hover:text-secondary cursor-pointer">
+              <h3 className="text-[18px] font-semibold text-black/70 hover:text-primary cursor-pointer">
                 Dr. Michael Brown
               </h3>
               <p className="flex gap-1 items-center">
@@ -199,7 +199,7 @@ const OurDoctors = () => {
           {/* Card Content Section */}
           <div className="p-5 shadow-lg rounded-lg flex-grow space-y-1 relative group">
             <div className="flex items-center justify-between">
-              <h3 className="text-[18px] font-semibold text-black/70 hover:text-secondary cursor-pointer">
+              <h3 className="text-[18px] font-semibold text-black/70 hover:text-primary cursor-pointer">
                 Dr. Olivia Green
               </h3>
               <p className="flex gap-1 items-center">

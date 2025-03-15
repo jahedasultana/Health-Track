@@ -56,7 +56,7 @@ const Sidebar = () => {
         <div>
        <div>
        <Link to={'/'}>
-       <MdOutlineKeyboardBackspace className="text-secondary text-3xl" />
+       <MdOutlineKeyboardBackspace className="text-primary text-3xl" />
        </Link>
        </div>
 

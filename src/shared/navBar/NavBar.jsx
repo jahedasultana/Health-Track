@@ -106,7 +106,7 @@ const Navbar = () => {
                       <div className="bg-gray-400/40 border border-gray-600/40  z-50 text-white px-3 py-4 rounded-lg  w-44 space-y-5 absolute top-14 right-0  ">
                         <div className="flex flex-col justify-center items-center">
                           <Link
-                            className="block text-lg pb-3 pt-1 hover:text-secondary hover:underline"
+                            className="block text-lg pb-3 pt-1 hover:text-primary hover:underline"
                             to={"dashboard"}
                           >
                             Dashboard

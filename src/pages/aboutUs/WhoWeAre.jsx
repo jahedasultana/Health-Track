@@ -4,7 +4,7 @@ const WhoWeAre = () => {
   return (
     <div className="my-12 w-[90%] mx-auto">
       <div className="">
-        <h2 className="text-secondary text-2xl mb-3">Who We Are</h2>
+        <h2 className="text-primary text-2xl mb-3">Who We Are</h2>
         <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
       <div className="md:flex">
@@ -17,7 +17,7 @@ const WhoWeAre = () => {
         </div>
         <div className="md:w-[50%] bg-[#FFFAF9] border-b-2 border-[#FD9678]">
           <div className="p-8">
-            <h2 className="text-secondary text-2xl mb-2">
+            <h2 className="text-primary text-2xl mb-2">
               Praesent massa orci, condimen vitae mattis quis, imperdiet non
               massa.
             </h2>
