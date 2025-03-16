@@ -36,7 +36,7 @@ const OurHospitalUpdates = () => {
   return (
     <div className="w-[90%] mx-auto md:my-24 my-12">
       <div className="">
-        <h2 className="text-[#1ABC9C] text-2xl mb-3">Our Hospital Updates</h2>
+        <h2 className="text-secondary text-2xl mb-3">Our Hospital Updates</h2>
         <div className="w-[80px] h-[2px] mb-8 bg-secondary"></div>
       </div>
 
@@ -52,7 +52,7 @@ const OurHospitalUpdates = () => {
                 <h3 className="text-base font-medium flex items-center gap-4 transition-all duration-1000 delay-700">
                   <FaQuestionCircle
                     className={`text-lg ${
-                      open === index ? "text-[#1ABC9C]" : "text-primary"
+                      open === index ? "text-secondary" : "text-primary"
                     }`}
                   />
                   {faq.question}

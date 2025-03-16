@@ -11,7 +11,7 @@ const GetInTouchWithUs = () => {
     <div  className="w-[90%] mx-auto my-12 md:my-24">
       <div className="">
         {/* Header Section */}
-        <h2 className="text-2xl text-center text-[#1ABC9C] mb-4">
+        <h2 className="text-2xl text-center text-secondary mb-4">
           Get in touch with us
         </h2>
         <div className="w-[80px] mx-auto h-[2px] mb-6 bg-secondary"></div>
@@ -26,7 +26,7 @@ const GetInTouchWithUs = () => {
           {/* Message Form */}
           <div className="md:w-[65%] ">
             <div className="">
-              <h2 className="text-[#1ABC9C] text-2xl mb-3">Leave a Message</h2>
+              <h2 className="text-secondary text-2xl mb-3">Leave a Message</h2>
               <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
             </div>
                 <div className="bg-[#FFFAF9] border-b-2 border-[#1ABC9C] p-6">
@@ -74,7 +74,7 @@ const GetInTouchWithUs = () => {
                 <input
                   type="checkbox"
                   id="receiveEmail"
-                  className="w-4 h-4 text-[#1ABC9C] border-gray-300 rounded focus:ring-[#1ABC9C]"
+                  className="w-4 h-4 text-secondary border-gray-300 rounded focus:ring-[#1ABC9C]"
                 />
                 <label
                   htmlFor="receiveEmail"
@@ -100,7 +100,7 @@ const GetInTouchWithUs = () => {
           {/* Contact Details */}
           <div className="md:w-[35%]">
             <div className="">
-              <h2 className="text-[#1ABC9C] text-2xl mb-3">Contact</h2>
+              <h2 className="text-secondary text-2xl mb-3">Contact</h2>
               <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
             </div>
 
@@ -121,10 +121,10 @@ const GetInTouchWithUs = () => {
               <FiMail className="text-white text-xl" /></div> info@healthcare.com
             </p>
             <div className="flex items-center gap-4 mt-4">
-              <FaFacebookF className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
-              <FaTwitter className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
-              <FaLinkedinIn className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
-              <FaYoutube className="text-2xl text-black/80 cursor-pointer hover:text-[#1ABC9C]" />
+              <FaFacebookF className="text-2xl text-black/80 cursor-pointer hover:text-secondary" />
+              <FaTwitter className="text-2xl text-black/80 cursor-pointer hover:text-secondary" />
+              <FaLinkedinIn className="text-2xl text-black/80 cursor-pointer hover:text-secondary" />
+              <FaYoutube className="text-2xl text-black/80 cursor-pointer hover:text-secondary" />
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ const MeetOurHealthCareTeam = () => {
   return (
     <div className="w-[90%] mx-auto md:my-24 my-8">
       <div className="">
-        <h2 className="text-[#1ABC9C] text-2xl mb-3">
+        <h2 className="text-secondary text-2xl mb-3">
           Meet Our Health Care Team
         </h2>
         <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>

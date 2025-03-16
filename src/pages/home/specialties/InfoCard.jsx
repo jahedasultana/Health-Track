@@ -77,7 +77,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
       </div>
 
       {/* Button */}
-      <div className="absolute text-lg -bottom-4 bg-white text-[#1ABC9C] border border-[#FD9678]/50 px-6 pt-1 rounded-full">
+      <div className="absolute text-lg -bottom-4 bg-white text-secondary border border-[#FD9678]/50 px-6 pt-1 rounded-full">
         <button>
           <FaLongArrowAltRight/>
         </button>

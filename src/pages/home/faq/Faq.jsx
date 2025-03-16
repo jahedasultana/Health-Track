@@ -85,7 +85,7 @@ const Faq = () => {
                 <h3 className="text-base font-medium flex items-center gap-4 transition-[max-height] duration-1000 delay-700">
                   <FaQuestionCircle
                     className={`text-lg ${
-                      open === index ? "text-[#1ABC9C]" : "text-[#df1710]"
+                      open === index ? "text-secondary" : "text-[#df1710]"
                     }`}
                   />
                   {faq.question}
