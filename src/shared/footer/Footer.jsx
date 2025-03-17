@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="w-full md:w-auto">
               <h3 className="text-xl font-semibold">Office Address</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
-                <FaLocationDot className="text-[#FD9678] text-2xl" />
+                <FaLocationDot className="text-primary text-2xl" />
                 <span className="text-[13px]">
                   Evanto HQ 24 Fifth St., Los Angeles, USA
                 </span>
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="w-full md:w-auto">
               <h3 className="text-xl font-semibold">Talk To Expert</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
-                <FaPhoneAlt className="text-[#FD9678] text-xl" />{" "}
+                <FaPhoneAlt className="text-primary text-xl" />{" "}
                 <span className="text-[13px]">(+01) 123 456 7890</span>
               </p>
             </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="w-full md:w-auto">
               <h3 className="text-xl font-semibold">Talk To Expert</h3>
               <p className="mt-1 flex items-center justify-center gap-2">
-                <MdEmail className="text-[#FD9678] text-2xl" />{" "}
+                <MdEmail className="text-primary text-2xl" />{" "}
                 <span className="text-[13px]">example@healthtrack.com</span>
               </p>
             </div>
@@ -77,8 +77,8 @@ const Footer = () => {
             <div key={index} className="mb-6 md:mb-0">
               <ul className="mt-4 space-y-2 text-md text-white">
                 {section.map((item, idx) => (
-                  <li key={idx} className="hover:text-[#FD9678] cursor-pointer">
-                    <span className="mr-2 text-[#FD9678] text-2xl">-</span>
+                  <li key={idx} className="hover:text-primary cursor-pointer">
+                    <span className="mr-2 text-primary text-2xl">-</span>
                     {item}
                   </li>
                 ))}

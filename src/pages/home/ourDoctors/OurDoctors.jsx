@@ -14,8 +14,8 @@ const OurDoctors = () => {
         <p className="text-black/50 text-[14px] font-semibold">Professionals</p>
         <h2 className=" relative text-black text-xl md:text-4xl font-bold mb-3 w-[max-content]">
           Our Doctors
-          <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
-          <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
+          <TiPlus className="absolute text-primary  -right-6 -top-4" />
+          <TiPlus className="absolute text-primary opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
         </h2>
         <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
@@ -56,17 +56,17 @@ const OurDoctors = () => {
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaFacebookF className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaTwitter className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
-                <FaPhoneAlt className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaPhoneAlt className="text-black hover:text-primary transition-colors duration-300" />
               </div>
             </div>
             {/* Bottom Border on Card Hover */}
@@ -110,17 +110,17 @@ const OurDoctors = () => {
 
               {/* Facebook Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaFacebookF className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaTwitter className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
-                <FaPhoneAlt className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaPhoneAlt className="text-black hover:text-primary transition-colors duration-300" />
               </div>
             </div>
 
@@ -164,17 +164,17 @@ const OurDoctors = () => {
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaFacebookF className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaTwitter className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
-                <FaPhoneAlt className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaPhoneAlt className="text-black hover:text-primary transition-colors duration-300" />
               </div>
             </div>
             {/* Bottom Border on Card Hover */}
@@ -218,17 +218,17 @@ const OurDoctors = () => {
             <div className="flex gap-2 pb-2 pt-3 justify-center">
               {/* Facebook Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaFacebookF className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaFacebookF className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Twitter Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/50">
-                <FaTwitter className="text-black hover:text-[#FD9678] transition-colors duration-300" />
+                <FaTwitter className="text-black hover:text-primary transition-colors duration-300" />
               </div>
 
               {/* Phone Icon */}
               <div className="bg-white border p-3 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#FD9678]/60">
-                <FaPhoneAlt className="text-black  hover:text-[#FD9678] transition-colors duration-300" />
+                <FaPhoneAlt className="text-black  hover:text-primary transition-colors duration-300" />
               </div>
             </div>
 

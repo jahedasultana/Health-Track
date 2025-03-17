@@ -24,8 +24,8 @@ const Testimonial = () => {
         <p className="text-black/50 text-[14px] font-semibold">Reviews</p>
         <h2 className=" relative text-black text-xl md:text-4xl font-bold mb-3 w-[max-content]">
         Here's What Our Patients <br /> Have to Say
-          <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
-          <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
+          <TiPlus className="absolute text-primary  -right-6 -top-4" />
+          <TiPlus className="absolute text-primary opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
         </h2>
         <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>

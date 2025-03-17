@@ -52,7 +52,7 @@ const OurHospitalUpdates = () => {
                 <h3 className="text-base font-medium flex items-center gap-4 transition-all duration-1000 delay-700">
                   <FaQuestionCircle
                     className={`text-lg ${
-                      open === index ? "text-[#1ABC9C]" : "text-[#FD9678]"
+                      open === index ? "text-[#1ABC9C]" : "text-primary"
                     }`}
                   />
                   {faq.question}
