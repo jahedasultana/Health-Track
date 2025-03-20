@@ -14,7 +14,7 @@ const GetInTouchWithUs = () => {
         <h2 className="text-2xl text-center text-[#1ABC9C] mb-4">
           Get in touch with us
         </h2>
-        <div className="w-[80px] mx-auto h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] mx-auto h-[2px] mb-6 bg-secondary"></div>
         <p className="text-center md:w-[700px] mx-auto text-gray-400 mb-8">
           Suspendisse ultrices sapien sit amet accumsan pharetra. Phasellus nec
           turpis neque. Sed tortor lacus, eleifend vitae eros at, fermentum
@@ -27,7 +27,7 @@ const GetInTouchWithUs = () => {
           <div className="md:w-[65%] ">
             <div className="">
               <h2 className="text-[#1ABC9C] text-2xl mb-3">Leave a Message</h2>
-              <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+              <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
             </div>
                 <div className="bg-[#FFFAF9] border-b-2 border-[#1ABC9C] p-6">
                 <form className="space-y-4">
@@ -35,7 +35,7 @@ const GetInTouchWithUs = () => {
                 {/* Full Name Field */}
                 <div className="relative w-1/2">
                   <div className="absolute inset-y-0 left-0 flex items-center">
-                    <div className="bg-[#1ABC9C] text-white p-4 rounded-md flex items-center justify-center">
+                    <div className="bg-secondary text-white p-4 rounded-md flex items-center justify-center">
                       <FiUser className="text-xl" />
                     </div>
                   </div>
@@ -49,7 +49,7 @@ const GetInTouchWithUs = () => {
                 {/* Email Field */}
                 <div className="relative w-1/2">
                   <div className="absolute inset-y-0 left-0 flex items-center">
-                    <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+                    <div className="bg-secondary text-white p-4 flex items-center justify-center rounded-md">
                       <FiMail className="text-xl" />
                     </div>
                   </div>
@@ -87,7 +87,7 @@ const GetInTouchWithUs = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className=" bg-[#1ABC9C] text-white font-semibold py-3  px-6 rounded-sm hover:bg-[#2aedc6] transition"
+                className=" bg-secondary text-white font-semibold py-3  px-6 rounded-sm hover:bg-[#2aedc6] transition"
               >
                 Send
               </button>
@@ -101,23 +101,23 @@ const GetInTouchWithUs = () => {
           <div className="md:w-[35%]">
             <div className="">
               <h2 className="text-[#1ABC9C] text-2xl mb-3">Contact</h2>
-              <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+              <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
             </div>
 
             <p className="flex items-center gap-3 text-gray-600 mb-4">
-              <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+              <div className="bg-secondary text-white p-4 flex items-center justify-center rounded-md">
               <FiMapPin className="text-white text-xl" /></div> 121 King St,
               Melbourne VIC 3000, Australia
             </p>
             <hr className="opacity-95"/>
             
             <p className="flex items-center gap-3 text-gray-600 mb-4">
-              <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+              <div className="bg-secondary text-white p-4 flex items-center justify-center rounded-md">
               <FiPhone className="text-white text-xl" />
                 </div> +00 0 0000 0000
             </p>
             <p className="flex items-center gap-3 text-gray-600 mb-4">
-              <div className="bg-[#1ABC9C] text-white p-4 flex items-center justify-center rounded-md">
+              <div className="bg-secondary text-white p-4 flex items-center justify-center rounded-md">
               <FiMail className="text-white text-xl" /></div> info@healthcare.com
             </p>
             <div className="flex items-center gap-4 mt-4">

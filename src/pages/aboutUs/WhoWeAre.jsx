@@ -5,7 +5,7 @@ const WhoWeAre = () => {
     <div className="my-12 w-[90%] mx-auto">
       <div className="">
         <h2 className="text-[#1ABC9C] text-2xl mb-3">Who We Are</h2>
-        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
       <div className="md:flex">
         <div className="md:w-[50%]">

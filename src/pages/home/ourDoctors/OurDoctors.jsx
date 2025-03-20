@@ -17,7 +17,7 @@ const OurDoctors = () => {
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
         </h2>
-        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-4">
@@ -30,7 +30,7 @@ const OurDoctors = () => {
               src="https://i.postimg.cc/bJ7Jbx4T/doctor-girl.jpg"
               alt="doctor"
             />
-            <div className="absolute inset-0 bg-[#1ABC9C] opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
+            <div className="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
@@ -82,7 +82,7 @@ const OurDoctors = () => {
               src="https://i.postimg.cc/GpnqMVGw/healthcare-workers.jpg"
               alt="doctor"
             />
-            <div className="absolute inset-0 bg-[#1ABC9C] opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
+            <div className="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
@@ -137,7 +137,7 @@ const OurDoctors = () => {
               src="https://i.postimg.cc/Dy2hNpQG/young-doctor.jpg"
               alt="doctor"
             />
-            <div className="absolute inset-0 bg-[#1ABC9C] opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
+            <div className="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 
@@ -192,7 +192,7 @@ const OurDoctors = () => {
               src="https://i.postimg.cc/YSVqKN2H/young-woman.jpg"
               alt="doctor"
             />
-            <div className="absolute inset-0 bg-[#1ABC9C] opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
+            <div className="absolute inset-0 bg-secondary opacity-0 group-hover:opacity-35 transition-opacity duration-300 flex items-center justify-center"></div>
             <AiOutlinePlus className="text-white absolute text-6xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
 

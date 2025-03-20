@@ -10,7 +10,7 @@ const Navbar = () => {
   const [scrollY, setScrollY] = useState(0);
   const { user, logout } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
-  const localiton = useLocation()
+  const localiton = useLocation();
   const handleLogout = () => {
     logout()
       .then(() => console.log("Logged out"))
@@ -40,11 +40,17 @@ const Navbar = () => {
       <nav className={`fixed top-0 z-20 w-full`}>
         <div
           className={`mx-auto ${
-            scrollY <= 50 ? "bg-transparent h-[140px]" : (localiton.pathname == '/' ? 'bg-primary' : "bg-[#1ABC9C]" )
+            scrollY <= 50
+              ? "bg-transparent h-[140px]"
+              : localiton.pathname == "/"
+              ? "bg-primary"
+              : "bg-secondary"
           } absolute top-0 w-full z-20 shadow-lg`}
         >
           {/* Top Navbar */}
-          <div className={`w-full md:block hidden transition-all duration-1000`}>
+          <div
+            className={`w-full md:block hidden transition-all duration-1000`}
+          >
             {scrollY <= 50 && <TopContact />}
           </div>
 
@@ -99,16 +105,20 @@ const Navbar = () => {
                     {isOpen && (
                       <div className="bg-gray-400/40 border border-gray-600/40  z-50 text-white px-3 py-4 rounded-lg  w-44 space-y-5 absolute top-14 right-0  ">
                         <div className="flex flex-col justify-center items-center">
-                        <Link className="block text-lg pb-3 pt-1 hover:text-[#1ABC9C] hover:underline" to={"dashboard"}>
-                          Dashboard
-                        </Link>
-                       
-                        <div>
-                        <Button buttonText={'LogOut'} handelButton={handleLogout}/>
+                          <Link
+                            className="block text-lg pb-3 pt-1 hover:text-[#1ABC9C] hover:underline"
+                            to={"dashboard"}
+                          >
+                            Dashboard
+                          </Link>
+
+                          <div>
+                            <Button
+                              buttonText={"LogOut"}
+                              handelButton={handleLogout}
+                            />
+                          </div>
                         </div>
-                        </div>
-                        
-                     
                       </div>
                     )}
                   </div>

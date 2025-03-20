@@ -22,7 +22,7 @@ const Doctors = () => {
             <h1 className="text-2xl font-bold mb-4 text-center">All Doctors</h1>
             <div className="overflow-x-auto">
                 <table className="table-auto w-full bg-white shadow-md rounded-md">
-                    <thead className="bg-[#1ABC9C] text-white">
+                    <thead className="bg-secondary text-white">
                         <tr>
                             <th className="px-4 py-2">Name</th>
                             <th className="px-4 py-2">Email</th>

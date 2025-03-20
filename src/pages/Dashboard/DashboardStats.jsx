@@ -12,7 +12,7 @@ const data = [
 const DashboardStats = () => {
     return (
         <div className="w-full p-4 space-y-6">
-            <div className="p-4 text-center bg-[#1ABC9C]/50 border rounded-lg shadow-md">
+            <div className="p-4 text-center bg-secondary/50 border rounded-lg shadow-md">
                 <h2 className="text-xl font-bold">Total Users</h2>
                 <p className="text-3xl font-semibold">1,800</p>
             </div>

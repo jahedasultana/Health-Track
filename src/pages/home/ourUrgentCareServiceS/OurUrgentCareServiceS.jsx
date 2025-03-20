@@ -23,7 +23,7 @@ const OurUrgentCareServiceS = () => {
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-jxl -right-[27px] rotate-45 -top-5" />
         </h2>
-        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
 
 

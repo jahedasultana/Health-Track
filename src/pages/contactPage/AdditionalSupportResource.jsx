@@ -9,7 +9,7 @@ const AdditionalSupportResource = () => {
         <h2 className="text-2xl text-center text-[#1ABC9C] mb-4">
         Additional Support Resource
         </h2>
-        <div className="w-[80px] mx-auto h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] mx-auto h-[2px] mb-6 bg-secondary"></div>
         <p className="text-center md:w-[700px] mx-auto text-gray-400 mb-8">
           Suspendisse ultrices sapien sit amet accumsan pharetra. Phasellus nec
           turpis neque. Sed tortor lacus, eleifend vitae eros at, fermentum

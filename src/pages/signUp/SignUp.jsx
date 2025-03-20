@@ -50,7 +50,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="mx-auto bg-[#1ABC9C]/40 flex flex-col  items-center justify-center pt-48 pb-20">
+    <div className="mx-auto bg-secondary/40 flex flex-col  items-center justify-center pt-48 pb-20">
       <form
         className="bg-white border p-8 rounded-lg border-gray-300 lg:w-4/12 md:w-6/12 w-full"
         onSubmit={onSubmit}

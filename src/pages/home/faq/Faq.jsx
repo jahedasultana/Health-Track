@@ -51,7 +51,7 @@ const Faq = () => {
           <TiPlus className="absolute text-[#FD9678]  -right-6 -top-4" />
           <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
         </h2>
-        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
 
       <div className=" flex flex-col md:flex-row gap-10">

@@ -5,7 +5,7 @@ const MeetOurHealthCareTeam = () => {
         <h2 className="text-[#1ABC9C] text-2xl mb-3">
           Meet Our Health Care Team
         </h2>
-        <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
       </div>
       {/* card */}
       <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center md:justify-items-start gap-2">

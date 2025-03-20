@@ -22,7 +22,7 @@ const Parallax = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#1ABC9C] opacity-70 z-0"></div>
+      <div className="absolute inset-0 bg-secondary opacity-70 z-0"></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col md:flex-row  justify-between items-center md:h-[500px] h-auto pl-0 md:pl-8">

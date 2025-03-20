@@ -41,7 +41,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="mx-auto pt-48 pb-20 bg-[#1ABC9C]/40 flex flex-col items-center justify-center">
+    <div className="mx-auto pt-48 pb-20 bg-secondary/40 flex flex-col items-center justify-center">
       <form
         className="bg-white p-8 border border-gray-300 rounded-lg lg:w-4/12 md:w-4/12 w-full"
         onSubmit={handleSubmit(onSubmit)}

@@ -37,7 +37,7 @@ const OurHospitalUpdates = () => {
     <div className="w-[90%] mx-auto md:my-24 my-12">
       <div className="">
         <h2 className="text-[#1ABC9C] text-2xl mb-3">Our Hospital Updates</h2>
-        <div className="w-[80px] h-[2px] mb-8 bg-[#1ABC9C]"></div>
+        <div className="w-[80px] h-[2px] mb-8 bg-secondary"></div>
       </div>
 
       <div className="flex flex-col md:flex-row gap-6">

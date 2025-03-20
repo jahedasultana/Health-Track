@@ -205,7 +205,7 @@ console.log(formData);
                 className={`text-white py-2 px-4 rounded-lg ${
                   role === "doctor"
                     ? "cursor-not-allowed bg-slate-500"
-                    : "cursor-auto bg-primary hover:bg-[#1ABC9C]"
+                    : "cursor-auto bg-primary hover:bg-secondary"
                 } transition-colors cursor-pointer`}
               >
                 Submit

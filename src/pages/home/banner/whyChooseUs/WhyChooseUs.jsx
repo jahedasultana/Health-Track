@@ -34,7 +34,7 @@ const WhyChooseUs = () => {
 
   return (
     <div className="md:pb-36 pb-6 pt-8" ref={sectionRef}>
-      <div className="bg-[#1ABC9C] md:h-[400px] py-20">
+      <div className="bg-secondary md:h-[400px] py-20">
         <div className="text-center mb-10">
           <p className="text-white text-[14px] font-semibold mb-2">
             Our Achievements
@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
             <TiPlus className="absolute text-[#FD9678] -right-6 -top-4" />
             <TiPlus className="absolute text-[#FD9678] opacity-70 text-2xl -right-[27px] rotate-45 -top-5" />
           </h2>
-          <div className="w-[80px] h-[2px] mb-6 bg-[#1ABC9C]"></div>
+          <div className="w-[80px] h-[2px] mb-6 bg-secondary"></div>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 px-4 md:px-16">
