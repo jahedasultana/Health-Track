@@ -92,7 +92,7 @@ const OurHospitalUpdates = () => {
                  src="https://i.postimg.cc/ZY7K1tWH/cool-doctor.jpg"
               alt="Doctor"
             />
-            <div className="absolute top-0 left-0 right-0 bottom-0 bg-[#FD9678] bg-opacity-10 rounded-lg transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0"></div>
+            <div className="absolute top-0 left-0 right-0 bottom-0 bg-primary bg-opacity-10 rounded-lg transition-opacity duration-500 ease-in-out group-hover:bg-opacity-0"></div>
           </div>
         </div>
       </div>

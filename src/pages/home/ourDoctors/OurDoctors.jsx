@@ -70,7 +70,7 @@ const OurDoctors = () => {
               </div>
             </div>
             {/* Bottom Border on Card Hover */}
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
@@ -125,7 +125,7 @@ const OurDoctors = () => {
             </div>
 
             {/* Bottom Border on Card Hover */}
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
@@ -178,7 +178,7 @@ const OurDoctors = () => {
               </div>
             </div>
             {/* Bottom Border on Card Hover */}
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 
@@ -234,7 +234,7 @@ const OurDoctors = () => {
 
             {/* Bottom Border on Card Hover */}
 
-            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-[#FD9678] ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
+            <div className="absolute bottom-0 left-0 w-[80%] h-[2px]  bg-primary ml-7  scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"></div>
           </div>
         </div>
 

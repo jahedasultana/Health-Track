@@ -95,7 +95,7 @@ const SignIn = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="mt-4 w-full py-2 bg-[#FD9678] text-white text-sm font-medium hover:bg-[#ec6f49] rounded-lg focus:outline-none"
+          className="mt-4 w-full py-2 bg-primary text-white text-sm font-medium hover:bg-[#ec6f49] rounded-lg focus:outline-none"
         >
           Submit
         </button>

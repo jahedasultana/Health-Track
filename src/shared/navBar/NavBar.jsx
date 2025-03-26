@@ -40,7 +40,7 @@ const Navbar = () => {
       <nav className={`fixed top-0 z-20 w-full`}>
         <div
           className={`mx-auto ${
-            scrollY <= 50 ? "bg-transparent h-[140px]" : (localiton.pathname == '/' ? 'bg-[#FD9678]' : "bg-[#1ABC9C]" )
+            scrollY <= 50 ? "bg-transparent h-[140px]" : (localiton.pathname == '/' ? 'bg-primary' : "bg-[#1ABC9C]" )
           } absolute top-0 w-full z-20 shadow-lg`}
         >
           {/* Top Navbar */}

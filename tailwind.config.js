@@ -9,6 +9,11 @@ export default {
       boxShadow: {
         custom: '0 0 0 5px rgb(253 150 120 / 15%)',
       },
+      colors: {
+        primary: '#3F8EFC',
+        secondary: '#87BFFF',
+       
+}
     },
   },
   plugins: [],

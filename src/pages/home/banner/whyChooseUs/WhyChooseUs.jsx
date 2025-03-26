@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
             </p>
 
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-[#FD9678] rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
+              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-primary rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
                 <MdArrowRightAlt className="text-3xl" />
               </button>
             </div>
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
               facilisisro convallis facilisisro
             </p>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-[#FD9678] rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
+              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-primary rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
                 <MdArrowRightAlt className="text-3xl" />
               </button>
             </div>
@@ -118,7 +118,7 @@ const WhyChooseUs = () => {
               facilisisro convallis facilisisro
             </p>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-[#FD9678] rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
+              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-primary rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
                 <MdArrowRightAlt className="text-3xl" />
               </button>
             </div>
@@ -139,7 +139,7 @@ const WhyChooseUs = () => {
               facilisisro convallis facilisisro
             </p>
             <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 translate-y-8 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out">
-              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-[#FD9678] rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
+              <button className="flex items-center p-[14px] bg-white text-black/70 hover:border hover:border-[#FD9678]/20 hover:text-white hover:bg-primary rounded-full hover:shadow-custom transition-all duration-300 ease-in-out">
                 <MdArrowRightAlt className="text-3xl" />
               </button>
             </div>
