@@ -77,7 +77,7 @@ const Faq = () => {
         {/* FAQ Section */}
         <div className="md:w-[50%] w-full mx-auto md:h-[175px]">
           {faqs.map((faq, index) => (
-            <div key={index} className="mb-4 bg-[#FFFAF9] border pb-2">
+            <div key={index} className="mb-4 bg-primary/10 border pb-2">
               <div
                 className="flex justify-between items-center cursor-pointer p-[14px]"
                 onClick={() => toggleFAQ(index)}

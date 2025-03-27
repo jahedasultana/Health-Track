@@ -8,7 +8,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
   return (
     <div
       className={`relative rounded-sm flex flex-col items-center justify-center shadow-md p-10 text-center 
-            w-full h-56 border border-[#FD9678]/50`}
+            w-full h-56 border border-primary/40`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -50,7 +50,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
         style={{
           width: "110px",
           height: "100px",
-          backgroundColor: "#FD96788F",
+          backgroundColor: "#3F8EFC66",
           clipPath:
             "polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)",
         }}
@@ -77,7 +77,7 @@ export const InfoCard = ({ title, Icon, description, isEven, color }) => {
       </div>
 
       {/* Button */}
-      <div className="absolute text-lg -bottom-4 bg-white text-primary border border-[#FD9678]/50 px-6 pt-1 rounded-full">
+      <div className="absolute text-lg -bottom-4 bg-white text-primary border border-primary/40 px-6 pt-1 rounded-full">
         <button>
           <FaLongArrowAltRight/>
         </button>

@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
         <div className="grid md:grid-cols-4 gap-6 px-4 md:px-16">
           {/* Card 1 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
+            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-primary/10 transition-all duration-300"></div>
 
             <h2 className="text-primary/80 text-4xl md:text-6xl font-bold mb-4">
               {startCounter && <CountUp start={0} end={8600} duration={3} />}
@@ -75,7 +75,7 @@ const WhyChooseUs = () => {
 
           {/* Card 2 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
+            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-primary/10 transition-all duration-300"></div>
             <h2 className="text-primary/80 text-4xl md:text-6xl font-bold mb-4">
               {startCounter && (
                 <CountUp start={0} end={145} duration={3} delay={1} />
@@ -100,7 +100,7 @@ const WhyChooseUs = () => {
 
           {/* Card 3 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
+            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-primary/10 transition-all duration-300"></div>
 
             <h2 className="text-primary/80 text-4xl md:text-6xl font-bold mb-4">
               {startCounter && (
@@ -126,7 +126,7 @@ const WhyChooseUs = () => {
 
           {/* Card 4 */}
           <div className="group relative bg-gradient-to-b from-white via-white to-gray-100 rounded-md p-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-[#f2ded9] transition-all duration-300"></div>
+            <div className="absolute inset-0 border border-transparent group-hover:border-r-[8px] group-hover:border-t-[3px] group-hover:border-l-[2px] group-hover:border-b-[7px] group-hover:border-primary/10 transition-all duration-300"></div>
             <h2 className="text-primary/80 text-4xl md:text-6xl font-bold mb-4">
               24X7
             </h2>
